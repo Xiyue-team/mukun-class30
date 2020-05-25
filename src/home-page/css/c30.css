@@ -1,0 +1,30 @@
+::-webkit-scrollbar{
+    width: 4px;
+    height: 4px;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 1em;
+    background-color: gray;
+}
+body{
+    overflow-x:hidden;
+}
+.bgGray{
+    background: #FAFAFA;
+}
+
+
+
+
+@media screen and (min-width:1069px) and (max-width:1439px){
+    .logo_navi{
+        width: 51px;
+        height: 37px;
+    }
+
+    .logo{
+        width: 280px;
+        height: 325px;
+        margin-top: 158px;
+    }
+}

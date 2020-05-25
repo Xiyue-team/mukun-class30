@@ -1,0 +1,168 @@
+@media screen and (min-width:1440px) and (max-width:2560px){
+    .section {
+        height: 1080px;
+    }
+    .logo_navi{
+        width: 51px;
+        height: 37px;
+    }
+
+    .logo{
+        width: 280px;
+        height: 325px;
+        margin-bottom: 73px;
+    }
+    #section2{
+        padding-top: 265px;
+    }
+
+    .cloudTitle{
+        font-size: 56px;
+        color: #20204D;
+        line-height: 72px;
+    }
+    .cloudContent{
+        font-size: 32px;
+        color: #6B6B6B;
+        margin-top: 30px;
+    }
+    .cloudContent span{ margin-left: 24px;  }
+
+    #section3{
+        padding-top: 108px;
+        margin-bottom: 194px;
+    }
+    .subTitle {
+        color: #333333;
+        font-size: 42px;
+        line-height: 45px;
+    }
+    .subTitle2{
+        color: #333333;
+        font-size: 32px;
+        line-height: 32px;
+        margin-bottom: 24px;
+    }
+    .subcontent {
+        font-size: 18px;
+        line-height: 32px;
+        color: #6B6B6B;
+    }
+    .img-panel{
+        width:620px;
+        height: 480px;
+    }
+    .img-panel1 img{
+        width: 620px;
+        height: 480px;
+        border-radius: 12px;
+    }
+    .text-panel1{
+        width:530px;
+        height: 256px;
+        line-height: 30px;
+        margin-top: 90px;
+    }
+    .img-panel2{
+       border-radius: 12px;
+    }
+    .img-panel2 img{
+        width: 850px;
+        height: 580px;
+        border-radius: 12px;
+    }
+    .text-panel2{
+        width:400px;
+        height: 256px;
+        line-height: 30px;
+        margin-top: 132px;
+    }
+
+    .img-panel3 img{
+        width: 850px;
+        height: 580px;
+        border-radius: 12px;
+    }
+    .text-panel3{
+        width:280px;
+        line-height: 32px;
+        margin-top: 90px;
+    }
+
+    .section4 {
+        width: 1380px;
+        height: 647px;
+    }
+    .section4-split{
+        width: 110px;
+    }
+    .section5 {
+        width: 1380px;
+        height: 940px;
+        padding-top: 180px;
+    }
+    .section6 {
+        width: 1380px;
+        height: 940px;
+        padding-top: 180px;
+    }
+    .section7{
+        width: 100%;
+        height: 1232px;
+        padding-top: 130px;
+    }
+    .section7 img{
+        width: 1324px;
+        height: 764px;
+    }
+    .section7 .gallery{
+        margin-top:115px;
+    }
+
+    .section8{
+        width: 100%;
+        height: 1080px;
+        padding-top: 130px;
+    }
+    .section8 img{
+        width: 276px;
+        height: 640px;
+        opacity: 0.65;
+    }
+    .section8 .gallery{
+        width:1380px;
+        margin-top: 74px;
+    }
+    .section8 .gallery2{
+        width:1380px;
+        margin-top: 74px;
+        background-image: url("../img/home/beike@2x.png");
+        background-size: cover;
+    }
+    .section9{
+        width: 100%;
+        height: 1080px;
+        background-image: url("../img/home/dataDrive@2x.png");
+        background-size: cover;
+        position:relative
+
+    }
+    .section9 .mask{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0.55;
+        background: #000000;
+    }
+    .section9 .dataDrive{
+        position: relative;
+    }
+    .section9 .title {
+        color:#FFFFFF;
+        padding-top: 472px;
+    }
+    .section9 .content {
+        color:#FFFFFF;
+        padding-top: 20px;
+    }
+}
