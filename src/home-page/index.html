@@ -5,10 +5,10 @@
     <title>C30</title>
     <link href="lib/tailwind.min.css" rel="stylesheet">
     <link href="css/c30.css" rel="stylesheet">
+    <link href="css/c30@small.css" rel="stylesheet">
+    <link href="css/c30@medium.css" rel="stylesheet">
     <link href="css/c30@large.css" rel="stylesheet">
     <link href="css/c30@xx-large.css" rel="stylesheet">
-    <link href="css/c30@medium.css" rel="stylesheet">
-    <link href="css/c30@small.css" rel="stylesheet">
 </head>
 <body class="bg-white">
 
@@ -24,27 +24,27 @@
             <span>数据驱动</span>
         </div>
     </div>
-    <section id="section3" >
+    <section class="section3 flex mx-auto flex-col" id="section3" >
         <div class="subTitle text-center">单点极致</div>
-        <div class="subcontent text-center">专注核心产品极致应用，基于生态融合第三方优质应用<br> 个性化应用可基于中台和无代码自定义应用业务的能力，快速实现</div>
+        <div class="subcontent text-center my-5">专注核心产品极致应用，基于生态融合第三方优质应用<br> 个性化应用可基于中台和无代码自定义应用业务的能力，快速实现</div>
     </section>
-    <div class="section4 flex flex-row mx-auto" >
+    <div class="section4 flex mx-auto sm:flex-col md:flex-col lg:flex-row xl:flex-row" >
         <div class="content-center img-panel1"><img class="mx-auto bg-gray-200"></div>
         <div class="section4-split"></div>
         <div class="content-center text-panel1">
             <div class="subTitle2 text-left">顶级素材资源</div>
-            <div class="subcontent text-left">
+            <div class="subcontent2 text-left">
                 火花学院是基于科学可视化技术创新开发的可视、可触、可交互的教学内容与工具库。覆盖了中小学的数学与科学类学科，帮助学生“看见”哪些难以“见到”的科学场景和概念。致力于构建科学可视化教学理论及应用体系，通过可视化的表达方式和教学新思路来提升课堂知识传递的效率，让教师有更多精力来指导学生学习和开展教学创作，让更多学生爱上课堂，爱科学，爱学科学，将科学思维运用于生活的点点滴滴。
             </div>
         </div>
     </div>
-    <div class="bgGray">
-        <div class="section5 flex flex-row-reverse mx-auto " >
-            <div class="content-center img-panel2"><img class="mx-auto bg-gray-100"></div>
-            <div class="section4-split"></div>
+    <div class="bgGray section5-bg">
+        <div class="section5 flex mx-auto sm:flex-col md:flex-col lg:flex-row-reverse xl:flex-row-reverse" >
+            <div class="content-center img-panel2"><img class="mx-auto bg-gray-200"></div>
+            <div class="section5-split"></div>
             <div class="content-center text-panel2">
                 <div class="subTitle2 text-left">管理平台</div>
-                <div class="subcontent text-left">
+                <div class="subcontent2 text-left">
                     沐坤提供强大的中台服务能力，个性化应用是基于平台的自定义能力及二次开发能力实现。<br>
                     无代码自定义，提供强大的中台能力，包括门户平台，流程平台，业务定制平台，集成平台。<br>
                     一体化集成平台，提供标准的API规范和外部系统各项接入接口，实现软件与硬件一体化融合。<br>
@@ -53,12 +53,12 @@
             </div>
         </div>
     </div>
-    <section class="section6 flex flex-row mx-auto bg-white" id="section6">
-        <div class="content-center img-panel3"><img   class="mx-auto bg-gray-100"  ></div>
-        <div class="section4-split"></div>
+    <section class="section6 flex mx-auto bg-white sm:flex-col md:flex-col lg:flex-row xl:flex-row" id="section6">
+        <div class="content-center img-panel3"><img class="mx-auto bg-gray-200"  ></div>
+        <div class="section6-split"></div>
         <div class="text-panel3">
             <div class="subTitle2 text-left" >流畅极致</div>
-            <div class="subcontent text-left">
+            <div class="subcontent2 text-left">
                 极致书写：<br>
                 连笔、圆润、笔锋<br>
                 绘图体验：<br>
@@ -75,11 +75,15 @@
     <section class="section7 mx-auto bgGray">
         <div class="subTitle text-center" >生态连接</div>
         <div class="subcontent text-center my-5">跨平台、品牌、设备互联互通，与能力共享</div>
-        <div class="text-center gallery mx-auto"><img class="mx-auto" src="img/home/dataDrive-2@2x.png" ></div>
+        <div class="text-center gallery mx-auto"><img class="mx-auto" src="img/home/equipment@2x.png" ></div>
     </section>
-    <section class="section8">
-        <div class="subcontent text-center">构建“备、讲、批、辅、考”应用闭环，内容与工具的深度融合</div>
-        <div class="text-center flex flex-row mx-auto gallery">
+    <section class="section8 flex mx-auto flex-col">
+        <div class="subcontent text-center">
+            <div class="title">
+                构建“备、讲、批、辅、考”应用闭环，内容与工具的深度融合
+            </div>
+        </div>
+        <div class="text-center flex mx-auto gallery sm:flex-col md:flex-row lg:flex-row xl:flex-row">
             <img class="mx-auto" src="img/home/bei@2x.png" >
             <img class="mx-auto" src="img/home/jiang@2x.png" >
             <img class="mx-auto" src="img/home/pi@2x.png" >
@@ -87,7 +91,7 @@
             <img class="mx-auto" src="img/home/kao@2x.png" >
         </div>
     </section>
-    <section class="section8">
+    <section class="section8-1">
         <div class="subcontent text-center">构建“备、讲、批、辅、考”应用闭环，内容与工具的深度融合</div>
         <div class="text-center flex flex-row mx-auto gallery2">
             <img class="mx-auto"  >
@@ -103,18 +107,23 @@
             <!--背景图 -->
             <div class="subTitle text-center title ">数据驱动</div>
             <div class="subcontent text-center content">
-                全过程、动态、连续、全面数据无感知采集<br>
-                数据自动汇聚与分类展现，技术关联性分析、因果分析实现精准教学与科学治理
+                全过程、动态、连续、全面数据无感知采集
+            </div>
+            <div class="subcontent text-center content">
+                <div class="content2">
+                    数据自动汇聚与分类展现，技术关联性分析、因果分析实现精准教学与科学治理
+                </div>
             </div>
         </div>
     </section>
-    <section class="section7">
+    <section class="section10">
         <div class="subTitle text-center" >数据驱动</div>
         <div class="subcontent text-center my-5">
-            全过程、动态、连续、全面数据无感知采集<br>数据自动汇聚与分类展现，技术关联性分析、因果分析实现精准教学与科学治理
+            <div class="content">
+                全过程、动态、连续、全面数据无感知采集<br>数据自动汇聚与分类展现，技术关联性分析、因果分析实现精准教学与科学治理
+            </div>
         </div>
         <div class="text-center gallery"><img class="mx-auto" src="img/home/dataDrive-2@2x.png" ></div>
     </section>
-
 </body>
 </html>

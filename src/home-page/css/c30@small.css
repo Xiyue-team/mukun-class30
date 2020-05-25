@@ -1,6 +1,6 @@
-@media screen and (min-width:320px) and (max-width:734px){
+@media screen and (max-width:734px){
     .section {
-        height: 1080px;
+        height: 768px;
     }
     .logo_navi{
         width: 51px;
@@ -8,29 +8,34 @@
     }
 
     .logo{
-        width: 280px;
-        height: 325px;
-        margin-bottom: 73px;
+        width: 180px;
+        height: 209px;
+        margin-bottom: 40px;
     }
     #section2{
-        padding-top: 265px;
+        padding-top: 160px;
     }
 
     .cloudTitle{
-        font-size: 56px;
+        font-size: 27px;
         color: #20204D;
-        line-height: 72px;
+        line-height: 27px;
     }
     .cloudContent{
-        font-size: 32px;
+        font-size: 20px;
         color: #6B6B6B;
-        margin-top: 30px;
+        line-height: 28px;
+        margin-top: 20px;
     }
-    .cloudContent span{ margin-left: 24px;  }
+    .cloudContent span{ margin-left: 36px;  }
+    .cloudContent span:nth-of-type(1){
+        margin-left: 0;
+    }
 
-    #section3{
-        padding-top: 108px;
-        margin-bottom: 194px;
+    .section3{
+        width: 320px;
+        height: 240px;
+        padding-top: 40px;
     }
     .subTitle {
         color: #333333;
@@ -39,110 +44,138 @@
     }
     .subTitle2{
         color: #333333;
-        font-size: 32px;
-        line-height: 32px;
-        margin-bottom: 24px;
+        font-size: 16px;
+        line-height: 16px;
+        margin-bottom: 16px;
     }
     .subcontent {
         font-size: 16px;
         line-height: 26px;
         color: #6B6B6B;
     }
-    .img-panel{
-        width:620px;
-        height: 480px;
+    .subcontent2 {
+        font-size: 14px;
+        line-height: 26px;
+        color: #6B6B6B;
     }
     .img-panel1 img{
-        width: 620px;
-        height: 480px;
+        width: 320px;
+        height: 247px;
         border-radius: 12px;
     }
     .text-panel1{
-        width:530px;
-        height: 256px;
-        line-height: 30px;
-        margin-top: 90px;
-    }
-    .img-panel2{
-       border-radius: 12px;
+        width:320px;
+        height: 266px;
     }
     .img-panel2 img{
-        width: 850px;
-        height: 580px;
+        width: 320px;
+        height: 218px;
         border-radius: 12px;
     }
     .text-panel2{
-        width:400px;
-        height: 256px;
-        line-height: 30px;
-        margin-top: 132px;
+        width:320px;
+        height: 240px;
     }
 
     .img-panel3 img{
-        width: 850px;
-        height: 580px;
+        width: 320px;
+        height: 218px;
         border-radius: 12px;
     }
     .text-panel3{
-        width:280px;
-        line-height: 32px;
-        margin-top: 90px;
+        width:320px;
+        height: 292px;
     }
 
     .section4 {
-        width: 1380px;
-        height: 647px;
+        width: 320px;
+        height: 663px;
+        padding-top: 80px;
     }
     .section4-split{
-        width: 110px;
+        height: 30px;
+    }
+    .section5-bg {
     }
     .section5 {
-        width: 1380px;
-        height: 940px;
-        padding-top: 180px;
+        width: 320px;
+        height: 608px;
+        padding-top: 60px;
+    }
+    .section5-split{
+        height: 30px;
     }
     .section6 {
-        width: 1380px;
-        height: 940px;
-        padding-top: 180px;
+        width: 320px;
+        height: 660px;
+        padding-top: 60px;
+    }
+    .section6-split{
+        height: 30px;
     }
     .section7{
         width: 100%;
-        height: 458px;
-        padding-top: 96px;
+        height: 415px;
+        padding-top: 40px;
     }
     .section7 img{
-        width: 235px;
-        height: 147px;
+        width: 320px;
+        height: 185px;
     }
     .section7 .gallery{
-        margin-top:115px;
+        margin-top:60px;
     }
 
     .section8{
         width: 100%;
-        height: 1080px;
-        padding-top: 130px;
+        height: 1287px;
+        padding-top: 40px;
+    }
+    .section8 .subcontent{
+        font-size: 16px;
+        line-height: 26px;
+        color: #6B6B6B;
+    }
+    .section8 .title{
+        width:285px;
+        margin: 0 auto;
     }
     .section8 img{
-        width: 276px;
-        height: 640px;
-        opacity: 0.65;
+        width: 320px;
+        height: 195px;
+        opacity: 0.37;
+        border-radius: 5px;
+        margin-bottom: 30px;
     }
     .section8 .gallery{
-        width:1380px;
-        margin-top: 74px;
+        width:320px;
+        margin-top: 60px;
+    }
+    .section8 .gallery img:nth-of-type(1){
+        content: url('../img/home/bei-sm@2x.png');
+    }
+    .section8 .gallery img:nth-of-type(2){
+        content: url('../img/home/jiang-sm@2x.png');
+    }
+    .section8 .gallery img:nth-of-type(3){
+        content: url('../img/home/pi-sm@2x.png');
+    }
+    .section8 .gallery img:nth-of-type(4){
+        content: url('../img/home/fu-sm@2x.png');
+    }
+    .section8 .gallery img:nth-of-type(5){
+        content: url('../img/home/kao-sm@2x.png');
     }
     .section8 .gallery2{
-        width:1380px;
-        margin-top: 74px;
+        width:700px;
+        margin-top: 60px;
         background-image: url("../img/home/beike@2x.png");
         background-size: cover;
     }
     .section9{
         width: 100%;
-        height: 1080px;
-        background-image: url("../img/home/dataDrive@2x.png");
+        height: 736px;
+        background-image: url("../img/home/dataDrive-sm@2x.png");
         background-size: cover;
         position:relative
 
@@ -159,10 +192,42 @@
     }
     .section9 .title {
         color:#FFFFFF;
-        padding-top: 472px;
+        padding-top: 308px;
+        margin-bottom: 18px;
     }
     .section9 .content {
         color:#FFFFFF;
+    }
+    .section9 .content2 {
+        width: 306px;
+        margin: 0 auto;
+    }
+    .section10{
+        width: 100%;
+        height: 458px;
+        padding-top: 40px;
+    }
+    .section10 .subTitle {
+        color: #333333;
+        font-size: 24px;
+        line-height: 24px;
+    }
+    .section10 .subcontent {
+        font-size: 16px;
+        line-height: 26px;
+        color: #6B6B6B;
         padding-top: 20px;
     }
+    .section10 img{
+        width: 280px;
+        height: 180px;
+    }
+    .section10 .gallery{
+        margin-top:60px;
+    }
+    .section10 .content {
+        width: 305px;
+        margin: 0 auto;
+    }
 }
+
