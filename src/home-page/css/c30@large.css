@@ -96,6 +96,7 @@
     }
 
     .section4 {
+        flex-direction:row;
         width: 992px;
         height: 500px;
     }
@@ -106,6 +107,7 @@
         background-color: #F1F1F1;
     }
     .section5 {
+        flex-direction:row-reverse;
         width: 1000px;
         height: 620px;
         padding-top: 100px;
@@ -114,6 +116,7 @@
         width: 43px;
     }
     .section6 {
+        flex-direction:row;
         width: 1000px;
         height: 620px;
         padding-top: 100px;
@@ -139,28 +142,54 @@
         height: 754px;
         padding-top: 100px;
     }
+    .section8-mobile{
+        width: 100%;
+        height: 754px;
+        padding-top: 100px;
+    }
     .section8 img{
         width: 204px;
         height: 474px;
         opacity: 0.65;
     }
-    .section8 .gallery{
-        width:1020px;
-        margin-top: 60px;
+    .section8-mobile img{
+        width: 204px;
+        height: 474px;
     }
-    .section8 .gallery2{
+    .section8 .gallery{
+        flex-direction:row;
         width:1020px;
         margin-top: 60px;
-        background-image: url("../img/home/beike@2x.png");
+        background: #000000;
+    }
+    .section8 .gallery .img-back:nth-of-type(1) img{
+        content: url('../img/home/bei-lg@2x.png');
+    }
+    .section8 .gallery .img-back:nth-of-type(2) img{
+        content: url('../img/home/jiang-lg@2x.png');
+    }
+    .section8 .gallery .img-back:nth-of-type(3) img{
+        content: url('../img/home/pi-lg@2x.png');
+    }
+    .section8 .gallery .img-back:nth-of-type(4) img{
+        content: url('../img/home/fu-lg@2x.png');
+    }
+    .section8 .gallery .img-back:nth-of-type(5) img{
+        content: url('../img/home/kao-lg@2x.png');
+    }
+    .section8-mobile .gallery2{
+        width:1020px;
+        margin-top: 60px;
+        background-image: url("../img/home/beike-lg@2x.png");
         background-size: cover;
+        opacity: 0.35;
     }
     .section9{
         width: 100%;
         height: 720px;
-        background-image: url("../img/home/dataDrive@2x.png");
+        background-image: url("../img/home/dataDrive-lg@2x.png");
         background-size: cover;
         position:relative
-
     }
     .section9 .mask{
         position: absolute;
@@ -199,8 +228,9 @@
         color: #6B6B6B;
     }
     .section10 img{
-        width: 760px;
-        height: 457px;
+        width: 800px;
+        height: 460px;
+        content: url('../img/home/dataDrive-lg-2@2x.png');
     }
     .section10 .gallery{
         margin-top:80px;

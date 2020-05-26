@@ -88,6 +88,7 @@
     }
 
     .section4 {
+        flex-direction:column;
         width: 320px;
         height: 663px;
         padding-top: 80px;
@@ -98,6 +99,7 @@
     .section5-bg {
     }
     .section5 {
+        flex-direction:column;
         width: 320px;
         height: 608px;
         padding-top: 60px;
@@ -106,6 +108,7 @@
         height: 30px;
     }
     .section6 {
+        flex-direction:column;
         width: 320px;
         height: 660px;
         padding-top: 60px;
@@ -131,6 +134,9 @@
         height: 1287px;
         padding-top: 40px;
     }
+    .section8-mobile{
+        height: 0;
+    }
     .section8 .subcontent{
         font-size: 16px;
         line-height: 26px;
@@ -141,36 +147,34 @@
         margin: 0 auto;
     }
     .section8 img{
-        width: 320px;
-        height: 195px;
         opacity: 0.37;
-        border-radius: 5px;
-        margin-bottom: 30px;
     }
     .section8 .gallery{
+        flex-direction:column;
         width:320px;
         margin-top: 60px;
     }
-    .section8 .gallery img:nth-of-type(1){
+    .section8 .gallery .img-back{
+        width: 320px;
+        height: 195px;
+        border-radius: 5px;
+        margin-bottom: 30px;
+        background-color: #000000;
+    }
+    .section8 .gallery .img-back:nth-of-type(1) img{
         content: url('../img/home/bei-sm@2x.png');
     }
-    .section8 .gallery img:nth-of-type(2){
+    .section8 .gallery .img-back:nth-of-type(2) img{
         content: url('../img/home/jiang-sm@2x.png');
     }
-    .section8 .gallery img:nth-of-type(3){
+    .section8 .gallery .img-back:nth-of-type(3) img{
         content: url('../img/home/pi-sm@2x.png');
     }
-    .section8 .gallery img:nth-of-type(4){
+    .section8 .gallery .img-back:nth-of-type(4) img{
         content: url('../img/home/fu-sm@2x.png');
     }
-    .section8 .gallery img:nth-of-type(5){
+    .section8 .gallery .img-back:nth-of-type(5) img{
         content: url('../img/home/kao-sm@2x.png');
-    }
-    .section8 .gallery2{
-        width:700px;
-        margin-top: 60px;
-        background-image: url("../img/home/beike@2x.png");
-        background-size: cover;
     }
     .section9{
         width: 100%;
@@ -178,7 +182,6 @@
         background-image: url("../img/home/dataDrive-sm@2x.png");
         background-size: cover;
         position:relative
-
     }
     .section9 .mask{
         position: absolute;
@@ -219,11 +222,12 @@
         padding-top: 20px;
     }
     .section10 img{
-        width: 280px;
-        height: 180px;
+        width: 300px;
+        height: 173px;
+        content: url('../img/home/dataDrive-sm-2@2x.png');
     }
     .section10 .gallery{
-        margin-top:60px;
+        margin-top:40px;
     }
     .section10 .content {
         width: 305px;
