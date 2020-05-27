@@ -1,6 +1,11 @@
 .section-mobile{
     display: none;
 }
+.shadow-pc{
+    background-color: #FFFFFF;
+    width: 100%;
+    box-shadow: 0 1px 0 0 rgba(0,0,0,0.06);
+}
 .section-pc{
     display: flex;
     width: 1066px;
@@ -30,4 +35,10 @@
 }
 .section-pc .nav-content:nth-of-type(5){
     margin-right: 0;
+}
+.section-pc .nav-content a{
+    color: #333333;
+}
+.section-pc .nav-content a:hover{
+    text-decoration: none;
 }

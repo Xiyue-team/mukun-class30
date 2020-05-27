@@ -183,6 +183,11 @@
     background-size: cover;
     opacity: 0.35;
 }
+.section8-mobile .gallery2 div{
+    width:276px;
+    height: 640px;
+    border: 1px solid #979797;
+}
 .section9{
     width: 100%;
     height: 1080px;
