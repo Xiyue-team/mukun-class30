@@ -70,13 +70,11 @@
     line-height: 30px;
     margin-top: 90px;
 }
-.img-panel2{
-   border-radius: 12px;
-}
-.img-panel2 img{
+.img-panel2 video{
     width: 850px;
     height: 580px;
     border-radius: 12px;
+    box-shadow: 0 3px 15px 0 rgba(0,0,0,0.05);
 }
 .text-panel2{
     width:400px;
@@ -85,10 +83,11 @@
     margin-top: 132px;
 }
 
-.img-panel3 img{
+.img-panel3 video{
     width: 850px;
     height: 580px;
     border-radius: 12px;
+    box-shadow: 0 3px 15px 0 rgba(0,0,0,0.05);
 }
 .text-panel3{
     width:280px;

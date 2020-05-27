@@ -64,20 +64,22 @@
     width:518px;
     height: 236px;
 }
-.img-panel2 img{
+.img-panel2 video{
     width: 616px;
     height: 420px;
     border-radius: 12px;
+    box-shadow: 0 3px 15px 0 rgba(0,0,0,0.05);
 }
 .text-panel2{
     width:580px;
     height: 256px;
 }
 
-.img-panel3 img{
+.img-panel3 video{
     width: 616px;
     height: 420px;
     border-radius: 12px;
+    box-shadow: 0 3px 15px 0 rgba(0,0,0,0.05);
 }
 .text-panel3{
     width:324px;
