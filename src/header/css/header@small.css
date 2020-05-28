@@ -47,12 +47,6 @@
     height: 60px;
     font-size: 15px;
     line-height: 60px;
-    box-shadow: inset 0 -1px 0 0 #EBEBEB;
-}
-.section-mobile .menu li a{
     color: #333333;
-}
-.section-mobile .menu li a:hover{
-    color: #38DB96;
-    text-decoration: none;
+    box-shadow: inset 0 -1px 0 0 #EBEBEB;
 }

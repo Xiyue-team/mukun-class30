@@ -77,10 +77,6 @@
     line-height: 38px;
     color: #6B6B6B;
 }
-.section-mobile .multi-collapse li a{
-    color: #8A8A8A;
-}
-.section-mobile .multi-collapse li a:hover{
+.section-mobile .multi-collapse li:active{
     color: #38DB96;
-    text-decoration: none;
 }

@@ -28,4 +28,14 @@ $(function(){
     collapseThree.on('hide.bs.collapse', function () {
         arrow[2].style.transform = "scaleY("+ -1 +")";
     });
+
+    let list = document.getElementsByClassName('section-mobile')[0].getElementsByTagName('li');
+    Object.keys(list).forEach(function(key) {
+        list[key].onmouseup = function() {
+            //  收起展开项
+            collapseOne.collapse('hide');
+            collapseTwo.collapse('hide');
+            collapseThree.collapse('hide');
+        }
+    })
 });
