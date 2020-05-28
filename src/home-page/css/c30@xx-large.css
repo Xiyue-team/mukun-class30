@@ -134,19 +134,10 @@
     height: 1080px;
     padding-top: 130px;
 }
-.section8-mobile{
-    width: 100%;
-    height: 1080px;
-    padding-top: 130px;
-}
 .section8 img{
     width: 276px;
     height: 640px;
     opacity: 0.65;
-}
-.section8-mobile img{
-    width: 276px;
-    height: 640px;
 }
 .section8 .gallery{
     position: relative;
@@ -161,10 +152,50 @@
     width:1380px;
     height: 640px;
 }
+.section8 .showBigImg{
+    display: none;
+    position: absolute;
+    flex-direction:row;
+    width:1380px;
+    height: 640px;
+}
+.section8 .img-open{
+    width: 276px;
+    height: 640px;
+    opacity: 1;
+}
+.section8 .forBorder{
+    width: 1380px;
+    height: 640px;
+    position: relative;
+}
+.section8 .borderAndText{
+    position: absolute;
+    left:0;
+    top:0;
+    width:1380px;
+    height: 100%;
+}
+.section8 .border-text{
+    width: 276px;
+    height: 640px;
+    opacity: 1;
+    border: 1px solid #979797;
+    padding-top: 565px;
+    font-size: 45px;
+    line-height: 45px;
+    color: #FFFFFF;
+}
 .section8 .img-cover{
     width: 276px;
     height: 640px;
     opacity: 1;
+}
+.section8 .img-cover .text{
+    font-size: 45px;
+    line-height: 45px;
+    padding-top: 474px;
+    color: #FFFFFF;
 }
 @keyframes turnToBig0{
     0%{background-color: #4a5568;background-image: url('../img/home/beike@2x.png');background-size: auto 100%;}
@@ -190,6 +221,9 @@
     0%{}
     100%{width:0;}
 }
+.section8 .gallery .img-back .text-mobile{
+    display: none;
+}
 .section8 .gallery .img-back:nth-of-type(1) img{
     content: url('../img/home/bei@2x.png');
 }
@@ -204,18 +238,6 @@
 }
 .section8 .gallery .img-back:nth-of-type(5) img{
     content: url('../img/home/kao@2x.png');
-}
-.section8-mobile .gallery2{
-    width:1380px;
-    margin-top: 74px;
-    background-image: url("../img/home/beike@2x.png");
-    background-size: cover;
-    opacity: 0.35;
-}
-.section8-mobile .gallery2 div{
-    width:276px;
-    height: 640px;
-    border: 1px solid #979797;
 }
 .section9{
     width: 100%;
