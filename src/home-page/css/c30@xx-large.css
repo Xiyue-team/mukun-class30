@@ -1,11 +1,6 @@
 .section {
     height: 1080px;
 }
-.logo_navi{
-    width: 51px;
-    height: 37px;
-}
-
 .logo{
     width: 280px;
     height: 325px;
@@ -148,17 +143,52 @@
     width: 276px;
     height: 640px;
     opacity: 0.65;
-
 }
 .section8-mobile img{
     width: 276px;
     height: 640px;
 }
 .section8 .gallery{
+    position: relative;
     flex-direction:row;
     width:1380px;
     margin-top: 74px;
     background: #000000;
+}
+.section8 .gallery-cover{
+    position: absolute;
+    flex-direction:row;
+    width:1380px;
+    height: 640px;
+}
+.section8 .img-cover{
+    width: 276px;
+    height: 640px;
+    opacity: 1;
+}
+@keyframes turnToBig0{
+    0%{background-color: #4a5568;background-image: url('../img/home/beike@2x.png');background-size: auto 100%;}
+    100%{width:1380px;background-color: #4a5568;background-image: url('../img/home/beike@2x.png');background-size: auto 100%;}
+}
+@keyframes turnToBig1{
+    0%{background-color: #4a5568;background-image: url('../img/home/jiang-open@2x.png');background-size: auto 100%;}
+    100%{width:1380px;background-color: #4a5568;background-image: url('../img/home/jiang-open@2x.png');background-size: auto 100%;}
+}
+@keyframes turnToBig2{
+    0%{background-color: #4a5568;background-image: url('../img/home/gai-open@2x.png');background-size: auto 100%;}
+    100%{width:1380px;background-color: #4a5568;background-image: url('../img/home/gai-open@2x.png');background-size: auto 100%;}
+}
+@keyframes turnToBig3{
+    0%{background-color: #4a5568;background-image: url('../img/home/fu-open@2x.png');background-size: auto 100%;}
+    100%{width:1380px;background-color: #4a5568;background-image: url('../img/home/fu-open@2x.png');background-size: auto 100%;}
+}
+@keyframes turnToBig4{
+    0%{background-color: #4a5568;background-image: url('../img/home/kao-open@2x.png');background-size: auto 100%;}
+    100%{width:1380px;background-color: #4a5568;background-image: url('../img/home/kao-open@2x.png');background-size: auto 100%;}
+}
+@keyframes turnToSmall{
+    0%{}
+    100%{width:0;}
 }
 .section8 .gallery .img-back:nth-of-type(1) img{
     content: url('../img/home/bei@2x.png');
