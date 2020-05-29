@@ -3,8 +3,6 @@
 }
 @keyframes blackToWhite{
     0%{background-color: #000000;}
-    70%{background-color: #000000;}
-    85%{background-color: #ffffff;}
     100%{background-color: #ffffff;}
 }
 .logo{

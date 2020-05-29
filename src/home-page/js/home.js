@@ -1,5 +1,6 @@
 let animation;
 let width;
+let delta = 8; //鼠标每次滚动时动画运行的帧数
 class HomePage {
 
     init() {
@@ -19,14 +20,21 @@ class HomePage {
         const element = document.querySelector('.home_page');
         let heightToTop=element.scrollTop; //滚动条距顶端的距离
         let total = 0;  // 鼠标滚轮和动画帧数绑定的数据
+        let lastTime = 0;
         // 鼠标滚轮滚动事件
         element.addEventListener('mousewheel', (e) => {
-            // arr[data1,data2] data1-动画当前播放方向 data2-动画当前播放帧数
-            let arr = this.countFrame(e, total);
-            total = arr[1];
             heightToTop=element.scrollTop;  // 重新获取滚动条距离顶部位置
+            let nowTime = new Date().getTime();
+            if (total <= 166) {
+                event.returnValue = true;
+                event.preventDefault();
+            }
             // 只有在顶部时，执行动画
-            if (total <= 168 && heightToTop === 0) {
+            if (total <= 168 && heightToTop === 0 && (nowTime-lastTime)>30) {
+                lastTime = nowTime;
+                // arr[data1,data2] data1-动画当前播放方向 data2-动画当前播放帧数
+                let arr = this.countFrame(e, total);
+                total = arr[1];
                 this.lottiePlay(arr[0],total);
             }
         });
@@ -49,14 +57,19 @@ class HomePage {
 
     // 计算鼠标滚轮和动画帧数total和标识前进后退
     countFrame(e, total) {
-        let delta = 8; //鼠标每次滚动时动画运行的帧数
         let goOrBack = 0; //动画前进或者后退: 0-前进 1-后退
         if(e.wheelDelta){//IE/Opera/Chrome
             if (e.wheelDelta < 0 && total < 166){
                 total += delta;
+                if (total < 0) {
+                    total = 0
+                }
                 goOrBack = 0;
             } else if (e.wheelDelta > 0 && total > 0) {
                 total -= delta;
+                if (total < 0) {
+                    total = 0
+                }
                 goOrBack = 1;
             }
         }else if(e.detail){//Firefox
@@ -71,29 +84,19 @@ class HomePage {
         return [goOrBack, total];
     }
 
+    // 控制视频前进还是后退播放
     lottiePlay(goOrBack, total) {
-        if (goOrBack === 0) {
-            animation.goToAndStop(total-7,true);
-            animation.goToAndStop(total-6,true);
-            animation.goToAndStop(total-5,true);
-            animation.goToAndStop(total-4,true);
-            animation.goToAndStop(total-3,true);
-            animation.goToAndStop(total-2,true);
-            animation.goToAndStop(total-1,true);
-            animation.goToAndStop(total,true);
-        } else if (goOrBack === 1) {
-            animation.goToAndStop(total+7,true);
-            animation.goToAndStop(total+6,true);
-            animation.goToAndStop(total+5,true);
-            animation.goToAndStop(total+4,true);
-            animation.goToAndStop(total+3,true);
-            animation.goToAndStop(total+2,true);
-            animation.goToAndStop(total+1,true);
-            animation.goToAndStop(total,true);
+        for (let i=delta-1; i>=0; i--) {
+            if (goOrBack === 0){
+                animation.goToAndStop(total-i,true);
+            } else if (goOrBack === 1) {
+                animation.goToAndStop(total+i,true);
+            }
         }
-        if (total <= 166) {
-            event.returnValue = true;
-            event.preventDefault();
+        if (total>=144) {
+            document.getElementsByClassName('section')[0].style.backgroundColor = '#ffffff';
+        } else {
+            document.getElementsByClassName('section')[0].style.backgroundColor = '#000000';
         }
     }
 
@@ -123,7 +126,6 @@ class HomePage {
             let borderText = document.getElementsByClassName('border-text');
             Object.keys(imgCover).forEach(function(key) {
                 imgCover[key].onmouseover = function() {
-                    console.info('hover');
                     //隐藏原来的5个字
                     Object.keys(text).forEach(function(key) {
                         text[key].style.display = 'none';
