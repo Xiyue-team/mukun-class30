@@ -5,7 +5,9 @@ class HomePage {
 
     init() {
         this.initView();
-        this.initEvent();
+        if (width >= 734) {
+            this.initEvent();
+        }
     }
 
     /*初始化界面*/
@@ -108,7 +110,7 @@ class HomePage {
             container: document.getElementById('section1'),
             renderer: 'svg',
             loop: false,
-            autoplay: false,
+            autoplay: (width<734),
             path: '../assets/lottie-home/data.json'
         });
     }
