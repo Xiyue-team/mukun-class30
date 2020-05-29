@@ -1,20 +1,11 @@
 .section {
     height: 900px;
 }
-.logo_navi{
-    width: 51px;
-    height: 37px;
-}
-
 .logo{
     width: 300px;
     height: 348px;
     margin-bottom: 60px;
 }
-#section2{
-    padding-top: 265px;
-}
-
 .cloudTitle{
     font-size: 50px;
     color: #20204D;
@@ -143,7 +134,7 @@
     height: 754px;
     padding-top: 100px;
 }
-.section8 img{
+.section8 .img-back img{
     width: 204px;
     height: 474px;
     opacity: 0.65;
@@ -172,6 +163,20 @@
     height: 474px;
     opacity: 1;
 }
+.section8 .img-open:nth-of-type(3){
+    position: relative;
+}
+.section8 .img-mask{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    background:rgba(0,0,0,0.35);
+    z-index:10;
+}
 .section8 .forBorder{
     width: 1020px;
     height: 474px;
@@ -193,6 +198,7 @@
     font-size: 32px;
     line-height: 32px;
     color: #FFFFFF;
+    z-index: 11;
 }
 .section8 .img-cover{
     width: 204px;

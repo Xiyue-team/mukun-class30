@@ -1,20 +1,11 @@
 .section {
     height: 700px;
 }
-.logo_navi{
-    width: 51px;
-    height: 37px;
-}
-
 .logo{
     width: 250px;
     height: 290px;
     margin-bottom: 64px;
 }
-#section2{
-    padding-top: 110px;
-}
-
 .cloudTitle{
     font-size: 48px;
     color: #20204D;
@@ -143,7 +134,7 @@
     line-height: 26px;
     color: #6B6B6B;
 }
-.section8 img{
+.section8 .img-back img{
     width: 140px;
     height: 325px;
     opacity: 0.65;
@@ -172,6 +163,20 @@
     height: 325px;
     opacity: 1;
 }
+.section8 .img-open:nth-of-type(3){
+    position: relative;
+}
+.section8 .img-mask{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    background:rgba(0,0,0,0.35);
+    z-index:10;
+}
 .section8 .forBorder{
     width: 700px;
     height: 325px;
@@ -193,6 +198,7 @@
     font-size: 20px;
     line-height: 20px;
     color: #FFFFFF;
+    z-index: 11;
 }
 .section8 .img-cover{
     width: 204px;
