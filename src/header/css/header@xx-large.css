@@ -53,3 +53,7 @@
 .section-pc .nav-content a:hover{
     text-decoration: none;
 }
+.login{
+    width: 500px;
+    height: 800px;
+}

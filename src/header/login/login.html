@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<!-- saved from url=(0016)http://localhost -->
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登录</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="viewport" content="minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0, width=device-width, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="css/login.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+	</head>
+	<body class="loading">
+		<!-- dialog mask -->
+		<div id="dialog_div_shadow" class="dialog_shadow" style="display: none;z-index: 2">
+		</div>
+		<div class="background">
+			<!--标题栏-->
+			<div class="title-bar">
+				<div id="step1_back" class="title-bar-btns" style="display: none;">
+					<img id="back-btn" src="img/back@2x.png" alt="" style="position: absolute;top: 0;left: 0;width: 44px;height: 44px;" onclick="backToLogin()">
+				</div>
+				<div id="close_login" class="title-bar-btns">
+					<img id="close-btn" src="img/close_44@2x.png" alt="" style="top: 0;width: 11%;max-width: 100%;float: right" onclick="closeForm()">
+				</div>
+			</div>
+			<!--登录begin -->
+			<div id="login_container" style="height: 88%;">
+				<!--logo-->
+				<div id="logo1" class="login_logo">
+					<img draggable="false" src="img/loginlogo@2x.png" alt="" style="width: 35%;">
+				</div>
+
+				<!--登录-->
+				<div id="login" class="form">
+					<form id="loginForm" style="height: 100%;">
+						<div class="form-group" id="username-div">
+							<input class="form-control large_input" id="username"  maxlength="18" type="text" value="" placeholder="请输入手机号码"/>
+						</div>
+						<div class="form-group" style="margin-top: 4%" id="pass_div">
+							<input class="form-control large_input" id="password" value=""  placeholder="请输入密码"/>
+						</div>
+						<div id="loginCodeFormGroup" class="form-group" style="display: none; margin-top: 16px;">
+							<input class="form-control  code_input" id="loginCode" type="text" value="" maxlength="4" placeholder="请输入验证码"/>
+						</div>
+						<!--错误提示-->
+						<div id="loginError" class="error"></div>
+
+						<input type="button" value="登录" id="submit_input" class="button large_btn" style="display: inline-block;"/>
+						<div class="link" style="display: inline-block">
+							<span id="register_acount" style="float: left"  onclick="register()">注册账户</span>
+							<span id="forget_password" style="float: right" onclick="forgetPassWord()">修改密码</span>
+						</div>
+					</form>
+				</div>
+			</div>
+			<!--登录end -->
+
+			<!--激活begin-->
+			<div id="active_container" style="-webkit-app-region: no-drag;display: none;">
+				<div id="" class="form ">
+					<div id="code_tip" class="active_label">激活账号</div>
+					<form id="forgetPwdForm">
+						<div class="form-group" style="margin-bottom: 16px;">
+							<input class="form-control large_input" id="username1" type="text" value="" maxlength="13" placeholder="请输入手机号码"/>
+						</div>
+						<div class="form-group" style="display: inline-flex;">
+							<input class="form-control  code_input" id="msgcode" type="text" value="" maxlength="4"  placeholder="请输入验证码"/>
+							<input class="code_button" id="forgetPwdGetCode" type="button" value="获取验证码">
+						</div>
+						<input type="button" value="绑定并登录" id="bind_complete"  class="button bind_btn"/>
+					</form>
+				</div>
+			</div>
+			<!--激活end -->
+
+			<!-- 设置密码 begin -->
+			<div id="resetPwdFormDiv" class="form resetPwdFormDiv" style="display: none;">
+				<div id="resetLabel" class="active_label">设置密码</div>
+				<form id="resetPwdForm">
+					<div class="form-group" style="margin-bottom: 16px;">
+						<input class="form-control large_input" id="password1" type="password" value="" placeholder="请输入密码(6-16位字符)"/>
+					</div>
+					<div class="form-group">
+						<input class="form-control large_input" id="password1_c" type="password" value=""  placeholder="请再次输入密码"/>
+					</div>
+					<div id="passwordError" class="error"></div>
+					<input type="button" value="完成" id="step2_next"  class="button password_btn"/>
+				</form>
+			</div>
+			<!-- 设置密码 end -->
+		</div>
+
+	</body>
+	<script type="text/javascript" src="../../assets/js/jquery-3.5.1.js"></script>
+	<script type="text/javascript" >
+        var isIE8               = navigator.appVersion.indexOf('MSIE 8.0')>-1;
+        var isIE7               = navigator.appVersion.indexOf('MSIE 7.0')>-1;
+
+        //禁止右键菜单
+        document.oncontextmenu = function(){return false;}
+        zoomDisabled();
+
+        // 禁止页面缩放
+		function zoomDisabled() {
+            $(document).keydown(function (event) {
+                //event.metaKey mac的command键
+                if ((event.ctrlKey === true || event.metaKey === true)&& (event.which === 61 || event.which === 107 || event.which === 173 || event.which === 109 || event.which === 187  || event.which === 189)){
+                    event.preventDefault();
+                }
+            });
+            $(window).bind('mousewheel DOMMouseScroll', function (event) {
+                if (event.ctrlKey === true || event.metaKey) {
+                    event.preventDefault();
+                }
+            });
+		}
+
+        $(document).ready(function () {
+
+            if (isIE8 || isIE7) {
+                var lodingDivH = $('#submit_input').innerHeight();
+                $('#loadingImg').css('margin-top', (lodingDivH - 24) / 2 + 'px');
+            }
+
+            placeholderInIE();
+            $('#submit_input').click(function () {
+				login();
+            });
+
+            $('#password').focus(function (e) {
+                focusInput();
+            });
+            $('#username').focus(function () {
+                usernameFocusInput();
+            });
+
+        });
+
+        function blurInput() {
+            if (isInputTextNull()) {
+                $('#pass_div').html('<input class="form-control large_input" id="password" onfocus="focusInput()" type="text" value="" placeholder="请输入密码"/>')
+                var input = $('#password');
+                if (input.val() == "" || input.val() == input.attr("placeholder")) {
+                    input.addClass("placeholder");
+                    input.val(input.attr("placeholder"));
+                    input.css("color", "#b8b8b8");
+                } else {
+                    input.css("color", "#191919");
+                }
+            }
+        }
+
+        function focusInput() {
+            $('#pass_div').html('<input class="form-control large_input" id="password" onblur="blurInput()" type="password" value="" placeholder="请输入密码"/>');
+            $('#password').focus();
+            //监听键盘
+            $('#password').keyup(function(event){
+                switch(event.keyCode) {
+                    case 13:
+                        login();
+                        return;
+                }
+            });
+        }
+
+        function usernameFocusInput() {
+            $('#username-div').html('<input class="form-control large_input" id="username" onblur="usernameBlurInput()"  maxlength="18" type="text" value="" placeholder="请输入手机号码"/>');
+            $('#username').focus();
+        }
+
+        function usernameBlurInput() {
+            if (isUsernameInputTextNull()) {
+                $('#username-div').html('<input class="form-control large_input" id="username" onfocus="usernameFocusInput()"  maxlength="18" type="text" value="" placeholder="请输入手机号码"/>')
+                var input = $('#username');
+                if (input.val() == "" || input.val() == input.attr("placeholder")) {
+                    input.addClass("placeholder");
+                    input.val(input.attr("placeholder"));
+                    input.css("color", "#b8b8b8");
+                } else {
+                    input.css("color", "#191919");
+                }
+            }
+        }
+
+        // 判断文本框的值,
+        function isInputTextNull() {
+            var text = $('#password').val();
+            if (text == '' || text == null || text == '请输入密码') {
+                return true;
+            }
+            return false;
+        }
+
+        // 判断手机号文本框的值,
+        function isUsernameInputTextNull() {
+            var text = $('#username').val();
+            if (text == '' || text == null || text == '请输入手机号码') {
+                return true;
+            }
+            return false;
+        }
+
+        // input框提示文字在ie9以下显示
+        function placeholderInIE() {
+            $("[placeholder]")
+                .focus(function () {
+                    var input = $(this);
+                    if (input.val() == input.attr("placeholder")) {
+                        input.val("");
+                        input.removeClass("placeholder");
+                        input.css("color", "#191919");
+                    }
+                })
+                .blur(function () {
+                    var input = $(this);
+                    if (input.val() == "" || input.val() == input.attr("placeholder")) {
+                        input.addClass("placeholder");
+                        input.val(input.attr("placeholder"));
+                        input.css("color", "#b8b8b8");
+                    } else {
+                        input.css("color", "#191919");
+					}
+                })
+                .blur()
+                .parents("form")
+                .submit(function () {
+                    $(this).find("[placeholder]").each(function () {
+                        var input = $(this);
+                        if (input.val() == input.attr("placeholder")) {
+                            input.val("");
+                        }
+                    });
+                });
+        }
+
+        // 调用登录接口
+        function login() {
+            let username = $('#username').val();
+            if (username == '' || username == '请输入手机号码') {
+                $('.error')[0].innerHTML = '请输入手机号';
+                $('#submit_input').show();
+                return;
+			}
+        }
+
+		function closeForm() {
+
+		}
+
+
+		//注册
+		function register() {
+			$('#login_container').css('display','none');
+			$('#active_container').css('display','inherit');
+			$('#step1_back').css('display','inherit');
+        }
+
+
+        //忘记密码
+		function forgetPassWord() {
+			$('#login_container').css('display','none');
+			$('#resetPwdFormDiv').css('display','inherit');
+			$('#step1_back').css('display','inherit');
+        }
+
+        // 返回
+		function backToLogin() {
+			$('#login_container').css('display','inherit');
+			$('#active_container').css('display','none');
+			$('#resetPwdFormDiv').css('display','none');
+			$('#step1_back').css('display','none');
+		}
+
+	</script>
+</html>
