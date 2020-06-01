@@ -25,7 +25,11 @@
             <div class="subcontent text-center my-5">专注核心产品极致应用，基于生态融合第三方优质应用<br> 个性化应用可基于中台和无代码自定义应用业务的能力，快速实现</div>
         </section>
         <div class="section4 flex mx-auto" >
-            <div class="content-center img-panel1"><img class="mx-auto bg-gray-200"></div>
+            <div class="content-center img-panel1">
+                <video muted autoplay loop>
+                    <source src="../assets/video/material.mp4" type="video/mp4">
+                </video>
+            </div>
             <div class="section4-split"></div>
             <div class="content-center text-panel1">
                 <div class="subTitle2 text-left">顶级素材资源</div>
@@ -37,7 +41,7 @@
         <div class="bgGray section5-bg">
             <div class="section5 flex mx-auto" >
                 <div class="content-center img-panel2">
-                    <video height="240" muted autoplay loop>
+                    <video muted autoplay loop>
                         <source src="../assets/video/management.mp4" type="video/mp4">
                     </video>
                 </div>
@@ -55,7 +59,7 @@
         </div>
         <section class="section6 flex mx-auto bg-white" id="section6">
             <div class="content-center img-panel3">
-                <video height="240" muted autoplay loop>
+                <video muted autoplay loop>
                     <source src="../assets/video/write.mp4" type="video/mp4">
                 </video>
             </div>
@@ -124,30 +128,22 @@
                 </div>
             </div>
         </section>
-        <section class="section9">
-            <div class="mask"></div>
-            <div class="dataDrive">
-                <!--背景图 -->
-                <div class="subTitle text-center title ">数据驱动</div>
-                <div class="subcontent text-center content">
-                    全过程、动态、连续、全面数据无感知采集
-                </div>
-                <div class="subcontent text-center content">
-                    <div class="content2">
-                        数据自动汇聚与分类展现，技术关联性分析、因果分析实现精准教学与科学治理
+        <div class="lottie-footer">
+            <section class="section9">
+                <div class="mask"></div>
+                <div class="dataDrive">
+                    <div class="dataDriveTitle text-center" >数据驱动</div>
+                    <div class="dataDriveContent text-center">
+                        <div class="content">
+                            全过程、动态、连续、全面数据无感知采集<br>数据自动汇聚与分类展现，技术关联性分析、因果分析实现精准教学与科学治理
+                        </div>
                     </div>
+                    <div class="text-center dataDriveGallery"><img class="mx-auto"></div>
                 </div>
+            </section>
+            <div id="dataDrive" style="position: absolute; left: 0; top: 0; width: 100%; height: 100%;">
             </div>
-        </section>
-        <section class="section10">
-            <div class="subTitle text-center" >数据驱动</div>
-            <div class="subcontent text-center my-5">
-                <div class="content">
-                    全过程、动态、连续、全面数据无感知采集<br>数据自动汇聚与分类展现，技术关联性分析、因果分析实现精准教学与科学治理
-                </div>
-            </div>
-            <div class="text-center gallery"><img class="mx-auto"></div>
-        </section>
+        </div>
     </div>
     <script type="text/javascript">
         new HomePage().init();

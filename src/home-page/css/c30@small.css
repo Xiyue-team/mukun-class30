@@ -48,10 +48,11 @@
     line-height: 26px;
     color: #6B6B6B;
 }
-.img-panel1 img{
+.img-panel1 video{
     width: 320px;
     height: 247px;
     border-radius: 12px;
+    box-shadow: 0 3px 15px 0 rgba(0,0,0,0.05);
 }
 .text-panel1{
     width:320px;
@@ -185,62 +186,76 @@
 .section8 .gallery .img-back:nth-of-type(5) img{
     content: url('../img/home/kao-sm@2x.png');
 }
+.lottie-footer{
+    width: 100%;
+    height: 736px;
+    position: relative;
+}
 .section9{
     width: 100%;
     height: 736px;
-    background-image: url("../img/home/dataDrive-sm@2x.png");
-    background-size: cover;
-    position:relative
+    position:relative;
+    background-color: #000000;
 }
 .section9 .mask{
     position: absolute;
     width: 100%;
     height: 100%;
     opacity: 0.55;
-    background: #000000;
+    background-image: url("../img/home/dataDrive-sm@2x.png");
+    background-size: cover;
 }
 .section9 .dataDrive{
     position: relative;
+    padding-top: 115px;
 }
-.section9 .title {
-    color:#FFFFFF;
-    padding-top: 308px;
-    margin-bottom: 18px;
-}
-.section9 .content {
-    color:#FFFFFF;
-}
-.section9 .content2 {
-    width: 306px;
-    margin: 0 auto;
-}
-.section10{
-    width: 100%;
-    height: 458px;
-    padding-top: 40px;
-}
-.section10 .subTitle {
+.section9 .dataDriveTitle {
     color: #333333;
     font-size: 24px;
     line-height: 24px;
+    opacity: 0;
 }
-.section10 .subcontent {
+.section9 .dataDriveContent {
     font-size: 16px;
     line-height: 26px;
     color: #6B6B6B;
     padding-top: 20px;
+    opacity: 0;
+    margin: 20px 0;
 }
-.section10 img{
-    width: 300px;
-    height: 173px;
+.section9 img{
+    width: 250px;
+    height: 140px;
     content: url('../img/home/dataDrive-sm-2@2x.png');
 }
-.section10 .gallery{
+.section9 .dataDriveGallery{
     margin-top:40px;
+    opacity: 0;
 }
-.section10 .content {
+.section9 .content {
     width: 305px;
     margin: 0 auto;
 }
-
-
+@keyframes maskShowOut{
+    0%{background-color: #000000;}
+    50%{background-color: #000000;}
+    75%{background-color: #ffffff;}
+    100%{background-color: #ffffff;}
+}
+@keyframes imgShowOut{
+    0%{opacity: 0.55;}
+    50%{opacity: 0.55;}
+    75%{opacity: 0;}
+    100%{opacity: 0;}
+}
+@keyframes imgShowIn{
+    0%{opacity: 0;}
+    50%{opacity: 0;}
+    75%{opacity: 1;}
+    100%{opacity: 1;}
+}
+@keyframes textShowIn{
+    0%{opacity: 0;}
+    80%{opacity: 0;}
+    100%{opacity: 1;}
+}
