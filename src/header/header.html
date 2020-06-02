@@ -17,9 +17,10 @@
     <script src="../assets/js/jquery-3.5.1.js"></script>
     <script src="../assets/js/bootstrap.min.js"></script>
 </head>
-<body class="bg-white">
+<body class="bg-white body">
+<div class="mask"></div>
 <!--pc端显示-->
-<div class="shadow-pc">
+<div class="shadow-pc flex flex-col">
     <div class="section-pc flex mx-auto flex-row">
         <div class="flex img-panel">
             <img class="mx-auto" src="img/logo-header@2x.png">
@@ -33,13 +34,10 @@
             <div class="nav-content text-left"><a href="#">登录</a></div>
         </div>
         <div class="section-split2"></div>
-        <div class="flex img-panel2">
+        <div class="flex img-panel2" onclick="showLogin()">
             <img class="mx-auto" src="img/login-header@2x.png">
         </div>
     </div>
-<!--    <div class="login">-->
-<!--        <iframe id="login" src="login/login.html"></iframe>-->
-<!--    </div>-->
 </div>
 <!--手机端显示-->
 <div class="section-mobile flex mx-auto flex-col" id="accordion">
@@ -63,10 +61,13 @@
                 <li>资源</li>
                 <li>应用</li>
                 <li>社区</li>
-                <li>登录</li>
+                <li onclick="showLogin()">登录</li>
             </ul>
         </div>
     </div>
+</div>
+<div class="login">
+    <iframe id="login" src="login/login.html" width="350px" height="490px"></iframe>
 </div>
 <script type="text/javascript"
         src="js/header.js"></script>

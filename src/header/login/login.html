@@ -12,9 +12,6 @@
 		<link rel="stylesheet" type="text/css" href="css/common.css" />
 	</head>
 	<body class="loading">
-		<!-- dialog mask -->
-		<div id="dialog_div_shadow" class="dialog_shadow" style="display: none;z-index: 2">
-		</div>
 		<div class="background">
 			<!--标题栏-->
 			<div class="title-bar">
@@ -65,10 +62,13 @@
 						<div class="form-group" style="margin-bottom: 16px;">
 							<input class="form-control large_input" id="username1" type="text" value="" maxlength="13" placeholder="请输入手机号码"/>
 						</div>
-						<div class="form-group" style="display: inline-flex;">
-							<input class="form-control  code_input" id="msgcode" type="text" value="" maxlength="4"  placeholder="请输入验证码"/>
-							<input class="code_button" id="forgetPwdGetCode" type="button" value="获取验证码">
+						<div class="form-group" style="display: flex;justify-content: center;">
+							<div style="width: 300px;box-shadow: inset 0 -1px 0 0 #EBEBEB;display: flex;">
+								<input class="form-control  code_input" id="msgcode" type="text" value="" maxlength="4"  placeholder="请输入验证码"/>
+								<span class="get-code" id="forgetPwdGetCode">获取验证码</span>
+							</div>
 						</div>
+						<div id="codeError" class="error"></div>
 						<input type="button" value="绑定并登录" id="bind_complete"  class="button bind_btn"/>
 					</form>
 				</div>
@@ -95,8 +95,6 @@
 	</body>
 	<script type="text/javascript" src="../../assets/js/jquery-3.5.1.js"></script>
 	<script type="text/javascript" >
-        var isIE8               = navigator.appVersion.indexOf('MSIE 8.0')>-1;
-        var isIE7               = navigator.appVersion.indexOf('MSIE 7.0')>-1;
 
         //禁止右键菜单
         document.oncontextmenu = function(){return false;}
@@ -117,136 +115,14 @@
             });
 		}
 
-        $(document).ready(function () {
-
-            if (isIE8 || isIE7) {
-                var lodingDivH = $('#submit_input').innerHeight();
-                $('#loadingImg').css('margin-top', (lodingDivH - 24) / 2 + 'px');
-            }
-
-            placeholderInIE();
-            $('#submit_input').click(function () {
-				login();
-            });
-
-            $('#password').focus(function (e) {
-                focusInput();
-            });
-            $('#username').focus(function () {
-                usernameFocusInput();
-            });
-
-        });
-
-        function blurInput() {
-            if (isInputTextNull()) {
-                $('#pass_div').html('<input class="form-control large_input" id="password" onfocus="focusInput()" type="text" value="" placeholder="请输入密码"/>')
-                var input = $('#password');
-                if (input.val() == "" || input.val() == input.attr("placeholder")) {
-                    input.addClass("placeholder");
-                    input.val(input.attr("placeholder"));
-                    input.css("color", "#b8b8b8");
-                } else {
-                    input.css("color", "#191919");
-                }
-            }
-        }
-
-        function focusInput() {
-            $('#pass_div').html('<input class="form-control large_input" id="password" onblur="blurInput()" type="password" value="" placeholder="请输入密码"/>');
-            $('#password').focus();
-            //监听键盘
-            $('#password').keyup(function(event){
-                switch(event.keyCode) {
-                    case 13:
-                        login();
-                        return;
-                }
-            });
-        }
-
-        function usernameFocusInput() {
-            $('#username-div').html('<input class="form-control large_input" id="username" onblur="usernameBlurInput()"  maxlength="18" type="text" value="" placeholder="请输入手机号码"/>');
-            $('#username').focus();
-        }
-
-        function usernameBlurInput() {
-            if (isUsernameInputTextNull()) {
-                $('#username-div').html('<input class="form-control large_input" id="username" onfocus="usernameFocusInput()"  maxlength="18" type="text" value="" placeholder="请输入手机号码"/>')
-                var input = $('#username');
-                if (input.val() == "" || input.val() == input.attr("placeholder")) {
-                    input.addClass("placeholder");
-                    input.val(input.attr("placeholder"));
-                    input.css("color", "#b8b8b8");
-                } else {
-                    input.css("color", "#191919");
-                }
-            }
-        }
-
-        // 判断文本框的值,
-        function isInputTextNull() {
-            var text = $('#password').val();
-            if (text == '' || text == null || text == '请输入密码') {
-                return true;
-            }
-            return false;
-        }
-
-        // 判断手机号文本框的值,
-        function isUsernameInputTextNull() {
-            var text = $('#username').val();
-            if (text == '' || text == null || text == '请输入手机号码') {
-                return true;
-            }
-            return false;
-        }
-
-        // input框提示文字在ie9以下显示
-        function placeholderInIE() {
-            $("[placeholder]")
-                .focus(function () {
-                    var input = $(this);
-                    if (input.val() == input.attr("placeholder")) {
-                        input.val("");
-                        input.removeClass("placeholder");
-                        input.css("color", "#191919");
-                    }
-                })
-                .blur(function () {
-                    var input = $(this);
-                    if (input.val() == "" || input.val() == input.attr("placeholder")) {
-                        input.addClass("placeholder");
-                        input.val(input.attr("placeholder"));
-                        input.css("color", "#b8b8b8");
-                    } else {
-                        input.css("color", "#191919");
-					}
-                })
-                .blur()
-                .parents("form")
-                .submit(function () {
-                    $(this).find("[placeholder]").each(function () {
-                        var input = $(this);
-                        if (input.val() == input.attr("placeholder")) {
-                            input.val("");
-                        }
-                    });
-                });
-        }
-
         // 调用登录接口
         function login() {
-            let username = $('#username').val();
-            if (username == '' || username == '请输入手机号码') {
-                $('.error')[0].innerHTML = '请输入手机号';
-                $('#submit_input').show();
-                return;
-			}
+
         }
 
+        // 关闭登录窗口
 		function closeForm() {
-
+			window.parent.closeLogin();
 		}
 
 

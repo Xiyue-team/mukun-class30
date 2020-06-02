@@ -16,8 +16,7 @@ window.onload = function() {
             });
         }
     })
-};
-$(function(){
+
     let list = document.getElementsByClassName('menu')[0].getElementsByTagName('li');
     let collapseOne = $('#collapseOne');
     Object.keys(list).forEach(function(key) {
@@ -32,6 +31,14 @@ $(function(){
             collapseOne.collapse('hide');
         }
     })
-});
+};
 
+function showLogin() {
+    document.getElementsByClassName('login')[0].style.display = 'inherit';
+    document.getElementsByClassName('mask')[0].style.display = 'inherit';
+}
 
+function closeLogin() {
+    document.getElementsByClassName('login')[0].style.display = 'none';
+    document.getElementsByClassName('mask')[0].style.display = 'none';
+}

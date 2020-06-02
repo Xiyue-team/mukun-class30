@@ -1,3 +1,6 @@
+.body{
+    position: relative;
+}
 .section-mobile{
     display: none;
 }
@@ -39,6 +42,7 @@
     width: 353px;
 }
 .section-pc .img-panel2{
+    cursor: pointer;
     width: 36px;
     height: 60px;
     align-items: center;
@@ -52,4 +56,25 @@
 }
 .section-pc .nav-content a:hover{
     text-decoration: none;
+}
+.login{
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -150px;
+    margin-top: -200px;
+    z-index: 11;
+}
+.mask{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    display: none;
+    background-color: rgb(0, 0, 0);
+    filter: alpha(opacity=20);
+    background-color: rgba(0, 0, 0, 0.2);
 }
