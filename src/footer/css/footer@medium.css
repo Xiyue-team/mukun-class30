@@ -1,71 +1,71 @@
-.section-mobile{
-    display: none;
+.section-mobile-footer{
+    display: none !important;
 }
-.section-pc{
+.section-pc-footer{
     display: flex;
     width: 100%;
     height: 296px;
     background-color: #F4F4F4;
 }
-.section-pc .section{
+.section-pc-footer .section-footer{
     width: 700px;
     margin-top: 44px;
     height: 200px;
 }
-.section-pc .nav{
+.section-pc-footer .nav{
     width: 426px;
 }
-.section-pc .nav ul{
+.section-pc-footer .nav ul{
     width: 72px;
     height: 200px;
     margin-right: 70px;
     padding-top: 32px;
 }
-.section-pc .nav ul li{
+.section-pc-footer .nav ul li{
     color: #8A8A8A;
     font-size: 13px;
     line-height: 14px;
     margin-bottom: 18px;
 }
-.section-pc .nav ul li:nth-of-type(1){
+.section-pc-footer .nav ul li:nth-of-type(1){
     color: #1A1A1A;
     font-size: 13px;
     line-height: 14px;
 }
-.section-pc .nav ul li a{
+.section-pc-footer .nav ul li a{
     color: #8A8A8A;
 }
-.section-pc .nav ul li a:hover{
+.section-pc-footer .nav ul li a:hover{
     color: #38DB96;
     text-decoration: none;
 }
-.section-pc .split{
+.section-pc-footer .split{
     width: 84px;
 }
-.section-pc .logo{
+.section-pc-footer .logo{
     position: relative;
     width: 190px;
 }
-.section-pc .img-panel{
+.section-pc-footer .img-panel{
     position: absolute;
     width: 51px;
     height: 38px;
     right: 1px;
     top: 57px;
 }
-.section-pc .sub-content1{
+.section-pc-footer .sub-content1{
     color: #8A8A8A;
     font-size: 13px;
     line-height: 14px;
     padding-top:107px;
 }
-.section-pc .sub-content2{
+.section-pc-footer .sub-content2{
     color: #8A8A8A;
     font-size: 13px;
     line-height: 14px;
     padding-top:7px;
 }
-.section-pc .line{
+.section-pc-footer .line{
     width: 700px;
     padding-top: 7px;
     border-bottom: 0.5px solid #B9B9B9;

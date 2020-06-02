@@ -1,10 +1,6 @@
 .section {
     height: 1080px;
 }
-@keyframes blackToWhite{
-    0%{background-color: #000000;}
-    100%{background-color: #ffffff;}
-}
 .logo{
     width: 280px;
     height: 325px;
@@ -316,4 +312,51 @@
     margin-top:148px;
     opacity: 0;
 }
+@keyframes textShowIn{
+    0%{opacity: 0;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+}
 
+@keyframes textShowOut{
+    0%{opacity: 1;}
+    50%{opacity: 1;}
+    100%{opacity: 0;}
+}
+
+@keyframes imgDown{
+    0%{padding-top: 5px;}
+    50%{padding-top: 205px;}
+    100%{padding-top: 205px;}
+}
+
+@keyframes imgUp{
+    0%{padding-top: 205px;}
+    50%{padding-top: 5px;}
+    100%{padding-top: 5px;}
+}
+
+@keyframes maskShowIn{
+    0%{opacity: 0;}
+    100%{opacity: 0.55;}
+}
+@keyframes maskShowOut{
+    0%{opacity: 0.55;}
+    100%{opacity: 0;}
+}
+@keyframes blackToWhite{
+    0%{background-color: #000000;}
+    100%{background-color: #ffffff;}
+}
+@keyframes whiteToBlack{
+    0%{background-color: #ffffff;}
+    100%{background-color: #000000;}
+}
+@keyframes imgShowIn{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes imgShowOut{
+    0%{opacity: 1;}
+    100%{opacity: 0;}
+}

@@ -16,21 +16,23 @@ window.onload = function() {
             });
         }
     })
-
-    let list = document.getElementsByClassName('menu')[0].getElementsByTagName('li');
-    let collapseOne = $('#collapseOne');
-    Object.keys(list).forEach(function(key) {
-        list[key].onmousedown = function() {
-            Object.keys(list).forEach(function(key1) {
-                list[key1].style.color = '#333333';
-            });
-            this.style.color = '#38DB96';
-        };
-        list[key].onmouseup = function() {
-            //  收起展开项
-            collapseOne.collapse('hide');
-        }
-    })
+    if(document.getElementsByClassName('menu').length > 0){
+        let list1 = document.getElementsByClassName('menu')[0].getElementsByTagName('li');
+        let collapseOneHeader = $('#collapseOne-header');
+        Object.keys(list1).forEach(function(key) {
+            list1[key].onmousedown = function() {
+                Object.keys(list1).forEach(function(key1) {
+                    list1[key1].style.color = '#333333';
+                });
+                this.style.color = '#38DB96';
+            };
+            list1[key].onmouseup = function() {
+                //  收起展开项
+                collapseOneHeader.collapse('hide');
+            }
+        })
+    }
+    //调用子页面方法显示/隐藏关闭按钮
     let width = document.body.clientWidth;
     if (width >= 734) {
         $('#login')[0].contentWindow.showCloseButton();

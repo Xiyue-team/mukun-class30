@@ -148,7 +148,7 @@
     display: none;
 }
 .borderAndText{
-    display: none;
+    display: none !important;
 }
 .section8 .gallery .img-back{
     position: relative;
@@ -280,4 +280,10 @@
     0%{opacity: 1;}
     10%{opacity: 0;}
     100%{opacity: 0;}
+}
+@keyframes blackToWhite{
+    0%{background-color: #000000;}
+    75%{background-color: #000000;}
+    85%{background-color: #ffffff;}
+    100%{background-color: #ffffff;}
 }

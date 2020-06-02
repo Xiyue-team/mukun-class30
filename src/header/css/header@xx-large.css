@@ -2,7 +2,7 @@
     position: relative;
 }
 .section-mobile{
-    display: none;
+    display: none !important;
 }
 .shadow-pc{
     background-color: #FFFFFF;
@@ -70,7 +70,7 @@
     display: none;
     position: absolute;
 }
-.mask{
+.mask-header{
     position: fixed;
     height: 100%;
     width: 100%;

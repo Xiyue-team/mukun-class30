@@ -2,7 +2,7 @@
     position: relative;
 }
 .section-pc {
-    display: none;
+    display: none !important;
 }
 .section-mobile{
     display: flex;

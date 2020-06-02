@@ -3,8 +3,8 @@ let animationFooter;
 let width;
 let delta = 8; //鼠标每次滚动时动画运行的帧数
 class HomePage {
-
     init() {
+        new Footer().init();
         this.initView();
         this.initEvent();
     }
