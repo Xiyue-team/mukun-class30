@@ -271,6 +271,22 @@
     background-image: url("../img/home/dataDrive-lg@2x.png");
     background-size: cover;
 }
+.section9 .mask-text{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.section9 .mask-text .title {
+    color:#FFFFFF;
+    padding-top: 305px;
+    margin-bottom: 20px;
+}
+.section9 .mask-text .content {
+    font-size: 17px;
+    line-height: 18px;
+    color:#FFFFFF;
+    padding-bottom: 14px;
+}
 .section9 .dataDrive{
     position: relative;
     padding-top: 0;

@@ -205,6 +205,23 @@
     background-image: url("../img/home/dataDrive-sm@2x.png");
     background-size: cover;
 }
+.section9 .mask-text{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.section9 .mask-text .title {
+    color:#FFFFFF;
+    padding-top: 308px;
+    margin-bottom: 18px;
+}
+.section9 .mask-text .content {
+    color:#FFFFFF;
+}
+.section9 .mask-text .content2 {
+    width: 306px;
+    margin: 0 auto;
+}
 .section9 .dataDrive{
     position: relative;
     padding-top: 115px;
@@ -258,4 +275,9 @@
     0%{opacity: 0;}
     80%{opacity: 0;}
     100%{opacity: 1;}
+}
+@keyframes textShowOut{
+    0%{opacity: 1;}
+    10%{opacity: 0;}
+    100%{opacity: 0;}
 }

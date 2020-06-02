@@ -19,26 +19,18 @@ class HomePage {
     /*初始化事件*/
     initEvent() {
         const element = document.querySelector('.home_page');
-        let heightToTop=element.scrollTop; //滚动条距顶端的距离
+        let heightToTop = this.getScrollTop(); //滚动条距顶端的距离
         let total = 0;  // 鼠标滚轮和动画帧数绑定的数据
         let lastTime = 0;
         let totalFooter = 0;  // 鼠标滚轮和动画帧数绑定的数据
-        let totalHeight = 0;
-        if (width >= 1440) {
-            totalHeight = 6473;
-        } else if (1069 <= width && width < 1439) {
-            totalHeight = 4458;
-        } else if (735 <= width && width < 1068) {
-            totalHeight = 4704;
-        } else {
-            totalHeight = 4646;
-        }
+        let flag;   // 滚动条有没有到最下面
         // 鼠标滚轮滚动事件
         element.addEventListener('mousewheel', (e) => {
+            flag = this.getScrollTop() + this.getWindowHeight() === this.getScrollHeight();
             heightToTop=element.scrollTop;  // 重新获取滚动条距离顶部位置
             if (width >= 734) {
                 let nowTime = new Date().getTime();
-                if (total <= 166) {
+                if (total <= 166 && heightToTop === 0) {
                     event.returnValue = true;
                     event.preventDefault();
                 }
@@ -52,20 +44,21 @@ class HomePage {
                 }
 
                 // 页面底部的lottie
-                if (totalFooter > 0 && heightToTop >= totalHeight){
+                if (totalFooter > -2 && flag){
                     // 页面底部lottie开始播放时，禁止滚动
                     event.returnValue = true;
                     event.preventDefault();
                 }
-                if (heightToTop >= totalHeight) {
+                if (flag) {
                     // 滚动条在最下方时，执行动画
                     let arr = this.countFrame(e, totalFooter, 181);
                     totalFooter = arr[1];
                     this.lottiePlay(arr[0],totalFooter, 1);
                 }
             } else {
-                if (heightToTop >= totalHeight) {
+                if (flag) {
                     animationFooter.play();
+                    document.getElementsByClassName('mask-text')[0].style.animation = "textShowOut 7s ease forwards";
                     document.getElementsByClassName('mask')[0].style.animation = "imgShowOut 7s ease forwards";
                     document.getElementsByClassName('section9')[0].style.animation = "maskShowOut 7s ease forwards";
                     document.getElementsByClassName('dataDriveGallery')[0].style.animation = "imgShowIn 7s ease forwards";
@@ -83,10 +76,17 @@ class HomePage {
                     if (total>=166) {
                         total = 165
                     }
-                    this.lottiePlay(1, total);
+                    this.lottiePlay(1, total, 0);
                 }
-                if (heightToTop >= totalHeight) {
-                    totalFooter += 1;
+                if (totalFooter > -2 && flag){
+                    // 页面底部lottie开始播放时，禁止滚动
+                    event.returnValue = true;
+                    event.preventDefault();
+                }
+                if (flag) {
+                    if (totalFooter <= -2) {
+                        totalFooter += 1;
+                    }
                     this.lottiePlay(0, totalFooter, 1);
                 }
             });
@@ -107,10 +107,13 @@ class HomePage {
                     total = 0
                 }
                 goOrBack = 0;
-            } else if (e.wheelDelta > 0 && total > 0) {
+            } else if (e.wheelDelta > 0 && total >= -1) {
                 total -= delta;
-                if (total < 0) {
+                if (total < 0 && totalFrame === 166) {
                     total = 0
+                } else if (total < -2 && totalFrame === 181) {
+                    // 尾部可以让动画消失
+                    total = -2
                 }
                 goOrBack = 1;
             }
@@ -129,10 +132,15 @@ class HomePage {
     // 控制视频前进还是后退播放
     lottiePlay(goOrBack, total, type) {
         let animation = type===0?animationHeader:animationFooter;
+        let min = 0;
+        if (type === 1) {
+            // 尾部可以让动画消失
+            min = -2
+        }
         for (let i=delta-1; i>=0; i--) {
             if (goOrBack === 0 && total-i >= 0){
                 animation.goToAndStop(total-i,true);
-            } else if (goOrBack === 1 && total+i >= 0) {
+            } else if (goOrBack === 1 && total+i >= min) {
                 animation.goToAndStop(total+i,true);
             }
         }
@@ -143,6 +151,11 @@ class HomePage {
                 document.getElementsByClassName('section')[0].style.backgroundColor = '#000000';
             }
         } else if (type === 1) {
+            if (total>=10) {
+                document.getElementsByClassName('mask-text')[0].style.display = 'none';
+            } else {
+                document.getElementsByClassName('mask-text')[0].style.display = 'inherit';
+            }
             if (total>=120) {
                 document.getElementsByClassName('mask')[0].style.opacity = '0';
                 document.getElementsByClassName('section9')[0].style.backgroundColor = "#ffffff";
@@ -180,6 +193,7 @@ class HomePage {
             autoplay: false,
             path: '../assets/lottie-home/data-footer.json'
         });
+        animationFooter.goToAndStop(-2,true);
     }
 
     /**
@@ -234,5 +248,41 @@ class HomePage {
         }
     }
 
+    //滚动条在Y轴上的滚动距离
+    getScrollTop(){
+        let scrollTop = 0, bodyScrollTop = 0, documentScrollTop = 0;
+        if(document.body){
+            bodyScrollTop = document.querySelector('.home_page').scrollTop;
+        }
+        if(document.documentElement){
+            documentScrollTop = document.documentElement.scrollTop;
+        }
+        scrollTop = (bodyScrollTop - documentScrollTop > 0) ? bodyScrollTop : documentScrollTop;
+        return scrollTop;
+    }
+
+    //浏览器视口的高度
+    getWindowHeight(){
+        let windowHeight = 0;
+        if(document.compatMode == "CSS1Compat"){
+            windowHeight = document.documentElement.clientHeight;
+        }else{
+            windowHeight = document.querySelector('.home_page').clientHeight;
+        }
+        return windowHeight;
+    }
+
+    //文档的总高度
+    getScrollHeight(){
+        let scrollHeight = 0, bodyScrollHeight = 0, documentScrollHeight = 0;
+        if(document.body){
+            bodyScrollHeight = document.querySelector('.home_page').scrollHeight;
+        }
+        if(document.documentElement){
+            documentScrollHeight = document.documentElement.scrollHeight;
+        }
+        scrollHeight = (bodyScrollHeight - documentScrollHeight > 0) ? bodyScrollHeight : documentScrollHeight;
+        return scrollHeight;
+    }
 }
 
