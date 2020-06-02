@@ -53,16 +53,23 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-        <div class="menu flex mx-auto flex-col">
-            <ul>
-                <li>首页</li>
-                <li>资源</li>
-                <li>应用</li>
-                <li>社区</li>
-                <li onclick="showLogin()">登录</li>
-            </ul>
+
+        <div class="flex mx-auto flex-col" style="width: 100%; position: absolute; z-index: 12;background-color: #ffffff;">
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="menu flex mx-auto flex-col">
+                    <ul>
+                        <li>首页</li>
+                        <li>资源</li>
+                        <li>应用</li>
+                        <li>社区</li>
+                        <li onclick="showMobileLogin()">登录</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="login-mobile">
+            <iframe id="login-mobile" src="login/login.html" width="350px" height="490px"></iframe>
         </div>
     </div>
 </div>

@@ -39,7 +39,7 @@
 							<input class="form-control large_input" id="password" value=""  placeholder="请输入密码"/>
 						</div>
 						<div id="loginCodeFormGroup" class="form-group" style="display: none; margin-top: 16px;">
-							<input class="form-control  code_input" id="loginCode" type="text" value="" maxlength="4" placeholder="请输入验证码"/>
+							<input class="form-control code_input" id="loginCode" type="text" value="" maxlength="4" placeholder="请输入验证码"/>
 						</div>
 						<!--错误提示-->
 						<div id="loginError" class="error"></div>
@@ -147,6 +147,14 @@
 			$('#active_container').css('display','none');
 			$('#resetPwdFormDiv').css('display','none');
 			$('#step1_back').css('display','none');
+		}
+
+		function showCloseButton() {
+			$('#close_login').css('display', 'inherit');
+		}
+
+		function hideCloseButton() {
+			$('#close_login').css('display', 'none');
 		}
 
 	</script>

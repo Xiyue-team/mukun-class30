@@ -31,6 +31,16 @@ window.onload = function() {
             collapseOne.collapse('hide');
         }
     })
+    let width = document.body.clientWidth;
+    if (width >= 734) {
+        $('#login')[0].contentWindow.showCloseButton();
+    } else {
+        $('#login-mobile')[0].contentWindow.hideCloseButton();
+    }
+};
+
+window.onresize = () => {
+    width = document.body.clientWidth;
 };
 
 function showLogin() {
@@ -41,4 +51,8 @@ function showLogin() {
 function closeLogin() {
     document.getElementsByClassName('login')[0].style.display = 'none';
     document.getElementsByClassName('mask')[0].style.display = 'none';
+}
+
+function showMobileLogin() {
+    document.getElementsByClassName('login-mobile')[0].style.display = 'inherit';
 }

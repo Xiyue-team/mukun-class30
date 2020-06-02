@@ -2,8 +2,8 @@ html,
 body {
 	margin: 0;
 	padding: 0;
-	width: 100%;
-	height: 480px;
+	width: 350px;
+	height: 490px;
 	overflow: hidden;
 	font-family: SHSCN;
 	-webkit-user-select:none;
@@ -90,16 +90,6 @@ input,span,div{
 	margin-top: 26px;
 	border-radius: 24px;
 }
-.animate_img{
-	height: 100%;
-	text-align: center;
-	display: -ms-inline-flexbox;
-	display: inline-flex;
-	-ms-flex-pack: start;
-	justify-content: flex-start;
-	-ms-flex-align: center;
-	align-items: center;
-}
 /*登录*/
 .form {
 	width: 100%;
@@ -122,18 +112,6 @@ input,span,div{
 	position: relative;
 }
 
-.form form .form-group.code span{
-	display: inline-block;
-	width: 98px;
-	height: 38px;
-	position: absolute;
-	top:0;
-	right: 0;
-	text-align: center;
-	line-height: 38px;
-	border: 1px solid #9b9b9b;
-	cursor: pointer;
-}
 .form .code_input{
 	background: #F9F9F9;
 	border: none;
@@ -154,12 +132,6 @@ input,span,div{
 	color: #EB622A;
 }
 
-.form .code_button.disable{
-	background: #BFBFBF;
-	pointer-events: none;
-	cursor: default;
-}
-
 .form .large_input{
 	background: #ffffff;
 	border: 0px solid #F0F0F0;
@@ -174,10 +146,6 @@ input,span,div{
 .error_input{
 	background: #FFF8F7 !important;
 	border: 1px solid #FFC9C7 !important;
-}
-
-.disable_color{
-	background-color: #c1c1c1 !important;
 }
 
 #submit_input{
@@ -197,95 +165,10 @@ input,span,div{
 .form .link span:hover{
 	color: #FE5702;
 }
-.form .link span:not(:first-child){}
-
-.form .link2{
-	position: absolute;
-	width: 300px;
-	bottom: 85px;
-}
-.login_result{
-	width: 300px;
-	height: 25px;
-	line-height: 25px;
-	text-align: center;
-	color: #FE5702;
-	font-size: 1.125rem;
-	position: fixed;
-	bottom: 195px;
-	left:50px;
-}
-.getcode{
-	position: absolute;
-	top: 5px;
-	right: 4px;
-	width: 90px;
-	height:30px;
-	background-color: #FE5702;
-	color: #fff;
-	line-height: 30px;
-	text-align: center;
-	border-radius: 5px;
-	cursor: pointer;
-	font-size:14px;
-}
-#last_result{
-	width: 300px;
-	text-align: center;
-}
-#last_result img{
-	position: fixed;
-	bottom: 263px;
-	width: 150px;
-	height:115px;
-}
-#last_result div{
-	width: 300px;
-	height: 50px;
-	text-align: center;
-	font-size: 1.125em;
-	opacity: 0.7;
-	position: fixed;
-	bottom: 137px;
-	left:50px;
-	letter-spacing: -1px;
-}
 
 .active_label{
 	font-size: 1.125em;
 	color: #191919;
 	line-height: 18px;
 	margin-bottom: 36px;
-}
-#prompt_div_Item{
-	width:320px;
-	height: 64px;
-	background: #FFFFFF;
-	box-shadow: 0 0 0 0 rgba(0,0,0,0.12), 0 3px 9px 0 rgba(0,0,0,0.12);
-	border-radius: 4px 4px 0 0;
-	position: absolute;
-	left:0;
-	top:0;
-	z-index: -1;
-	opacity:0;
-	-webkit-transition: opacity 2s linear;
-	-moz-transition: opacity 2s linear;
-	-o-transition: opacity 2s linear;
-	transition: opacity 2s linear;
-}
-
-.prompt_img_Item{
-	float: left;
-	margin: 14px 0 0 20px;
-}
-
-.prompt_span_Item{
-	font-size: 0.938em;
-	color: #6B6B6B;
-	line-height: 15px;
-	float: left;
-	margin: 25px 0 0 14px;
-}
-#cnzz_stat_icon_1277775723{
-	display: none;
 }

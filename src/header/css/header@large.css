@@ -66,6 +66,10 @@
     margin-top: -200px;
     z-index: 11;
 }
+.login-mobile{
+    display: none;
+    position: absolute;
+}
 .mask{
     position: fixed;
     height: 100%;
