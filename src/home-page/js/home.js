@@ -210,9 +210,13 @@ class HomePage {
             container: document.getElementById('section1'),
             renderer: 'svg',
             loop: false,
-            autoplay: (width<734),
+            autoplay: false,
             path: '../assets/lottie-home/data.json'
         });
+        if (width<734) {
+            animationHeader.play();
+            document.getElementsByClassName('section')[0].style.animation = "blackToWhite 6s ease forwards";
+        }
         // 181
         animationFooter = lottie.loadAnimation({
             container: document.getElementById('dataDrive'),
@@ -293,6 +297,8 @@ function hideHome(type) {
     } else {
         document.getElementById('main').style.display = 'inherit';
         document.getElementById('footer_container').style.marginTop = '0';
+        document.getElementsByClassName('section')[0].style.animation = "";
+        document.getElementsByClassName('section')[0].style.backgroundColor = "#ffffff";
     }
 }
 
