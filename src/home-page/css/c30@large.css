@@ -1,11 +1,6 @@
 .section {
     height: 900px;
 }
-.logo{
-    width: 300px;
-    height: 348px;
-    margin-bottom: 60px;
-}
 .cloudTitle{
     font-size: 50px;
     color: #20204D;
@@ -313,4 +308,37 @@
     margin-top:15px;
     opacity: 0;
 }
-
+@keyframes textShowIn{
+    0%{opacity: 0;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes textShowOut{
+    0%{opacity: 1;}
+    50%{opacity: 1;}
+    100%{opacity: 0;}
+}
+@keyframes maskShowIn{
+    0%{opacity: 0;}
+    100%{opacity: 0.55;}
+}
+@keyframes maskShowOut{
+    0%{opacity: 0.55;}
+    100%{opacity: 0;}
+}
+@keyframes blackToWhite{
+    0%{background-color: #000000;}
+    100%{background-color: #ffffff;}
+}
+@keyframes whiteToBlack{
+    0%{background-color: #ffffff;}
+    100%{background-color: #000000;}
+}
+@keyframes imgShowIn{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes imgShowOut{
+    0%{opacity: 1;}
+    100%{opacity: 0;}
+}

@@ -23,10 +23,20 @@ class HomePage {
         let total = 0;  // 鼠标滚轮和动画帧数绑定的数据
         let lastTime = 0;
         let totalFooter = 0;  // 鼠标滚轮和动画帧数绑定的数据
-        let flag;   // 滚动条有没有到最下面
+        let secondAni1 = 0;
+        let secondAni2 = 0;
+        if (width >= 1440) {
+            secondAni1 = 6450;
+            secondAni2 = 6700;
+        } else if (width < 1439 && width >= 1069) {
+            secondAni1 = 4500;
+            secondAni2 = 4650;
+        } else if (width < 1068 && width >= 735) {
+            secondAni1 = 4700;
+            secondAni2 = 4900;
+        }
         // 鼠标滚轮滚动事件
         element.addEventListener('mousewheel', (e) => {
-            flag = this.getScrollTop() + this.getWindowHeight() === this.getScrollHeight();
             heightToTop=element.scrollTop;  // 重新获取滚动条距离顶部位置
             if (width >= 734) {
                 let nowTime = new Date().getTime();
@@ -44,19 +54,16 @@ class HomePage {
                 }
 
                 // 页面底部的lottie
-                if (totalFooter > -2 && flag){
-                    // 页面底部lottie开始播放时，禁止滚动
+                if (this.getScrollTop()>=secondAni1 && this.getScrollTop()<=secondAni2 && totalFooter>-2 && totalFooter< 181) {
                     event.returnValue = true;
                     event.preventDefault();
-                }
-                if (flag) {
-                    // 滚动条在最下方时，执行动画
                     let arr = this.countFrame(e, totalFooter, 181);
                     totalFooter = arr[1];
                     this.lottiePlay(arr[0],totalFooter, 1);
                 }
             } else {
-                if (flag) {
+                // 手机端
+                if (this.getScrollTop() > 4200) {
                     animationFooter.play();
                     document.getElementsByClassName('mask-text')[0].style.animation = "textShowOut 7s ease forwards";
                     document.getElementsByClassName('mask')[0].style.animation = "imgShowOut 7s ease forwards";
@@ -70,6 +77,7 @@ class HomePage {
         if (width >= 734) {
             // 滚动条滚动事件
             element.addEventListener('scroll', () => {
+                // 头部动画
                 heightToTop=element.scrollTop; // 重新获取滚动条距离顶部位置
                 if (heightToTop === 0) {
                     // 回到顶部时，锁定滚动条，重新执行动画
@@ -78,16 +86,15 @@ class HomePage {
                     }
                     this.lottiePlay(1, total, 0);
                 }
-                if (totalFooter > -2 && flag){
-                    // 页面底部lottie开始播放时，禁止滚动
-                    event.returnValue = true;
-                    event.preventDefault();
-                }
-                if (flag) {
+
+                // 尾部动画
+                if (this.getScrollTop()>=secondAni1 && this.getScrollTop()<=secondAni2) {
                     if (totalFooter <= -2) {
                         totalFooter += 1;
+                    } else if (totalFooter>=181) {
+                        totalFooter = 180;
                     }
-                    this.lottiePlay(0, totalFooter, 1);
+
                 }
             });
         }
@@ -146,28 +153,49 @@ class HomePage {
         }
         if (type === 0) {
             if (total>=144) {
-                document.getElementsByClassName('section')[0].style.backgroundColor = '#ffffff';
+                document.getElementsByClassName('section')[0].style.animation = "blackToWhite 1s ease forwards";
             } else {
-                document.getElementsByClassName('section')[0].style.backgroundColor = '#000000';
+                let section = document.getElementsByClassName('section')[0];
+                let backgroundColor = window.getComputedStyle(section,null).backgroundColor;
+                if(backgroundColor === 'rgb(255, 255, 255)'){
+                    document.getElementsByClassName('section')[0].style.animation = "whiteToBlack 1s ease forwards";
+                }
             }
         } else if (type === 1) {
             if (total>=10) {
-                document.getElementsByClassName('mask-text')[0].style.display = 'none';
+                document.getElementsByClassName('mask-text')[0].style.animation = "textShowOut 0.5s ease forwards";
             } else {
-                document.getElementsByClassName('mask-text')[0].style.display = 'inherit';
+                let dataDriveTitle = document.getElementsByClassName('mask-text')[0];
+                let opacity = window.getComputedStyle(dataDriveTitle,null).opacity;
+                if (opacity < 1){
+                    document.getElementsByClassName('mask-text')[0].style.animation = "textShowIn 0.5s ease forwards";
+                }
             }
             if (total>=120) {
-                document.getElementsByClassName('mask')[0].style.opacity = '0';
-                document.getElementsByClassName('section9')[0].style.backgroundColor = "#ffffff";
-                document.getElementsByClassName('dataDriveGallery')[0].style.opacity = '1';
-                document.getElementsByClassName('dataDriveTitle')[0].style.opacity = '1';
-                document.getElementsByClassName('dataDriveContent')[0].style.opacity = '1';
+                document.getElementsByClassName('mask')[0].style.animation = "maskShowOut 1s ease forwards";
+                document.getElementsByClassName('section9')[0].style.animation = "blackToWhite 1s ease forwards";
+                document.getElementsByClassName('dataDriveGallery')[0].style.animation = "imgShowIn 1s ease forwards";
             } else {
-                document.getElementsByClassName('mask')[0].style.opacity = '0.55';
-                document.getElementsByClassName('section9')[0].style.backgroundColor = "#000000";
-                document.getElementsByClassName('dataDriveGallery')[0].style.opacity = '0';
-                document.getElementsByClassName('dataDriveTitle')[0].style.opacity = '0';
-                document.getElementsByClassName('dataDriveContent')[0].style.opacity = '0';
+                let mask = document.getElementsByClassName('mask')[0];
+                let opacity = window.getComputedStyle(mask,null).opacity;
+                if (opacity < 0.55) {
+                    document.getElementsByClassName('mask')[0].style.animation = "maskShowIn 1s ease forwards";
+                    document.getElementsByClassName('section9')[0].style.animation = "whiteToBlack 1s ease forwards";
+                    document.getElementsByClassName('dataDriveGallery')[0].style.animation = "imgShowOut 1s ease forwards";
+                }
+            }
+            if (total>=183) {
+                document.getElementsByClassName('dataDrive')[0].style.animation = "imgDown 1s ease forwards";
+                document.getElementsByClassName('dataDriveTitle')[0].style.animation = "textShowIn 1s ease forwards";
+                document.getElementsByClassName('dataDriveContent')[0].style.animation = "textShowIn 1s ease forwards";
+            } else {
+                let dataDriveTitle = document.getElementsByClassName('dataDriveTitle')[0];
+                let opacity = window.getComputedStyle(dataDriveTitle,null).opacity;
+                if (opacity > 0) {
+                    document.getElementsByClassName('dataDrive')[0].style.animation = "imgUp 1s ease forwards";
+                    document.getElementsByClassName('dataDriveTitle')[0].style.animation = "textShowOut 1s ease forwards";
+                    document.getElementsByClassName('dataDriveContent')[0].style.animation = "textShowOut 1s ease forwards";
+                }
             }
         }
 
@@ -250,39 +278,21 @@ class HomePage {
 
     //滚动条在Y轴上的滚动距离
     getScrollTop(){
-        let scrollTop = 0, bodyScrollTop = 0, documentScrollTop = 0;
+        let bodyScrollTop = 0;
         if(document.body){
             bodyScrollTop = document.querySelector('.home_page').scrollTop;
         }
-        if(document.documentElement){
-            documentScrollTop = document.documentElement.scrollTop;
-        }
-        scrollTop = (bodyScrollTop - documentScrollTop > 0) ? bodyScrollTop : documentScrollTop;
-        return scrollTop;
+        return bodyScrollTop;
     }
+}
 
-    //浏览器视口的高度
-    getWindowHeight(){
-        let windowHeight = 0;
-        if(document.compatMode == "CSS1Compat"){
-            windowHeight = document.documentElement.clientHeight;
-        }else{
-            windowHeight = document.querySelector('.home_page').clientHeight;
-        }
-        return windowHeight;
-    }
-
-    //文档的总高度
-    getScrollHeight(){
-        let scrollHeight = 0, bodyScrollHeight = 0, documentScrollHeight = 0;
-        if(document.body){
-            bodyScrollHeight = document.querySelector('.home_page').scrollHeight;
-        }
-        if(document.documentElement){
-            documentScrollHeight = document.documentElement.scrollHeight;
-        }
-        scrollHeight = (bodyScrollHeight - documentScrollHeight > 0) ? bodyScrollHeight : documentScrollHeight;
-        return scrollHeight;
+function hideHome(type) {
+    if (type === 1) {
+        document.getElementById('main').style.display = 'none';
+        document.getElementById('footer_container').style.marginTop = '520px';
+    } else {
+        document.getElementById('main').style.display = 'inherit';
+        document.getElementById('footer_container').style.marginTop = '0';
     }
 }
 

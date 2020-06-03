@@ -1,11 +1,6 @@
 .section {
     height: 768px;
 }
-.logo{
-    width: 180px;
-    height: 209px;
-    margin-bottom: 40px;
-}
 .cloudTitle{
     font-size: 27px;
     color: #20204D;

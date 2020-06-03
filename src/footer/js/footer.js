@@ -1,16 +1,16 @@
 let arrow = document.getElementsByClassName("arrow-img");
-let collapseOne =  $('#collapseOne');
-let collapseTwo =  $('#collapseTwo');
-let collapseThree =  $('#collapseThree');
+
 class Footer {
     init() {
         this.initCollapse();
         let width = document.body.clientWidth;
-        // this.clickUp(width);
-        // window.onresize = () => {
-        //     width = document.body.clientWidth;
-        //     this.clickUp(width);
-        // };
+        setTimeout(()=>{
+            this.clickUp(width);
+        },500)
+        window.onresize = () => {
+            width = document.body.clientWidth;
+            this.clickUp(width);
+        };
     }
 
     //  点击打开折叠项时翻转箭头，其他箭头还原
@@ -21,6 +21,9 @@ class Footer {
         arrow[num-1].style.transform = "scaleY("+ 1 +")";
     }
     initCollapse() {
+        let collapseOne =  $('#collapseOne');
+        let collapseTwo =  $('#collapseTwo');
+        let collapseThree =  $('#collapseThree');
         collapseOne.on('show.bs.collapse', function () {
             this.arrowRotate(1);
         });
@@ -42,13 +45,13 @@ class Footer {
     }
 
     clickUp(width){
-        console.log(width)
-        console.log(document.getElementsByClassName('section-mobile-footer'))
         if(width < 734 && document.getElementsByClassName('section-mobile-footer').length > 0) {
             let list = document.getElementsByClassName('section-mobile-footer')[0].getElementsByTagName('li');
             Object.keys(list).forEach(function(key) {
-                console.log('123')
                 list[key].onmouseup = function() {
+                    let collapseOne =  $('#collapseOne');
+                    let collapseTwo =  $('#collapseTwo');
+                    let collapseThree =  $('#collapseThree');
                     //  收起展开项
                     collapseOne.collapse('hide');
                     collapseTwo.collapse('hide');
