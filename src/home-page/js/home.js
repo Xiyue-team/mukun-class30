@@ -101,6 +101,16 @@ class HomePage {
         // 窗口resize事件
         window.onresize = () => {
             width = document.body.clientWidth;
+            if (width >= 1440) {
+                secondAni1 = 6450;
+                secondAni2 = 6700;
+            } else if (width < 1439 && width >= 1069) {
+                secondAni1 = 4500;
+                secondAni2 = 4650;
+            } else if (width < 1068 && width >= 735) {
+                secondAni1 = 4700;
+                secondAni2 = 4900;
+            }
         };
     }
 
@@ -241,33 +251,35 @@ class HomePage {
             let borderText = document.getElementsByClassName('border-text');
             Object.keys(imgCover).forEach(function(key) {
                 imgCover[key].onmouseover = function() {
-                    //隐藏原来的5个字
-                    Object.keys(text).forEach(function(key) {
-                        text[key].style.display = 'none';
-                    });
-                    //修改新出现的5个字(分大小屏)
-                    if (width >= 1440) {
-                        Object.keys(borderText).forEach(function(key) {
-                            borderText[key].style.paddingTop = '565px';
+                    setTimeout(()=>{
+                        //隐藏原来的5个字
+                        Object.keys(text).forEach(function(key) {
+                            text[key].style.display = 'none';
                         });
-                        borderText[key].style.paddingTop = '298px';
-                    } else if (1069 <= width && width < 1439) {
-                        Object.keys(borderText).forEach(function(key) {
-                            borderText[key].style.paddingTop = '406px';
+                        //修改新出现的5个字(分大小屏)
+                        if (width >= 1440) {
+                            Object.keys(borderText).forEach(function(key) {
+                                borderText[key].style.paddingTop = '565px';
+                            });
+                            borderText[key].style.paddingTop = '298px';
+                        } else if (1069 <= width && width < 1439) {
+                            Object.keys(borderText).forEach(function(key) {
+                                borderText[key].style.paddingTop = '406px';
+                            });
+                            borderText[key].style.paddingTop = '221px';
+                        } else if (735 <= width && width < 1068) {
+                            Object.keys(borderText).forEach(function(key) {
+                                borderText[key].style.paddingTop = '280px';
+                            });
+                            borderText[key].style.paddingTop = '152px';
+                        }
+                        //展开选中图片
+                        showBigImg.style.display = 'flex';
+                        Object.keys(imgOpen).forEach(function(key) {
+                            imgOpen[key].style.animation = "turnToSmall 1s ease forwards";
                         });
-                        borderText[key].style.paddingTop = '221px';
-                    } else if (735 <= width && width < 1068) {
-                        Object.keys(borderText).forEach(function(key) {
-                            borderText[key].style.paddingTop = '280px';
-                        });
-                        borderText[key].style.paddingTop = '152px';
-                    }
-                    //展开选中图片
-                    showBigImg.style.display = 'flex';
-                    Object.keys(imgOpen).forEach(function(key) {
-                        imgOpen[key].style.animation = "turnToSmall 1s ease forwards";
-                    });
-                    imgOpen[2].style.animation = "turnToBig" + key + " 1s ease forwards";
+                        imgOpen[2].style.animation = "turnToBig" + key + " 1s ease forwards";
+                    },200);
                 };
                 showBigImg.onmouseout = function() {
                     showBigImg.style.display = 'none';
