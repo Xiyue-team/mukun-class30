@@ -20,10 +20,11 @@ class AppPage {
 
     // 更多应用模块轮播组件
     container() {
+        let width = document.body.clientWidth;
         let swiper = new Swiper('.swiper-container', {
             autoplay: true,
-            slidesPerView: 3,
-            spaceBetween: 30,
+            slidesPerView: width>=735?3:1,
+            spaceBetween: width>=735?30:0,
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,

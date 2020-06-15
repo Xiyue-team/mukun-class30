@@ -54,6 +54,7 @@
     width: 970px;
     height: 114px;
     margin-top: 30px;
+    flex-wrap: nowrap;
 }
 .card{
     width: 192px;
@@ -112,7 +113,7 @@
     content: url("../img/img1380/jiaoshiPC-tag2@2x.png");
 }
 .section3 .card:nth-of-type(3){
-    /*content: url("../img/img1380/jiaoshiPC-tag3@2x.png");*/
+    content: url("../img/img1380/jiaoshiPC-tag3@2x.png");
 }
 .section3 .card:nth-of-type(4){
     content: url("../img/img1380/jiaoshiPC-tag4@2x.png");
@@ -152,6 +153,7 @@
 .app-cards{
     height: 400px;
     margin-top: 40px;
+    flex-direction: row;
 }
 .app-card{
     width: 430px;

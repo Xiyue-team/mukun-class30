@@ -30,6 +30,7 @@
     color: #333333;
     letter-spacing: 0;
     text-align: center;
+    line-height: 28px;
 }
 .subContent{
     font-size: 16px;
@@ -55,6 +56,7 @@
     width: 693px;
     height: 81px;
     margin-top: 20px;
+    flex-wrap: nowrap;
 }
 .card{
     width: 137px;
@@ -113,7 +115,7 @@
     content: url("../img/img1380/jiaoshiPC-tag2@2x.png");
 }
 .section3 .card:nth-of-type(3){
-    /*content: url("../img/img1380/jiaoshiPC-tag3@2x.png");*/
+    content: url("../img/img1380/jiaoshiPC-tag3@2x.png");
 }
 .section3 .card:nth-of-type(4){
     content: url("../img/img1380/jiaoshiPC-tag4@2x.png");
@@ -153,6 +155,7 @@
 .app-cards{
     height: 320px;
     margin-top: 31px;
+    flex-direction: row;
 }
 .app-card{
     width: 226px;
@@ -160,7 +163,6 @@
     margin-left: 11px;
     background: #FFFFFF;
     box-shadow: 0 3px 8px 0 rgba(0,0,0,0.02);
-    border-radius: 8px;
     border-radius: 8px;
 }
 .app-card:nth-of-type(1){
