@@ -5,6 +5,11 @@ class DownloadPage {
 
     /*初始化事件*/
     initEvent() {
+        setTimeout(()=>{
+            let navContent = document.getElementsByClassName('nav-content');
+            navContent[3].style.opacity = '1';
+        },200)
+
         let versionButtons = document.getElementsByClassName('version-button');
         let pujiaoyun = document.getElementsByClassName('pujiaoyun')[0];
         let zhijiaoyun = document.getElementsByClassName('zhijiaoyun')[0];
@@ -33,5 +38,18 @@ class DownloadPage {
                 }
             }
         });
+    }
+
+}
+
+function  hideHome(type) {
+    if (type === 1) {
+        document.getElementById('main').style.display = 'none';
+        document.getElementById('footer_container').style.marginTop = '550px';
+    } else {
+        document.getElementById('main').style.display = 'inherit';
+        document.getElementById('footer_container').style.marginTop = '0';
+        document.getElementsByClassName('section')[0].style.animation = "";
+        document.getElementsByClassName('section')[0].style.backgroundColor = "#ffffff";
     }
 }

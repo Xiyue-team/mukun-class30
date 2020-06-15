@@ -34,6 +34,10 @@
     margin-right: 70px;
     font-size: 15px;
     line-height: 60px;
+    opacity: 0.4;
+}
+.section-pc .nav-content:hover{
+    opacity: 1;
 }
 .section-pc .nav-content:nth-of-type(5){
     margin-right: 0;
@@ -61,7 +65,7 @@
     display: none;
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 300px;
     margin-left: -150px;
     margin-top: -200px;
     z-index: 11;

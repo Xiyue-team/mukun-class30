@@ -6,6 +6,10 @@ class ResourcesPage {
 
     /*初始化事件*/
     initEvent() {
+        setTimeout(()=>{
+            let navContent = document.getElementsByClassName('nav-content');
+            navContent[1].style.opacity = '1';
+        },200)
         // 窗口resize事件
         window.onresize = () => {
             this.zoomImg();
@@ -19,7 +23,6 @@ class ResourcesPage {
         let detailWidth = document.getElementsByClassName('detail')[0].offsetWidth;
         let backHeight, imgWidth,imgHeight;
         if (width >= 1440) {
-            console.log(1440);
             backHeight = width * (800/1920);
             imgWidth = detailWidth * (497/628);
             imgHeight = imgWidth * (410/497);
@@ -28,7 +31,6 @@ class ResourcesPage {
                 detailImgs[key].style.height = imgHeight.toString() + 'px';
             })
         } else if (width < 1440 && width >= 1069) {
-            console.log(1069);
             backHeight = width * (800/1280);
             imgWidth = detailImgs[0].offsetWidth;
             imgHeight = imgWidth * (410/414.6);
@@ -37,7 +39,6 @@ class ResourcesPage {
                 detailImgs[key].style.height = imgHeight.toString() + 'px';
             })
         } else if (width < 1069 && width >= 735) {
-            console.log(735);
             backHeight = width * (650/900);
             imgWidth = detailImgs[0].offsetWidth;
             Object.keys(detailImgs).forEach(function(key){
@@ -45,7 +46,6 @@ class ResourcesPage {
                 detailImgs[key].style.height = imgWidth.toString() + 'px';
             })
         } else if (width < 735) {
-            console.log(320);
             backHeight = width * (236/321);
             imgWidth = detailImgs[0].offsetWidth;
             imgHeight = imgWidth * (284/321);
@@ -55,6 +55,19 @@ class ResourcesPage {
             })
         }
         document.getElementsByClassName('section2')[0].style.height = backHeight.toString() + 'px';
-        document.getElementsByClassName('section3')[0].style.paddingTop = backHeight.toString() + 'px';
+        document.getElementsByClassName('section3')[0].style.paddingTop = (backHeight + 60).toString() + 'px';
+    }
+
+}
+
+function  hideHome(type) {
+    if (type === 1) {
+        document.getElementById('main').style.display = 'none';
+        document.getElementById('footer_container').style.marginTop = '550px';
+    } else {
+        document.getElementById('main').style.display = 'inherit';
+        document.getElementById('footer_container').style.marginTop = '0';
+        document.getElementsByClassName('section')[0].style.animation = "";
+        document.getElementsByClassName('section')[0].style.backgroundColor = "#ffffff";
     }
 }

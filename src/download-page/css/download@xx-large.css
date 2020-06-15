@@ -90,11 +90,11 @@
     height: 721px;
     padding-top: 173px;
 }
-.img-panel1{
+.section4 .img-panel1{
     width: 736px;
     height: 427px;
 }
-.img-panel1 img{
+.section4 .img-panel1 img{
     content: url('../img/pujiaoyun/daping@2x.png');
     width: 736px;
     height: 427px;
@@ -180,11 +180,11 @@
     height: 755px;
     padding-top: 173px;
 }
-.img-panel2{
+.section5 .img-panel2{
     width: 607px;
     height: 418px;
 }
-.img-panel2 img{
+.section5 .img-panel2 img{
     content: url('../img/pujiaoyun/jiaoshiPC@2x.png');
     width: 607px;
     height: 418px;

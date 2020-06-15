@@ -13,6 +13,11 @@ class AppPage {
     initEvent() {
         this.container();
 
+        setTimeout(()=>{
+            let navContent = document.getElementsByClassName('nav-content');
+            navContent[2].style.opacity = '1';
+        },200)
+
         // 窗口resize事件
         window.onresize = () => {
         };
@@ -66,4 +71,17 @@ class AppPage {
         }
     }
 
+}
+
+
+function hideHome(type) {
+    if (type === 1) {
+        document.getElementById('main').style.display = 'none';
+        document.getElementById('footer_container').style.marginTop = '550px';
+    } else {
+        document.getElementById('main').style.display = 'inherit';
+        document.getElementById('footer_container').style.marginTop = '0';
+        document.getElementsByClassName('section')[0].style.animation = "";
+        document.getElementsByClassName('section')[0].style.backgroundColor = "#ffffff";
+    }
 }

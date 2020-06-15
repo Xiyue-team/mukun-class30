@@ -1,21 +1,21 @@
 window.onload = function() {
     //  导航栏中选中一项时，将其他项透明度改为40%
     let navContent = document.getElementsByClassName("nav-content");
-    Object.keys(navContent).forEach(function(key) {
-        //  鼠标移入时，将除自己外的项透明度改为40%
-        navContent[key].getElementsByTagName("a")[0].onmouseover = function () {
-            Object.keys(navContent).forEach(function(key2) {
-                navContent[key2].style.opacity = '0.4';
-            });
-            navContent[key].style.opacity = '1';
-        };
-        navContent[key].getElementsByTagName("a")[0].onmouseout = function () {
-            //  鼠标移除时还原样式,透明度改回100%
-            Object.keys(navContent).forEach(function (key) {
-                navContent[key].style.opacity = '1';
-            });
-        }
-    })
+    // Object.keys(navContent).forEach(function(key) {
+    //     //  鼠标移入时，将除自己外的项透明度改为40%
+    //     navContent[key].getElementsByTagName("a")[0].onmouseover = function () {
+    //         Object.keys(navContent).forEach(function(key2) {
+    //             navContent[key2].style.opacity = '0.4';
+    //         });
+    //         navContent[key].style.opacity = '1';
+    //     };
+    //     navContent[key].getElementsByTagName("a")[0].onmouseout = function () {
+    //         //  鼠标移除时还原样式,透明度改回100%
+    //         Object.keys(navContent).forEach(function (key) {
+    //             navContent[key].style.opacity = '1';
+    //         });
+    //     }
+    // })
     if(document.getElementsByClassName('menu').length > 0){
         let list1 = document.getElementsByClassName('menu')[0].getElementsByTagName('li');
         let collapseOneHeader = $('#collapseOne-header');
@@ -49,12 +49,12 @@ window.onresize = () => {
 
 function showLogin() {
     document.getElementsByClassName('login')[0].style.display = 'inherit';
-    document.getElementsByClassName('mask')[0].style.display = 'inherit';
+    // document.getElementsByClassName('mask')[0].style.display = 'inherit';
 }
 
 function closeLogin() {
     document.getElementsByClassName('login')[0].style.display = 'none';
-    document.getElementsByClassName('mask')[0].style.display = 'none';
+    // document.getElementsByClassName('mask')[0].style.display = 'none';
 }
 
 function showMobileLogin() {
@@ -65,4 +65,20 @@ function showMobileLogin() {
 function backToHome() {
     document.getElementsByClassName('login-mobile')[0].style.display = 'none';
     window.parent.hideHome(0);
+}
+
+function toHomePage() {
+    window.location.href='../home-page/index.html';
+}
+function toResourcePage() {
+    window.location.href='../resources-page/index.html';
+}
+function toAppPage() {
+    window.location.href='../app-page/index.html';
+}
+function toDownloadPage() {
+    window.location.href='../download-page/index.html';
+}
+function test() {
+    console.log('123')
 }

@@ -61,7 +61,7 @@
     display: none;
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 300px;
     margin-left: -150px;
     margin-top: -200px;
     z-index: 11;
