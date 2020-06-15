@@ -336,37 +336,17 @@
 .section9 .subTitle{
     margin-top: 100px;
 }
-.section9 .app-card:nth-of-type(1) .app-img img{
-    content: url("../img/img1380/app-jiazhang@2x.png");
-}
-.section9 .app-card:nth-of-type(2) .app-img img{
-    content: url("../img/img1380/app-zhushou@2x.png");
-}
-.section9 .app-card:nth-of-type(3) .app-img img{
-    content: url("../img/img1380/app-xuexi@2x.png");
-}
 
-
-/*.swiper-container {*/
-/*    width: 1380px;*/
-/*    height: 400px;*/
-/*}*/
-/*.swiper-slide {*/
-/*    text-align: center;*/
-/*    font-size: 18px;*/
-/*    background: #fff;*/
-
-/*    !* Center slide text vertically *!*/
-/*    display: -webkit-box;*/
-/*    display: -ms-flexbox;*/
-/*    display: -webkit-flex;*/
-/*    display: flex;*/
-/*    -webkit-box-pack: center;*/
-/*    -ms-flex-pack: center;*/
-/*    -webkit-justify-content: center;*/
-/*    justify-content: center;*/
-/*    -webkit-box-align: center;*/
-/*    -ms-flex-align: center;*/
-/*    -webkit-align-items: center;*/
-/*    align-items: center;*/
-/*}*/
+.section9 .swiper-container {
+    width: 1380px;
+    height: 462px;
+    margin-top: 40px;
+}
+.section9 .swiper-slide {
+    width: 430px;
+    height: 400px;
+    background: #ffffff;
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.02);
+    border-radius: 16px;
+    border-radius: 16px;
+}
