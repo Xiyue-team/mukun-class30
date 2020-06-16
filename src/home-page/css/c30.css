@@ -1,11 +1,11 @@
-::-webkit-scrollbar{
-    width: 4px;
-    height: 4px;
-}
-::-webkit-scrollbar-thumb{
-    border-radius: 1em;
-    background-color: gray;
-}
+/*::-webkit-scrollbar{*/
+/*    width: 4px;*/
+/*    height: 4px;*/
+/*}*/
+/*::-webkit-scrollbar-thumb{*/
+/*    border-radius: 1em;*/
+/*    background-color: gray;*/
+/*}*/
 html, body{
     width: 100%;
     height: 100%;

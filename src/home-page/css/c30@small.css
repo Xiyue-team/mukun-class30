@@ -1,5 +1,14 @@
 .section {
     height: 768px;
+    position: relative;
+}
+.lottieImg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url('../img/home/mainBack.jpg')
 }
 .section1{
     width: 100%;
@@ -113,12 +122,41 @@
     height: 415px;
     padding-top: 40px;
 }
-.section7 img{
-    width: 320px;
-    height: 185px;
-}
 .section7 .gallery{
     margin-top:60px;
+    height: 185px;
+    width: 100%;
+    background-image: url("../img/home/equipment.png");
+    background-size: contain;
+}
+
+.cooperation-section{
+    width: 100%;
+    height: 334px;
+    position: relative;
+}
+.cooperationImg{
+    width: 320px;
+    height: 264px;
+    position: absolute;
+    background-image: url("../img/home/cooperation320.png");
+    background-size: contain;
+    background-repeat:no-repeat;
+    left: 50%;
+    margin-left: -160px;
+    top: 70px;
+}
+.cooperationContent{
+    position: absolute;
+    font-size: 14px;
+    color: #6B6B6B;
+    text-align: center;
+    line-height: 22px;
+    left: 50%;
+    margin-left: -160px;
+    width: 320px;
+    height: 88px;
+    top: 30px;
 }
 
 .section8{
@@ -134,9 +172,6 @@
 .section8 .title{
     width:285px;
     margin: 0 auto;
-}
-.section8 img{
-    opacity: 0.37;
 }
 .section8 .gallery{
     flex-direction:column;
@@ -157,33 +192,25 @@
     margin-bottom: 30px;
     background-color: #000000;
 }
-.section8 .gallery .img-back .text-mobile{
-    position: absolute;
-    color: #ffffff;
-    padding-top: 86px;
-    padding-left: 149px;
-    font-size: 22px;
-    line-height: 22px;
-}
 .section8 .gallery .img-back img{
     position: absolute;
     left: 0;
     top: 0;
 }
 .section8 .gallery .img-back:nth-of-type(1) img{
-    content: url('../img/home/bei-sm@2x.png');
+    content: url('../img/home/bei-sm.png');
 }
 .section8 .gallery .img-back:nth-of-type(2) img{
-    content: url('../img/home/jiang-sm@2x.png');
+    content: url('../img/home/jiang-sm.png');
 }
 .section8 .gallery .img-back:nth-of-type(3) img{
-    content: url('../img/home/pi-sm@2x.png');
+    content: url('../img/home/pi-sm.png');
 }
 .section8 .gallery .img-back:nth-of-type(4) img{
-    content: url('../img/home/fu-sm@2x.png');
+    content: url('../img/home/fu-sm.png');
 }
 .section8 .gallery .img-back:nth-of-type(5) img{
-    content: url('../img/home/kao-sm@2x.png');
+    content: url('../img/home/kao-sm.png');
 }
 .lottie-footer{
     width: 100%;
@@ -283,6 +310,6 @@
 @keyframes blackToWhite{
     0%{background-color: #000000;}
     75%{background-color: #000000;}
-    85%{background-color: #ffffff;}
-    100%{background-color: #ffffff;}
+    85%{background-color: #fafafa;}
+    100%{background-color: #fafafa;}
 }

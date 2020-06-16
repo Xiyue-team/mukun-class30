@@ -31,14 +31,14 @@ class HomePage {
         let secondAni1 = 0;
         let secondAni2 = 0;
         if (width >= 1440) {
-            secondAni1 = 6450;
-            secondAni2 = 6700;
+            secondAni1 = 6600;
+            secondAni2 = 7100;
         } else if (width < 1439 && width >= 1069) {
-            secondAni1 = 4500;
-            secondAni2 = 4650;
+            secondAni1 = 4750;
+            secondAni2 = 5000;
         } else if (width < 1068 && width >= 735) {
-            secondAni1 = 4700;
-            secondAni2 = 4900;
+            secondAni1 = 5000;
+            secondAni2 = 5200;
         }
         // 鼠标滚轮滚动事件
         element.addEventListener('mousewheel', (e) => {
@@ -168,12 +168,14 @@ class HomePage {
         }
         if (type === 0) {
             if (total>=144) {
-                document.getElementsByClassName('section')[0].style.animation = "blackToWhite 1s ease forwards";
+                document.getElementsByClassName('lottieImg')[0].style.display = "none";
+                document.getElementsByClassName('section')[0].style.animation = "lottieChange 1s ease forwards";
             } else {
                 let section = document.getElementsByClassName('section')[0];
                 let backgroundColor = window.getComputedStyle(section,null).backgroundColor;
-                if(backgroundColor === 'rgb(255, 255, 255)'){
-                    document.getElementsByClassName('section')[0].style.animation = "whiteToBlack 1s ease forwards";
+                if(backgroundColor === 'rgb(250, 250, 250)'){
+                    document.getElementsByClassName('lottieImg')[0].style.display = "inherit";
+                    document.getElementsByClassName('section')[0].style.animation = "lottieChangeBack 1s ease forwards";
                 }
             }
         } else if (type === 1) {
@@ -231,6 +233,9 @@ class HomePage {
         if (width<734) {
             animationHeader.play();
             document.getElementsByClassName('section')[0].style.animation = "blackToWhite 6s ease forwards";
+            setTimeout(()=>{
+                document.getElementsByClassName('lottieImg')[0].style.display = "none";
+            },4500)
         }
         // 181
         animationFooter = lottie.loadAnimation({
@@ -284,7 +289,7 @@ class HomePage {
                             imgOpen[key].style.animation = "turnToSmall 1s ease forwards";
                         });
                         imgOpen[2].style.animation = "turnToBig" + key + " 1s ease forwards";
-                    },200);
+                    },100);
                 };
                 showBigImg.onmouseout = function() {
                     showBigImg.style.display = 'none';

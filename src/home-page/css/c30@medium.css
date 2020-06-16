@@ -1,5 +1,14 @@
 .section {
     height: 700px;
+    position: relative;
+}
+.lottieImg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url('../img/home/mainBack.jpg')
 }
 .section1{
     width: 100%;
@@ -111,12 +120,42 @@
     height: 707px;
     padding-top: 105px;
 }
-.section7 img{
-    width: 700px;
-    height: 405px;
-}
 .section7 .gallery{
     margin-top:60px;
+    height: 405px;
+    width: 735px;
+    background-image: url("../img/home/equipment.png");
+    background-size: contain;
+    background-repeat:no-repeat;
+}
+
+.cooperation-section{
+    width: 100%;
+    height: 253px;
+    position: relative;
+}
+.cooperationImg{
+    width: 735px;
+    height: 153px;
+    position: absolute;
+    background-image: url("../img/home/cooperation.png");
+    background-size: contain;
+    background-repeat:no-repeat;
+    left: 50%;
+    margin-left: -367px;
+    top: 100px;
+}
+.cooperationContent{
+    position: absolute;
+    font-size: 14px;
+    color: #6B6B6B;
+    text-align: center;
+    line-height: 22px;
+    left: 50%;
+    margin-left: -213px;
+    width: 426px;
+    height: 66px;
+    top: 30px;
 }
 
 .section8{
@@ -214,24 +253,24 @@
     color: #FFFFFF;
 }
 @keyframes turnToBig0{
-    0%{background-color: #ffffff;background-image: url('../img/home/beike@2x.png');background-size: auto 100%;}
-    100%{width:700px;background-color: #ffffff;background-image: url('../img/home/beike@2x.png');background-size: auto 100%;}
+    0%{background-color: #ffffff;background-image: url('../img/home/bei-open-md.png');background-size: auto 100%;}
+    100%{width:700px;background-color: #ffffff;background-image: url('../img/home/bei-open-md.png');background-size: auto 100%;}
 }
 @keyframes turnToBig1{
-    0%{background-color: #ffffff;background-image: url('../img/home/jiang-open@2x.png');background-size: auto 100%;}
-    100%{width:700px;background-color: #ffffff;background-image: url('../img/home/jiang-open@2x.png');background-size: auto 100%;}
+    0%{background-color: #ffffff;background-image: url('../img/home/jiang-open-md.png');background-size: auto 100%;}
+    100%{width:700px;background-color: #ffffff;background-image: url('../img/home/jiang-open-md.png');background-size: auto 100%;}
 }
 @keyframes turnToBig2{
-    0%{background-color: #ffffff;background-image: url('../img/home/gai-open@2x.png');background-size: auto 100%;}
-    100%{width:700px;background-color: #ffffff;background-image: url('../img/home/gai-open@2x.png');background-size: auto 100%;}
+    0%{background-color: #ffffff;background-image: url('../img/home/pi-open-md.png');background-size: auto 100%;}
+    100%{width:700px;background-color: #ffffff;background-image: url('../img/home/pi-open-md.png');background-size: auto 100%;}
 }
 @keyframes turnToBig3{
-    0%{background-color: #ffffff;background-image: url('../img/home/fu-open@2x.png');background-size: auto 100%;}
-    100%{width:700px;background-color: #ffffff;background-image: url('../img/home/fu-open@2x.png');background-size: auto 100%;}
+    0%{background-color: #ffffff;background-image: url('../img/home/fu-open-md.png');background-size: auto 100%;}
+    100%{width:700px;background-color: #ffffff;background-image: url('../img/home/fu-open-md.png');background-size: auto 100%;}
 }
 @keyframes turnToBig4{
-    0%{background-color: #ffffff;background-image: url('../img/home/kao-open@2x.png');background-size: auto 100%;}
-    100%{width:700px;background-color: #ffffff;background-image: url('../img/home/kao-open@2x.png');background-size: auto 100%;}
+    0%{background-color: #ffffff;background-image: url('../img/home/kao-open-md.png');background-size: auto 100%;}
+    100%{width:700px;background-color: #ffffff;background-image: url('../img/home/kao-open-md.png');background-size: auto 100%;}
 }
 @keyframes turnToSmall{
     0%{}
@@ -241,19 +280,19 @@
     display: none;
 }
 .section8 .gallery .img-back:nth-of-type(1) img{
-    content: url('../img/home/bei-md@2x.png');
+    content: url('../img/home/bei-md.png');
 }
 .section8 .gallery .img-back:nth-of-type(2) img{
-    content: url('../img/home/jiang-md@2x.png');
+    content: url('../img/home/jiang-md.png');
 }
 .section8 .gallery .img-back:nth-of-type(3) img{
-    content: url('../img/home/pi-md@2x.png');
+    content: url('../img/home/pi-md.png');
 }
 .section8 .gallery .img-back:nth-of-type(4) img{
-    content: url('../img/home/fu-md@2x.png');
+    content: url('../img/home/fu-md.png');
 }
 .section8 .gallery .img-back:nth-of-type(5) img{
-    content: url('../img/home/kao-md@2x.png');
+    content: url('../img/home/kao-md.png');
 }
 .lottie-footer{
     width: 100%;
@@ -349,4 +388,12 @@
 @keyframes imgShowOut{
     0%{opacity: 1;}
     100%{opacity: 0;}
+}
+@keyframes lottieChange{
+    0%{background-color: #000000;}
+    100%{background-color: #fafafa;}
+}
+@keyframes lottieChangeBack{
+    0%{background-color: #fafafa;}
+    100%{background-color: #000000;}
 }
