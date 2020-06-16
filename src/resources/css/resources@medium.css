@@ -3,7 +3,7 @@
     height: 60px;
 }
 .section2{
-    height: 800px;
+    height: 650px;
     background-color: #000000;
     position: fixed;
     top: 60px;
@@ -18,7 +18,7 @@
 }
 .section3{
     position: relative;
-    padding-top: 800px;
+    padding-top: 650px;
     width: 100%;
     z-index: 11;
 }
@@ -28,8 +28,8 @@
 }
 .more-title{
     width: 100%;
-    height: 247px;
-    line-height: 247px;
+    height: 220px;
+    line-height: 220px;
     font-size: 36px;
     color: #004254;
     text-align: center;
@@ -37,13 +37,13 @@
 .more-detail{
     flex-direction: row;
     justify-content: space-between;
-    padding-bottom: 98px;
+    padding-bottom: 86px;
 }
 .detail{
     width: 1000px;
     background: #F1F9F6;
     border: 1pt solid #F1F9F6;
-    padding-bottom: 128px;
+    padding-bottom: 68px;
 }
 .detail:hover{
     border: 1pt solid #38DB96;
@@ -52,9 +52,9 @@
     margin: 0 18pt;
 }
 .detail-img{
-    width: 497px;
-    height: 410px;
-    margin-top: 65px;
+    width: 288px;
+    height: 288px;
+    margin-top: 73px;
 }
 .detail-img img{
     width: 100%;
@@ -70,53 +70,53 @@
     content: url("../img/zhijiaoyun@2x.png");
 }
 .detail-title{
-    margin-top: 82px;
-    height: 45px;
-    line-height: 45px;
-    font-size: 32px;
+    margin-top: 51px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 22px;
     color: #004254;
 }
 .detail-content{
-    margin-top: 20px;
-    height: 22px;
-    line-height: 22px;
-    font-size: 16px;
+    margin-top: 14px;
+    height: 16px;
+    line-height: 16px;
+    font-size: 11px;
     color: #8A8A8A;
 }
 .detail-button{
-    margin-top: 51px;
-    width: 190px;
-    height: 60px;
+    margin-top: 35px;
+    width: 133px;
+    height: 45px;
     position: relative;
 }
 .button-shadow{
     position: absolute;
-    top: 12.5px;
-    width: 190px;
-    height: 45px;
+    top: 9px;
+    width: 133px;
+    height: 32px;
     opacity: 0.38;
     background: #38DB96;
-    border-radius: 27.5px;
+    border-radius: 19px;
 }
 .button-border{
     cursor: pointer;
     position: absolute;
     top: 0;
-    width: 190px;
-    height: 45px;
+    width: 133px;
+    height: 32px;
     background: #38DB96;
-    border-radius: 27.5px;
+    border-radius: 19px;
 }
 .button-content{
-    width: 84px;
-    height: 45px;
+    width: 65px;
+    height: 32px;
 }
 .button-text{
-    font-size: 16px;
+    font-size: 11px;
     color: #FFFFFF;
 }
 .enter{
-    width: 8px;
-    height: 13px;
-    margin-left: 12px;
+    width: 5px;
+    height: 9px;
+    margin-left: 8px;
 }

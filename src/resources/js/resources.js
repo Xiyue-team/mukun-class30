@@ -24,35 +24,35 @@ class ResourcesPage {
         let backHeight, imgWidth,imgHeight;
         if (width >= 1440) {
             backHeight = width * (800/1920);
-            imgWidth = detailWidth * (497/628);
-            imgHeight = imgWidth * (410/497);
-            Object.keys(detailImgs).forEach(function(key){
-                detailImgs[key].style.width = imgWidth.toString() + 'px';
-                detailImgs[key].style.height = imgHeight.toString() + 'px';
-            })
+            // imgWidth = detailWidth * (497/628);
+            // imgHeight = imgWidth * (410/497);
+            // Object.keys(detailImgs).forEach(function(key){
+            //     detailImgs[key].style.width = imgWidth.toString() + 'px';
+            //     detailImgs[key].style.height = imgHeight.toString() + 'px';
+            // })
         } else if (width < 1440 && width >= 1069) {
             backHeight = width * (800/1280);
-            imgWidth = detailImgs[0].offsetWidth;
-            imgHeight = imgWidth * (410/414.6);
-            Object.keys(detailImgs).forEach(function(key){
-                detailImgs[key].style.width = '100%';
-                detailImgs[key].style.height = imgHeight.toString() + 'px';
-            })
+            // imgWidth = detailImgs[0].offsetWidth;
+            // imgHeight = imgWidth * (410/414.6);
+            // Object.keys(detailImgs).forEach(function(key){
+            //     detailImgs[key].style.width = '100%';
+            //     detailImgs[key].style.height = imgHeight.toString() + 'px';
+            // })
         } else if (width < 1069 && width >= 735) {
             backHeight = width * (650/900);
-            imgWidth = detailImgs[0].offsetWidth;
-            Object.keys(detailImgs).forEach(function(key){
-                detailImgs[key].style.width = '100%';
-                detailImgs[key].style.height = imgWidth.toString() + 'px';
-            })
+            // imgWidth = detailImgs[0].offsetWidth;
+            // Object.keys(detailImgs).forEach(function(key){
+            //     detailImgs[key].style.width = '100%';
+            //     detailImgs[key].style.height = imgWidth.toString() + 'px';
+            // })
         } else if (width < 735) {
             backHeight = width * (236/321);
-            imgWidth = detailImgs[0].offsetWidth;
-            imgHeight = imgWidth * (284/321);
-            Object.keys(detailImgs).forEach(function(key){
-                detailImgs[key].style.width = '100%';
-                detailImgs[key].style.height = imgHeight.toString() + 'px';
-            })
+            // imgWidth = detailImgs[0].offsetWidth;
+            // imgHeight = imgWidth * (284/321);
+            // Object.keys(detailImgs).forEach(function(key){
+            //     detailImgs[key].style.width = '100%';
+            //     detailImgs[key].style.height = imgHeight.toString() + 'px';
+            // })
         }
         document.getElementsByClassName('section2')[0].style.height = backHeight.toString() + 'px';
         document.getElementsByClassName('section3')[0].style.paddingTop = (backHeight + 60).toString() + 'px';

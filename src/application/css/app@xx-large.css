@@ -1,35 +1,37 @@
+.swiper-pagination{
+    --swiper-pagination-color: #004254;
+}
 .section1{
     width: 100%;
     height: 60px;
 }
 /*通用样式*/
 .main-title{
-    font-size: 36px;
+    font-size: 50px;
     color: #333333;
     text-align: center;
-    line-height: 36px;
-    margin-top: 80px;
+    line-height: 64px;
+    margin-top: 100px;
 }
 .subTitle{
-    font-size: 22px;
+    font-size: 28px;
     color: #333333;
     letter-spacing: 0;
     text-align: center;
     line-height: 28px;
 }
 .subTitle2{
-    font-size: 22px;
+    font-size: 28px;
     color: #333333;
     letter-spacing: 0;
     text-align: center;
     line-height: 28px;
-    margin-top: 31px;
+    margin-top: 50px;
 }
 .subTitle3{
     font-size: 28px;
     color: #333333;
     letter-spacing: 0;
-    text-align: center;
     line-height: 28px;
 }
 .subContent{
@@ -37,39 +39,39 @@
     color: #6B6B6B;
     text-align: center;
     line-height: 26px;
-    margin-top: 16px;
+    margin-top: 20px;
 }
 .subContent2{
     width: 560px;
     font-size: 16px;
     color: #6B6B6B;
-    text-align: center;
     line-height: 26px;
-    margin: 16px auto 0 auto;
+    margin-top: 20px;
 }
 .big-img{
-    width: 700px;
-    height: 397px;
-    margin-top: 30px;
+    width: 970px;
+    height: 550px;
+    margin-top: 40px;
 }
 .cards{
-    width: 693px;
-    height: 81px;
-    margin-top: 20px;
+    width: 970px;
+    height: 114px;
+    margin-top: 30px;
     flex-wrap: nowrap;
 }
 .card{
-    width: 137px;
-    height: 81px;
-    margin-left: 2px;
+    width: 192px;
+    height: 114px;
+    margin-left: 6px;
+    border: none;
 }
 .card:nth-of-type(1){
     margin-left: 0;
 }
 /*智慧教学*/
 .section2{
-    width: 700px;
-    height: 918px;
+    width: 970px;
+    height: 1207px;
 }
 .section2 .subTitle{
     margin-top: 40px;
@@ -96,14 +98,14 @@
 /*C30教师PC*/
 .section3-back{
     width: 100%;
-    height: 972px;
+    height: 1181px;
     background-color: #fafafa;
 }
 .section3{
-    width: 700px;
+    width: 970px;
 }
 .section3 .subTitle{
-    margin-top: 80px;
+    margin-top: 100px;
 }
 .section3 .big-img img{
     content: url("../img/img1380/jiaoshiPC@2x.png");
@@ -126,11 +128,11 @@
 
 /*C30学生端*/
 .section4{
-    width: 700px;
-    height: 973px;
+    width: 970px;
+    height: 1155px;
 }
 .section4 .subTitle{
-    margin-top: 80px;
+    margin-top: 100px;
 }
 .section4 .big-img img{
     content: url("../img/img1380/xueshengPC@2x.png");
@@ -153,57 +155,58 @@
 
 /*小卡片公用样式*/
 .app-cards{
-    height: 320px;
-    margin-top: 31px;
+    height: 400px;
+    margin-top: 40px;
     flex-direction: row;
 }
 .app-card{
-    width: 226px;
-    height: 320px;
-    margin-left: 11px;
+    width: 430px;
+    height: 400px;
+    margin-left: 45px;
     background: #FFFFFF;
-    box-shadow: 0 3px 8px 0 rgba(0,0,0,0.02);
-    border-radius: 8px;
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.02);
+    border-radius: 16px;
+    border-radius: 16px;
 }
 .app-card:nth-of-type(1){
     margin-left: 0;
 }
 .app-img{
-    width: 50px;
-    height: 50px;
-    margin-top: 30px;
+    width: 96px;
+    height: 96px;
+    margin-top: 28px;
 }
 .app-img img{
     width: 100%;
     height: 100%;
 }
 .app-title{
-    font-size: 15px;
+    font-size: 28px;
     color: #333333;
     letter-spacing: 0;
     text-align: center;
-    line-height: 15px;
-    margin-top: 16px;
+    line-height: 28px;
+    margin-top: 24px;
 }
 .app-content{
-    width: 190px;
-    font-size: 13px;
+    width: 390px;
+    font-size: 15px;
     color: #8A8A8A;
-    line-height: 20px;
-    margin-top: 16px;
+    line-height: 32px;
+    margin-top: 24px;
 }
 
 /*更多应用*/
 .section5-back{
     width: 100%;
-    height: 539px;
+    height: 668px;
     background-color: #fafafa;
 }
 .section5{
-    width: 700px;
+    width: 1380px;
 }
 .section5 .subTitle{
-    margin-top: 80px;
+    margin-top: 100px;
 }
 .section5 .app-card:nth-of-type(1) .app-img img{
     content: url("../img/img1380/app-jiazhang@2x.png");
@@ -217,32 +220,34 @@
 
 
 .left-img{
-    width: 600px;
-    height: 467px;
+    width: 720px;
+    height: 560px;
 }
 .left-img img{
     width: 100%;
     height: 100%;
 }
 .section-split{
-    height: 30px;
+    width: 100px;
 }
 .right-content{
-    width: 600px;
-    margin: 0 auto;
+    width: 560px;
 }
 
 /*智慧管理*/
 .section6{
-    width: 692px;
-    height: 990px;
+    width: 1380px;
+    height: 1117px;
 }
 .section6 .img-content{
-    margin: 40px auto 0 auto;
-    flex-direction: column-reverse;
+    margin-top: 80px;
+    flex-direction: row;
 }
 .section6 .left-img img{
     content: url("../img/img1380/shisheng@2x.png");
+}
+.section6 .subTitle3{
+    margin-top: 180px;
 }
 .section6 .card:nth-of-type(1){
     content: url("../img/img1380/shisheng-tag1@2x.png");
@@ -263,18 +268,21 @@
 /*教务管理*/
 .section7-back{
     width: 100%;
-    height: 913px;
+    height: 973px;
     background-color: #fafafa;
 }
 .section7{
-    width: 692px;
+    width: 1380px;
 }
 .section7 .img-content{
-    margin: 80px auto 0 auto;
-    flex-direction: column-reverse;
+    margin-top: 100px;
+    flex-direction: row-reverse;
 }
 .section7 .left-img img{
     content: url("../img/img1380/jiaowu@2x.png");
+}
+.section7 .subTitle3{
+    margin-top: 200px;
 }
 .section7 .card:nth-of-type(1){
     content: url("../img/img1380/jiaowu-tag1@2x.png");
@@ -294,20 +302,23 @@
 
 /*一体化平台*/
 .section8{
-    width: 600px;
-    height: 898px;
+    width: 1380px;
+    height: 973px;
 }
 .section8 .img-content{
-    margin: 80px auto 0 auto;
-    flex-direction: column-reverse;
+    margin-top: 100px;
+    flex-direction: row;
 }
 .section8 .left-img img{
     content: url("../img/img1380/pingtai@2x.png");
 }
+.section8 .subTitle3{
+    margin-top: 200px;
+}
 .section8 .cards{
-    width: 415px;
-    height: 81px;
-    margin-top: 20px;
+    width: 588px;
+    height: 114px;
+    margin-top: 30px;
 }
 .section8 .card:nth-of-type(1){
     content: url("../img/img1380/pingtai-tag1@2x.png");
@@ -322,26 +333,26 @@
 /*更多应用*/
 .section9-back{
     width: 100%;
-    height: 577px;
+    height: 722px;
     background-color: #fafafa;
 }
 .section9{
-    width: 700px;
+    width: 1380px;
 }
 .section9 .subTitle{
-    margin-top: 80px;
+    margin-top: 100px;
 }
 
 .section9 .swiper-container {
-    width: 700px;
-    height: 370px;
-    margin-top: 31px;
+    width: 1380px;
+    height: 462px;
+    margin-top: 40px;
 }
 .section9 .swiper-slide {
-    width: 226px;
-    height: 320px;
+    width: 430px;
+    height: 400px;
     background: #ffffff;
-    box-shadow: 0 3px 8px 0 rgba(0,0,0,0.02);
-    border-radius: 8px;
-    border-radius: 8px;
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.02);
+    border-radius: 16px;
+    border-radius: 16px;
 }

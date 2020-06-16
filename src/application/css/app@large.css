@@ -1,3 +1,6 @@
+.swiper-pagination{
+    --swiper-pagination-color: #004254;
+}
 .section1{
     width: 100%;
     height: 60px;
@@ -39,7 +42,7 @@
     margin-top: 20px;
 }
 .subContent2{
-    width: 560px;
+    width: 424px;
     font-size: 16px;
     color: #6B6B6B;
     line-height: 26px;
@@ -151,45 +154,45 @@
 
 /*小卡片公用样式*/
 .app-cards{
-    height: 400px;
+    height: 350px;
     margin-top: 40px;
     flex-direction: row;
 }
 .app-card{
-    width: 430px;
-    height: 400px;
-    margin-left: 45px;
+    width: 324px;
+    height: 350px;
+    margin-left: 26px;
     background: #FFFFFF;
     box-shadow: 0 5px 15px 0 rgba(0,0,0,0.02);
-    border-radius: 16px;
-    border-radius: 16px;
+    border-radius: 12px;
+    border-radius: 12px;
 }
 .app-card:nth-of-type(1){
     margin-left: 0;
 }
 .app-img{
-    width: 96px;
-    height: 96px;
-    margin-top: 28px;
+    width: 72px;
+    height: 72px;
+    margin-top: 44px;
 }
 .app-img img{
     width: 100%;
     height: 100%;
 }
 .app-title{
-    font-size: 28px;
+    font-size: 20px;
     color: #333333;
     letter-spacing: 0;
     text-align: center;
-    line-height: 28px;
+    line-height: 20px;
     margin-top: 24px;
 }
 .app-content{
-    width: 390px;
-    font-size: 18px;
+    width: 284px;
+    font-size: 14px;
     color: #8A8A8A;
-    line-height: 32px;
-    margin-top: 24px;
+    line-height: 24px;
+    margin-top: 20px;
 }
 
 /*更多应用*/
@@ -199,7 +202,7 @@
     background-color: #fafafa;
 }
 .section5{
-    width: 1380px;
+    width: 1024px;
 }
 .section5 .subTitle{
     margin-top: 100px;
@@ -216,24 +219,24 @@
 
 
 .left-img{
-    width: 720px;
-    height: 560px;
+    width: 530px;
+    height: 412px;
 }
 .left-img img{
     width: 100%;
     height: 100%;
 }
 .section-split{
-    width: 100px;
+    width: 70px;
 }
 .right-content{
-    width: 560px;
+    width: 424px;
 }
 
 /*智慧管理*/
 .section6{
-    width: 1380px;
-    height: 1117px;
+    width: 1024px;
+    height: 970px;
 }
 .section6 .img-content{
     margin-top: 80px;
@@ -243,7 +246,7 @@
     content: url("../img/img1380/shisheng@2x.png");
 }
 .section6 .subTitle3{
-    margin-top: 180px;
+    margin-top: 90px;
 }
 .section6 .card:nth-of-type(1){
     content: url("../img/img1380/shisheng-tag1@2x.png");
@@ -264,11 +267,11 @@
 /*教务管理*/
 .section7-back{
     width: 100%;
-    height: 973px;
+    height: 826px;
     background-color: #fafafa;
 }
 .section7{
-    width: 1380px;
+    width: 1024px;
 }
 .section7 .img-content{
     margin-top: 100px;
@@ -278,7 +281,7 @@
     content: url("../img/img1380/jiaowu@2x.png");
 }
 .section7 .subTitle3{
-    margin-top: 200px;
+    margin-top: 128px;
 }
 .section7 .card:nth-of-type(1){
     content: url("../img/img1380/jiaowu-tag1@2x.png");
@@ -298,8 +301,8 @@
 
 /*一体化平台*/
 .section8{
-    width: 1380px;
-    height: 973px;
+    width: 1024px;
+    height: 812px;
 }
 .section8 .img-content{
     margin-top: 100px;
@@ -309,7 +312,7 @@
     content: url("../img/img1380/pingtai@2x.png");
 }
 .section8 .subTitle3{
-    margin-top: 200px;
+    margin-top: 127px;
 }
 .section8 .cards{
     width: 588px;
@@ -329,26 +332,26 @@
 /*更多应用*/
 .section9-back{
     width: 100%;
-    height: 722px;
+    height: 659px;
     background-color: #fafafa;
 }
 .section9{
-    width: 1380px;
+    width: 1024px;
 }
 .section9 .subTitle{
     margin-top: 100px;
 }
 
 .section9 .swiper-container {
-    width: 1380px;
-    height: 462px;
+    width: 1024px;
+    height: 400px;
     margin-top: 40px;
 }
 .section9 .swiper-slide {
-    width: 430px;
-    height: 400px;
+    width: 324px;
+    height: 350px;
     background: #ffffff;
     box-shadow: 0 5px 15px 0 rgba(0,0,0,0.02);
-    border-radius: 16px;
-    border-radius: 16px;
+    border-radius: 12px;
+    border-radius: 12px;
 }

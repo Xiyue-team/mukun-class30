@@ -65,7 +65,7 @@
     border-radius: 25px;
     font-size: 24px;
     color: #004254;
-    line-height: 50px;
+    line-height: 46px;
 }
 .version-button:nth-of-type(1){
     background: #38DB96;
@@ -139,28 +139,25 @@
     height: 60px;
     position: relative;
 }
-.button-shadow{
-    position: absolute;
-    top: 12.5px;
-    width: 160px;
-    height: 45px;
-    opacity: 0.38;
-    background: #38DB96;
-    border-radius: 27.5px;
-}
 .button-content{
     cursor: pointer;
-    position: absolute;
     top: 0;
     width: 160px;
     height: 45px;
     background: #38DB96;
     border-radius: 27.5px;
+    box-shadow: 0 10px 20px 0 #38DB96;
 }
 .microsoft{
     width: 20px;
     height: 20px;
     margin-left: 37px;
+}
+.phone{
+    width: 20px;
+    height: 20px;
+    margin-left: 37px;
+    margin-bottom: 3px;
 }
 .button-text{
     margin-left: 10px;
