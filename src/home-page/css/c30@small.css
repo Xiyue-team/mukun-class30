@@ -123,30 +123,32 @@
     padding-top: 40px;
 }
 .section7 .gallery{
-    margin-top:60px;
     height: 185px;
-    width: 100%;
+    width: 414px;
     background-image: url("../img/home/equipment.png");
-    background-size: contain;
+    background-size: 100%;
     background-repeat:no-repeat;
 }
 
 .cooperation-section{
-    width: 100%;
+    width: 414px;
     height: 334px;
     position: relative;
-}
-.cooperationImg{
-    width: 320px;
-    height: 264px;
-    position: absolute;
     background-image: url("../img/home/cooperation320.png");
-    background-size: contain;
+    background-size: 100%;
     background-repeat:no-repeat;
-    left: 50%;
-    margin-left: -160px;
-    top: 70px;
 }
+/*.cooperationImg{*/
+/*    width: 320px;*/
+/*    height: 264px;*/
+/*    position: absolute;*/
+/*    background-image: url("../img/home/cooperation320.png");*/
+/*    background-size: contain;*/
+/*    background-repeat:no-repeat;*/
+/*    left: 50%;*/
+/*    margin-left: -160px;*/
+/*    top: 70px;*/
+/*}*/
 .cooperationContent{
     position: absolute;
     font-size: 14px;

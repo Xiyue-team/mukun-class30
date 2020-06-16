@@ -51,6 +51,7 @@
     height: 143px;
     background-color: #ffffff;
     border-radius: 11px;
+    z-index: 11;
 }
 .version-buttons{
     width: 490px;
@@ -80,6 +81,7 @@
     height: 94px;
     background: #ECF7F2;
     border-radius: 11px;
+    filter: blur(8px);
 }
 
 /*普教云*/
@@ -142,14 +144,24 @@
     height: 60px;
     position: relative;
 }
+.button-shadow{
+    position: absolute;
+    top: 12.5px;
+    width: 160px;
+    height: 45px;
+    opacity: 0.38;
+    background: #38DB96;
+    border-radius: 27.5px;
+    filter: blur(8px);
+}
 .button-content{
     cursor: pointer;
+    position: absolute;
     top: 0;
     width: 160px;
     height: 45px;
     background: #38DB96;
     border-radius: 27.5px;
-    box-shadow: 0 10px 20px 0 #38DB96;
 }
 .microsoft{
     width: 20px;

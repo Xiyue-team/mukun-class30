@@ -121,11 +121,10 @@
     padding-top: 105px;
 }
 .section7 .gallery{
-    margin-top:60px;
     height: 405px;
-    width: 735px;
+    width: 100%;
     background-image: url("../img/home/equipment.png");
-    background-size: contain;
+    background-size: 100%;
     background-repeat:no-repeat;
 }
 
@@ -133,18 +132,21 @@
     width: 100%;
     height: 253px;
     position: relative;
-}
-.cooperationImg{
-    width: 735px;
-    height: 153px;
-    position: absolute;
-    background-image: url("../img/home/cooperation.png");
-    background-size: contain;
+    background-image: url("../img/home/cooperation700.png");
+    background-size: 100%;
     background-repeat:no-repeat;
-    left: 50%;
-    margin-left: -367px;
-    top: 100px;
 }
+/*.cooperationImg{*/
+/*    width: 735px;*/
+/*    height: 153px;*/
+/*    position: absolute;*/
+/*    background-image: url("../img/home/cooperation.png");*/
+/*    background-size: contain;*/
+/*    background-repeat:no-repeat;*/
+/*    left: 50%;*/
+/*    margin-left: -367px;*/
+/*    top: 100px;*/
+/*}*/
 .cooperationContent{
     position: absolute;
     font-size: 14px;
