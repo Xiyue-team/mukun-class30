@@ -9,7 +9,7 @@
     top: 60px;
     left: 0;
     overflow: hidden;
-    right: 4px;
+    right: 6px;
 }
 .section2 img{
     width: 100%;
@@ -78,29 +78,14 @@
     font-size: 14px;
     color: #8A8A8A;
 }
-.detail-button{
-    margin-top: 31px;
-    width: 133px;
-    height: 45px;
-    position: relative;
-}
-.button-shadow{
-    position: absolute;
-    top: 9px;
-    width: 133px;
-    height: 32px;
-    opacity: 0.38;
-    background: #38DB96;
-    border-radius: 19px;
-}
 .button-border{
     cursor: pointer;
-    position: absolute;
-    top: 0;
     width: 133px;
     height: 32px;
     background: #38DB96;
     border-radius: 19px;
+    margin-top: 31px;
+    box-shadow: 0 10px 20px 0 #38DB96;
 }
 .button-content{
     width: 70px;

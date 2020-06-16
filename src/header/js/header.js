@@ -71,14 +71,11 @@ function toHomePage() {
     window.location.href='../home-page/index.html';
 }
 function toResourcePage() {
-    window.location.href='../resources-page/index.html';
+    window.location.href='../resources/index.html';
 }
 function toAppPage() {
-    window.location.href='../app-page/index.html';
+    window.location.href='../application/index.html';
 }
 function toDownloadPage() {
-    window.location.href='../download-page/index.html';
-}
-function test() {
-    console.log('123')
+    window.location.href='../download/index.html';
 }
