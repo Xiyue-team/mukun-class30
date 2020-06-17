@@ -162,8 +162,8 @@
 
 .section8{
     width: 100%;
-    height: 754px;
-    padding-top: 100px;
+    height: 702px;
+    padding-top: 60px;
 }
 .section8 .img-back img{
     width: 204px;
@@ -173,7 +173,7 @@
 .section8 .gallery{
     flex-direction:row;
     width:1020px;
-    margin-top: 60px;
+    margin-top: 40px;
     background: #000000;
 }
 .section8 .gallery-cover{
@@ -295,7 +295,7 @@
     width: 100%;
     height: 720px;
     background-color: #000000;
-    position:relative
+    position: relative;
 }
 .section9 .mask{
     position: absolute;
@@ -347,6 +347,38 @@
     margin-top:15px;
     opacity: 0;
 }
+
+.section9-rotation{
+    width: 100%;
+    height: 720px;
+    position:relative;
+    display: none;
+}
+.section9-rotation .dataDrive{
+    position: relative;
+    padding-top: 0;
+}
+.section9-rotation .dataDriveTitle {
+    color: #333333;
+    font-size: 42px;
+    line-height: 46px;
+}
+.section9-rotation .dataDriveContent {
+    font-size: 20px;
+    line-height: 34px;
+    color: #6B6B6B;
+    margin-top: 20px;
+}
+.section9-rotation .swiper-slide{
+    width: 750px;
+    height: 420px;
+}
+.section9-rotation .swiper-container{
+    width: 750px;
+    height: 420px;
+    margin-top: 80px;
+}
+
 @keyframes textShowIn{
     0%{opacity: 0;}
     50%{opacity: 0;}

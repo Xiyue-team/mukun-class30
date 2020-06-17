@@ -156,13 +156,8 @@
 
 .section8{
     width: 100%;
-    height: 571px;
-    padding-top: 80px;
-}
-.section8-mobile{
-    width: 100%;
-    height: 571px;
-    padding-top: 80px;
+    height: 521px;
+    padding-top: 50px;
 }
 .section8 .subcontent{
     font-size: 16px;
@@ -177,7 +172,7 @@
 .section8 .gallery{
     flex-direction:row;
     width:700px;
-    margin-top: 60px;
+    margin-top: 40px;
     background: #000000;
 }
 .section8 .gallery-cover{
@@ -350,6 +345,37 @@
 .section9 .dataDriveGallery{
     margin-top:60px;
     opacity: 0;
+}
+
+.section9-rotation{
+    width: 100%;
+    height: 700px;
+    position:relative;
+    display: none;
+}
+.section9-rotation .dataDrive{
+    position: relative;
+    padding-top: 0;
+}
+.section9-rotation .dataDriveTitle {
+    color: #333333;
+    font-size: 36px;
+    line-height: 40px;
+}
+.section9-rotation .dataDriveContent {
+    font-size: 18px;
+    line-height: 28px;
+    color: #6B6B6B;
+    margin: 20px 0;
+}
+.section9-rotation .swiper-slide{
+    width: 610px;
+    height: 345px;
+}
+.section9-rotation .swiper-container{
+    width: 610px;
+    height: 345px;
+    margin-top: 60px;
 }
 @keyframes textShowIn{
     0%{opacity: 0;}

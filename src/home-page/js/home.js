@@ -2,6 +2,7 @@ let animationHeader;
 let animationFooter;
 let width;
 let delta = 8; //鼠标每次滚动时动画运行的帧数
+let swiper;
 class HomePage {
     init() {
         new Footer().init();
@@ -76,6 +77,15 @@ class HomePage {
                     document.getElementsByClassName('dataDriveGallery')[0].style.animation = "imgShowIn 7s ease forwards";
                     document.getElementsByClassName('dataDriveTitle')[0].style.animation = "textShowIn 7s ease forwards";
                     document.getElementsByClassName('dataDriveContent')[0].style.animation = "textShowIn 7s ease forwards";
+                    let lottieFooter = document.getElementsByClassName('lottie-footer')[0];
+                    let display = window.getComputedStyle(lottieFooter,null).display;
+                    if (display == 'block') {
+                        setTimeout(()=>{
+                            document.getElementsByClassName('lottie-footer')[0].style.display = 'none';
+                            document.getElementsByClassName('section9-rotation')[0].style.display = 'inherit';
+                            this.container();
+                        },7500)
+                    }
                 }
             }
         });
@@ -96,10 +106,7 @@ class HomePage {
                 if (this.getScrollTop()>=secondAni1 && this.getScrollTop()<=secondAni2) {
                     if (totalFooter <= -2) {
                         totalFooter += 1;
-                    } else if (totalFooter>=181) {
-                        totalFooter = 180;
                     }
-
                 }
             });
         }
@@ -167,6 +174,7 @@ class HomePage {
             }
         }
         if (type === 0) {
+            // 头部lottie
             if (total>=144) {
                 document.getElementsByClassName('lottieImg')[0].style.display = "none";
                 document.getElementsByClassName('section')[0].style.animation = "lottieChange 1s ease forwards";
@@ -179,6 +187,7 @@ class HomePage {
                 }
             }
         } else if (type === 1) {
+            // 尾部lottie
             if (total>=10) {
                 document.getElementsByClassName('mask-text')[0].style.animation = "textShowOut 0.5s ease forwards";
             } else {
@@ -205,6 +214,11 @@ class HomePage {
                 document.getElementsByClassName('dataDrive')[0].style.animation = "imgDown 1s ease forwards";
                 document.getElementsByClassName('dataDriveTitle')[0].style.animation = "textShowIn 1s ease forwards";
                 document.getElementsByClassName('dataDriveContent')[0].style.animation = "textShowIn 1s ease forwards";
+                setTimeout(()=>{
+                    document.getElementsByClassName('lottie-footer')[0].style.display = 'none';
+                    document.getElementsByClassName('section9-rotation')[0].style.display = 'inherit';
+                    this.container();
+                },500);
             } else {
                 let dataDriveTitle = document.getElementsByClassName('dataDriveTitle')[0];
                 let opacity = window.getComputedStyle(dataDriveTitle,null).opacity;
@@ -309,6 +323,21 @@ class HomePage {
             bodyScrollTop = document.querySelector('.home_page').scrollTop;
         }
         return bodyScrollTop;
+    }
+
+    // 数据驱动模块轮播组件
+    container() {
+        if (!swiper) {
+            swiper = new Swiper('.swiper-container', {
+                autoplay: true,
+                slidesPerView: 1,
+                spaceBetween: 0,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+            });
+        }
     }
 }
 

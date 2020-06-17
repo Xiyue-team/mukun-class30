@@ -158,8 +158,8 @@
 
 .section8{
     width: 100%;
-    height: 1080px;
-    padding-top: 130px;
+    height: 948px;
+    padding-top: 100px;
 }
 .section8 .img-back img{
     width: 276px;
@@ -170,7 +170,7 @@
     position: relative;
     flex-direction:row;
     width:1380px;
-    margin-top: 74px;
+    margin-top: 50px;
     background: #000000;
 }
 .section8 .gallery-cover{
@@ -346,6 +346,37 @@
     margin-top:148px;
     opacity: 0;
 }
+
+.section9-rotation{
+    width: 100%;
+    height: 1080px;
+    position:relative;
+    display: none;
+}
+.section9-rotation .dataDrive{
+    position: relative;
+    padding-top: 131px;
+}
+.section9-rotation .dataDriveTitle {
+    color: #333333;
+    font-size: 42px;
+    line-height: 46px;
+}
+.section9-rotation .dataDriveContent {
+    font-size: 18px;
+    line-height: 28px;
+    color: #6B6B6B;
+    margin: 20px 0;
+}
+.section9-rotation .swiper-slide{
+    width: 920px;
+    height: 530px;
+}
+.section9-rotation .swiper-container{
+    width: 920px;
+    height: 530px;
+    margin-top:148px;
+}
 @keyframes textShowIn{
     0%{opacity: 0;}
     50%{opacity: 0;}
@@ -360,12 +391,12 @@
 
 @keyframes imgDown{
     0%{padding-top: 5px;}
-    50%{padding-top: 205px;}
-    100%{padding-top: 205px;}
+    50%{padding-top: 131px;}
+    100%{padding-top: 131px;}
 }
 
 @keyframes imgUp{
-    0%{padding-top: 205px;}
+    0%{padding-top: 131px;}
     50%{padding-top: 5px;}
     100%{padding-top: 5px;}
 }
