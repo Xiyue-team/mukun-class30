@@ -31,7 +31,6 @@ class AppPage {
                 swiper.params.spaceBetween = 0;
                 swiper.params.slidesPerGroup = 1;
             }
-            console.log(swiper);
         };
     }
 
