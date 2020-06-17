@@ -13,7 +13,8 @@
     height: 650px;
     border: 1px solid #979797;
     background-image: url("../img/backImg@2x.png");
-    background-size: cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     position: relative;
 }
 .img-title{
