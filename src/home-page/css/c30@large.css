@@ -123,8 +123,13 @@
 }
 .section7{
     width: 100%;
-    height: 941px;
-    padding-top: 100px;
+    height: 808px;
+}
+.section7 .subTitle{
+    margin-top: 100px;
+}
+.section7 .subcontent{
+    margin-top: 15px;
 }
 .section7 .gallery{
     height: 577px;
@@ -142,16 +147,6 @@
     background-size: 100%;
     background-repeat:no-repeat;
 }
-/*.cooperationImg{*/
-/*    position: absolute;*/
-/*    width: 1069px;*/
-/*    height: 203px;*/
-/*    background-image: url("../img/home/cooperation.png");*/
-/*    background-size: cover;*/
-/*    top: 70px;*/
-/*    left: 50%;*/
-/*    margin-left: -535px;*/
-/*}*/
 .cooperationContent{
     position: absolute;
     font-size: 14px;
