@@ -245,24 +245,24 @@
     color: #FFFFFF;
 }
 @keyframes turnToBig0{
-    0%{background-color: #ffffff;background-image: url('../img/home/bei-open.png');background-size: auto 100%;}
-    100%{width:1380px;background-color: #ffffff;background-image: url('../img/home/bei-open.png');background-size: auto 100%;}
+    0%{background-color: #ffffff;background-image: url('../img/home/bei-open.png');background-size: 100% 100%;}
+    100%{width:1380px;background-color: #ffffff;background-image: url('../img/home/bei-open.png');background-size: 100% 100%;}
 }
 @keyframes turnToBig1{
-    0%{background-color: #ffffff;background-image: url('../img/home/jiang-open.png');background-size: auto 100%;}
-    100%{width:1380px;background-color: #ffffff;background-image: url('../img/home/jiang-open.png');background-size: auto 100%;}
+    0%{background-color: #ffffff;background-image: url('../img/home/jiang-open.png');background-size: 100% 100%;}
+    100%{width:1380px;background-color: #ffffff;background-image: url('../img/home/jiang-open.png');background-size: 100% 100%;}
 }
 @keyframes turnToBig2{
-    0%{background-color: #ffffff;background-image: url('../img/home/pi-open.png');background-size: auto 100%;}
-    100%{width:1380px;background-color: #ffffff;background-image: url('../img/home/pi-open.png');background-size: auto 100%;}
+    0%{background-color: #ffffff;background-image: url('../img/home/pi-open.png');background-size: 100% 100%;}
+    100%{width:1380px;background-color: #ffffff;background-image: url('../img/home/pi-open.png');background-size: 100% 100%;}
 }
 @keyframes turnToBig3{
-    0%{background-color: #ffffff;background-image: url('../img/home/fu-open.png');background-size: auto 100%;}
-    100%{width:1380px;background-color: #ffffff;background-image: url('../img/home/fu-open.png');background-size: auto 100%;}
+    0%{background-color: #ffffff;background-image: url('../img/home/fu-open.png');background-size: 100% 100%;}
+    100%{width:1380px;background-color: #ffffff;background-image: url('../img/home/fu-open.png');background-size: 100% 100%;}
 }
 @keyframes turnToBig4{
-    0%{background-color: #ffffff;background-image: url('../img/home/kao-open.png');background-size: auto 100%;}
-    100%{width:1380px;background-color: #ffffff;background-image: url('../img/home/kao-open.png');background-size: auto 100%;}
+    0%{background-color: #ffffff;background-image: url('../img/home/kao-open.png');background-size: 100% 100%;}
+    100%{width:1380px;background-color: #ffffff;background-image: url('../img/home/kao-open.png');background-size: 100% 100%;}
 }
 @keyframes turnToSmall{
     0%{}
@@ -303,7 +303,8 @@
     height: 100%;
     opacity: 0.55;
     background-image: url("../img/home/dataDrive@2x.png");
-    background-size: cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 .section9 .mask-text{
     position: absolute;

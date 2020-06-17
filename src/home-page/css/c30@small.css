@@ -228,7 +228,8 @@
     height: 100%;
     opacity: 0.55;
     background-image: url("../img/home/dataDrive-sm@2x.png");
-    background-size: cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 .section9 .mask-text{
     position: absolute;

@@ -131,7 +131,7 @@
     height: 405px;
     width: 100%;
     background-image: url("../img/home/equipment.png");
-    background-size: 100%;
+    background-size: 100% 100%;
     background-repeat:no-repeat;
     margin-top: 24px;
 }
@@ -141,7 +141,7 @@
     height: 253px;
     position: relative;
     background-image: url("../img/home/cooperation700.png");
-    background-size: 100%;
+    background-size: 100% 100%;
     background-repeat:no-repeat;
 }
 .cooperationContent{
@@ -247,24 +247,24 @@
     color: #FFFFFF;
 }
 @keyframes turnToBig0{
-    0%{background-color: #ffffff;background-image: url('../img/home/bei-open-md.png');background-size: auto 100%;}
-    100%{width:700px;background-color: #ffffff;background-image: url('../img/home/bei-open-md.png');background-size: auto 100%;}
+    0%{background-color: #ffffff;background-image: url('../img/home/bei-open-md.png');background-size: 100% 100%;}
+    100%{width:700px;background-color: #ffffff;background-image: url('../img/home/bei-open-md.png');background-size: 100% 100%;}
 }
 @keyframes turnToBig1{
-    0%{background-color: #ffffff;background-image: url('../img/home/jiang-open-md.png');background-size: auto 100%;}
-    100%{width:700px;background-color: #ffffff;background-image: url('../img/home/jiang-open-md.png');background-size: auto 100%;}
+    0%{background-color: #ffffff;background-image: url('../img/home/jiang-open-md.png');background-size: 100% 100%;}
+    100%{width:700px;background-color: #ffffff;background-image: url('../img/home/jiang-open-md.png');background-size: 100% 100%;}
 }
 @keyframes turnToBig2{
-    0%{background-color: #ffffff;background-image: url('../img/home/pi-open-md.png');background-size: auto 100%;}
-    100%{width:700px;background-color: #ffffff;background-image: url('../img/home/pi-open-md.png');background-size: auto 100%;}
+    0%{background-color: #ffffff;background-image: url('../img/home/pi-open-md.png');background-size: 100% 100%;}
+    100%{width:700px;background-color: #ffffff;background-image: url('../img/home/pi-open-md.png');background-size: 100% 100%;}
 }
 @keyframes turnToBig3{
-    0%{background-color: #ffffff;background-image: url('../img/home/fu-open-md.png');background-size: auto 100%;}
-    100%{width:700px;background-color: #ffffff;background-image: url('../img/home/fu-open-md.png');background-size: auto 100%;}
+    0%{background-color: #ffffff;background-image: url('../img/home/fu-open-md.png');background-size: 100% 100%;}
+    100%{width:700px;background-color: #ffffff;background-image: url('../img/home/fu-open-md.png');background-size: 100% 100%;}
 }
 @keyframes turnToBig4{
-    0%{background-color: #ffffff;background-image: url('../img/home/kao-open-md.png');background-size: auto 100%;}
-    100%{width:700px;background-color: #ffffff;background-image: url('../img/home/kao-open-md.png');background-size: auto 100%;}
+    0%{background-color: #ffffff;background-image: url('../img/home/kao-open-md.png');background-size: 100% 100%;}
+    100%{width:700px;background-color: #ffffff;background-image: url('../img/home/kao-open-md.png');background-size: 100% 100%;}
 }
 @keyframes turnToSmall{
     0%{}
@@ -305,7 +305,8 @@
     height: 100%;
     opacity: 0.55;
     background-image: url("../img/home/dataDrive-md@2x.png");
-    background-size: cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 .section9 .dataDrive{
     position: relative;
