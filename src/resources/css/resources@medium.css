@@ -83,14 +83,30 @@
     font-size: 11px;
     color: #8A8A8A;
 }
-.button-border{
+.detail-button{
     margin-top: 35px;
+    width: 133px;
+    height: 45px;
+    position: relative;
+}
+.button-shadow{
+    position: absolute;
+    top: 9px;
+    width: 133px;
+    height: 32px;
+    opacity: 0.38;
+    background: #38DB96;
+    border-radius: 19px;
+    filter: blur(8px);
+}
+.button-border{
     cursor: pointer;
+    position: absolute;
+    top: 0;
     width: 133px;
     height: 32px;
     background: #38DB96;
     border-radius: 19px;
-    box-shadow: 0 10px 20px 0 #38DB96;
 }
 .button-content{
     width: 65px;
