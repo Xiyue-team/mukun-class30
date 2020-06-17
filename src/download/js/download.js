@@ -39,10 +39,9 @@ class DownloadPage {
             }
         });
     }
-
 }
 
-function  hideHome(type) {
+function hideHome(type) {
     if (type === 1) {
         document.getElementById('main').style.display = 'none';
         document.getElementById('footer_container').style.marginTop = '550px';
@@ -52,4 +51,23 @@ function  hideHome(type) {
         document.getElementsByClassName('section')[0].style.animation = "";
         document.getElementsByClassName('section')[0].style.backgroundColor = "#ffffff";
     }
+}
+
+function section4Nav() {
+    window.open('https://fs.iclass30.com/software/common/%E6%99%BA%E8%83%BD%E5%A4%A7%E5%B1%8F.exe');
+}
+function section5Nav() {
+    window.open(' https://fs.iclass30.com/software/common/%E6%99%BA%E8%83%BDPC.exe');
+}
+function section6NavAndroid() {
+    window.open('https://fs.iclass30.com/Android/pptAssistant/pptAssistant.apk');
+}
+function section6NavIos() {
+    window.open('https://apps.apple.com/cn/app/id1360134121');
+}
+function section7NavAndroid() {
+    window.open('https://fs.iclass30.com/Android/studentclient/studenthomework/studenthomework.apk');
+}
+function section7NavIos() {
+    window.open('https://apps.apple.com/cn/app/id1469687292');
 }
