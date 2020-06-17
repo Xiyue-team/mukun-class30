@@ -25,14 +25,12 @@
 }
 .title1{
     margin: 0 auto;
-    width: 119px;
     height: 33px;
     font-size: 24px;
     color: #ffffff;
 }
 .title2{
     margin: 21.5px auto 0 auto;
-    width: 128px;
     height: 22px;
     font-size: 16px;
     color: #ffffff;
@@ -112,8 +110,8 @@
     width: 310px;
 }
 .title{
+    text-align: center;
     margin: 0 auto;
-    width: 119px;
     height: 28px;
     font-size: 20px;
     color: #004254;
@@ -126,8 +124,8 @@
     border-radius: 2.5px;
 }
 .subTitle{
-    margin: 24.7px auto 0 auto;
-    width: 64px;
+    text-align: center;
+    margin-top: 24.7px;
     height: 22px;
     font-size: 16px;
     color: #5E5E5E;
