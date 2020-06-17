@@ -1,3 +1,6 @@
+.swiper-pagination{
+    --swiper-pagination-color: #004254;
+}
 .section {
     height: 1080px;
     position: relative;
@@ -378,7 +381,7 @@
 }
 .section9-rotation .swiper-container{
     width: 920px;
-    height: 530px;
+    height: 585px;
     margin-top:148px;
 }
 @keyframes textShowIn{

@@ -1,3 +1,6 @@
+.swiper-pagination{
+    --swiper-pagination-color: #004254;
+}
 .section {
     height: 768px;
     position: relative;
@@ -311,7 +314,7 @@
 }
 .section9-rotation .swiper-container{
     width: 250px;
-    height: 150px;
+    height: 202px;
     margin-top: 40px;
 }
 .section9-rotation .content2{
