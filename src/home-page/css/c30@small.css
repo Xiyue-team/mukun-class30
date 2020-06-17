@@ -122,7 +122,7 @@
     height: 323px;
 }
 .section7 .subTitle{
-    margin-top: 40px;
+    padding-top: 40px;
 }
 .section7 .subcontent{
     margin-top: 16px;
@@ -133,6 +133,7 @@
     background-image: url("../img/home/equipment.png");
     background-size: 100%;
     background-repeat:no-repeat;
+    margin-top: 24px;
 }
 .cooperation-section{
     width: 100%;
