@@ -6,6 +6,9 @@
 /*    border-radius: 1em;*/
 /*    background-color: gray;*/
 /*}*/
+.swiper-pagination{
+    --swiper-pagination-color: #39DB96;
+}
 html, body{
     width: 100%;
     height: 100%;
