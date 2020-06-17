@@ -13,7 +13,7 @@
 <!--pc端显示-->
 <div class="shadow-pc flex flex-col">
     <div class="section-pc flex mx-auto flex-row">
-        <div class="flex img-panel">
+        <div class="flex img-panel" onclick="toHomePage()">
             <img class="mx-auto" src="../header/img/logo-header@2x.png">
         </div>
         <div class="section-split"></div>
@@ -34,7 +34,7 @@
 <div class="section-mobile flex mx-auto flex-col" id="accordion">
     <div class="shadow-mobile">
         <div class="nav flex mx-auto flex-row">
-            <div class="flex img-panel1">
+            <div class="flex img-panel1" onclick="toHomePage()">
                 <img class="mx-auto" src="../header/img/logo-header@2x.png">
             </div>
             <div class="img-split"></div>
@@ -63,6 +63,9 @@
             <iframe id="login-mobile" src="../login/login.html" width="350px" height="490px"></iframe>
         </div>
     </div>
+</div>
+<div class="login-medium">
+    <iframe id="login-medium" src="../login/login.html" width="350px" height="490px"></iframe>
 </div>
 <div class="login">
     <iframe id="login" src="../login/login.html" width="350px" height="490px" style="background: #FFFFFF;box-shadow: 0 1px 4px 0 rgba(0,0,0,0.10);border-radius: 8px;"></iframe>

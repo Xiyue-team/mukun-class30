@@ -63,7 +63,10 @@
     margin-left: -175px;
     z-index: 11;
 }
-
+.login-medium{
+    display: none;
+    position: absolute;
+}
 .login{
     display: none;
     position: absolute;

@@ -17,6 +17,7 @@
     width: 55px;
     height: 60px;
     align-items: center;
+    cursor: pointer;
 }
 .section-pc .img-panel img{
     width: 55px;
@@ -65,13 +66,17 @@
     display: none;
     position: absolute;
     left: 50%;
-    top: 300px;
+    top: 430px;
     margin-left: -150px;
     margin-top: -200px;
     z-index: 11;
     border-radius: 5px;
 }
 .login-mobile{
+    display: none;
+    position: absolute;
+}
+.login-medium{
     display: none;
     position: absolute;
 }

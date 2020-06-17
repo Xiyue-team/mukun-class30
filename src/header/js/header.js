@@ -35,10 +35,11 @@ window.onload = function() {
     //调用子页面方法显示/隐藏关闭按钮
     let width = document.body.clientWidth;
     setTimeout(()=>{
-        if (width >= 734) {
+        if (width >= 1069) {
             $('#login')[0].contentWindow.showCloseButton();
         } else {
             $('#login-mobile')[0].contentWindow.hideCloseButton();
+            $('#login-medium')[0].contentWindow.hideCloseButton();
         }
     },500)
 };
@@ -48,8 +49,15 @@ window.onresize = () => {
 };
 
 function showLogin() {
-    document.getElementsByClassName('login')[0].style.display = 'inherit';
-    document.getElementsByClassName('mask-header')[0].style.display = 'inherit';
+    let width = document.body.clientWidth;
+    if (width < 1069) {
+        document.getElementsByClassName('login-medium')[0].style.display = 'inherit';
+        window.parent.hideHome(1);
+    } else {
+        document.getElementsByClassName('login')[0].style.display = 'inherit';
+        document.getElementsByClassName('mask-header')[0].style.display = 'inherit';
+    }
+
 }
 
 function closeLogin() {
