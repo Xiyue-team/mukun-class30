@@ -8,7 +8,9 @@
     height: 100%;
     top: 0;
     left: 0;
-    background-image: url('../img/home/mainBack.jpg')
+    background-image: url('../img/home/mainBack.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 .section1{
     width: 100%;
@@ -131,7 +133,7 @@
     width: 100%;
     height: 764px;
     background-image: url("../img/home/equipment.png");
-    background-size: 100%;
+    background-size: 100% 100%;
     background-repeat:no-repeat;
     margin-top: 23px;
 }
@@ -141,7 +143,7 @@
     height: 410px;
     position: relative;
     background-image: url("../img/home/cooperation.png");
-    background-size: 100%;
+    background-size: 100% 100%;
     background-repeat:no-repeat;
 }
 .cooperationContent{
