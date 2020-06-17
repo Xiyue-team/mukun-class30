@@ -1,3 +1,4 @@
+let swiper;
 class AppPage {
     init() {
         this.initView();
@@ -20,13 +21,24 @@ class AppPage {
 
         // 窗口resize事件
         window.onresize = () => {
+            let width = document.body.clientWidth;
+            if (width>=735) {
+                swiper.params.slidesPerView = 3;
+                swiper.params.spaceBetween = 30;
+                swiper.params.slidesPerGroup = 3;
+            } else {
+                swiper.params.slidesPerView = 1;
+                swiper.params.spaceBetween = 0;
+                swiper.params.slidesPerGroup = 1;
+            }
+            console.log(swiper);
         };
     }
 
     // 更多应用模块轮播组件
     container() {
         let width = document.body.clientWidth;
-        let swiper = new Swiper('.swiper-container', {
+        swiper = new Swiper('.swiper-container', {
             autoplay: true,
             slidesPerView: width>=735?3:1,
             spaceBetween: width>=735?30:0,
