@@ -111,6 +111,7 @@
 .button-content{
     width: 65px;
     height: 32px;
+    justify-content: space-between;
 }
 .button-text{
     font-size: 11px;
@@ -119,5 +120,4 @@
 .enter{
     width: 5px;
     height: 9px;
-    margin-left: 8px;
 }
