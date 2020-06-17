@@ -30,6 +30,8 @@ class AppPage {
             autoplay: true,
             slidesPerView: width>=735?3:1,
             spaceBetween: width>=735?30:0,
+            slidesPerGroup: width>=735?3:1,
+            loop: true,
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
