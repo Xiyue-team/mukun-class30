@@ -291,12 +291,12 @@
 }
 .lottie-footer{
     width: 100%;
-    height: 720px;
+    height: 874px;
     position: relative;
 }
 .section9{
     width: 100%;
-    height: 720px;
+    height: 874px;
     background-color: #000000;
     position: relative;
 }
@@ -334,6 +334,7 @@
     font-size: 40px;
     line-height: 46px;
     opacity: 0;
+    padding-top: 75px;
 }
 .section9 .dataDriveContent {
     font-size: 20px;
@@ -354,7 +355,7 @@
 
 .section9-rotation{
     width: 100%;
-    height: 720px;
+    height: 874px;
     position:relative;
     display: none;
 }
@@ -366,6 +367,7 @@
     color: #333333;
     font-size: 42px;
     line-height: 46px;
+    padding-top: 100px;
 }
 .section9-rotation .dataDriveContent {
     font-size: 20px;
