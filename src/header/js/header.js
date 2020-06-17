@@ -49,12 +49,12 @@ window.onresize = () => {
 
 function showLogin() {
     document.getElementsByClassName('login')[0].style.display = 'inherit';
-    // document.getElementsByClassName('mask')[0].style.display = 'inherit';
+    document.getElementsByClassName('mask-header')[0].style.display = 'inherit';
 }
 
 function closeLogin() {
     document.getElementsByClassName('login')[0].style.display = 'none';
-    // document.getElementsByClassName('mask')[0].style.display = 'none';
+    document.getElementsByClassName('mask-header')[0].style.display = 'none';
 }
 
 function showMobileLogin() {
