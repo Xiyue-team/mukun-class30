@@ -26,11 +26,13 @@ class ResourcesPage {
         let backHeight;
         if (width >= 1440) {
             backHeight = width * (800/1920);
-        } else if (width < 1440 && width >= 1069) {
+        } else if (width < 1440 && width >= 1280) {
             backHeight = width * (800/1280);
-        } else if (width < 1069 && width >= 735) {
+        } else if (width < 1280 && width >= 900) {
             backHeight = width * (650/900);
-        } else if (width < 735) {
+        } else if (width < 900 && width >= 594) {
+            backHeight = width * (450/594);
+        } else if (width < 594) {
             backHeight = width * (236/321);
         }
         document.getElementsByClassName('section2')[0].style.height = backHeight.toString() + 'px';
