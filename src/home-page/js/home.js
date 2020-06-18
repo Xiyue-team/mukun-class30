@@ -30,17 +30,8 @@ class HomePage {
         let lastTime = 0;
         let totalFooter = 0;  // 鼠标滚轮和动画帧数绑定的数据
         let secondAni1 = 0;
-        let secondAni2 = 0;
-        if (width >= 1440) {
-            secondAni1 = 6600;
-            secondAni2 = 7100;
-        } else if (width < 1439 && width >= 1069) {
-            secondAni1 = 4750;
-            secondAni2 = 5000;
-        } else if (width < 1068 && width >= 735) {
-            secondAni1 = 5000;
-            secondAni2 = 5200;
-        }
+        const lastLottieContainer = document.querySelector('.lottie-footer');
+        secondAni1 = lastLottieContainer.offsetTop - 150;
         // 鼠标滚轮滚动事件
         element.addEventListener('mousewheel', (e) => {
             heightToTop=element.scrollTop;  // 重新获取滚动条距离顶部位置
@@ -60,7 +51,7 @@ class HomePage {
                 }
 
                 // 页面底部的lottie
-                if (this.getScrollTop()>=secondAni1 && this.getScrollTop()<=secondAni2 && totalFooter>-2 && totalFooter< 181) {
+                if (this.getScrollTop()>=secondAni1 && totalFooter>-2 && totalFooter< 181) {
                     event.returnValue = true;
                     event.preventDefault();
                     let arr = this.countFrame(e, totalFooter, 181);
@@ -82,6 +73,7 @@ class HomePage {
                     if (display == 'block') {
                         setTimeout(()=>{
                             document.getElementsByClassName('lottie-footer')[0].style.display = 'none';
+                            document.getElementsByClassName('whriteDiv')[0].style.display = 'none';
                             document.getElementsByClassName('section9-rotation')[0].style.display = 'inherit';
                             this.container();
                         },7500)
@@ -103,7 +95,7 @@ class HomePage {
                 }
 
                 // 尾部动画
-                if (this.getScrollTop()>=secondAni1 && this.getScrollTop()<=secondAni2) {
+                if (this.getScrollTop()>=secondAni1) {
                     if (totalFooter <= -2) {
                         totalFooter += 1;
                     }
@@ -115,13 +107,10 @@ class HomePage {
             width = document.body.clientWidth;
             if (width >= 1440) {
                 secondAni1 = 6450;
-                secondAni2 = 6700;
             } else if (width < 1439 && width >= 1069) {
                 secondAni1 = 4500;
-                secondAni2 = 4650;
             } else if (width < 1068 && width >= 735) {
                 secondAni1 = 4700;
-                secondAni2 = 4900;
             }
         };
     }
@@ -174,62 +163,74 @@ class HomePage {
             }
         }
         if (type === 0) {
-            // 头部lottie
-            if (total>=144) {
-                document.getElementsByClassName('lottieImg')[0].style.display = "none";
-                document.getElementsByClassName('section')[0].style.animation = "lottieChange 1s ease forwards";
-            } else {
-                let section = document.getElementsByClassName('section')[0];
-                let backgroundColor = window.getComputedStyle(section,null).backgroundColor;
-                if(backgroundColor === 'rgb(250, 250, 250)'){
-                    document.getElementsByClassName('lottieImg')[0].style.display = "inherit";
-                    document.getElementsByClassName('section')[0].style.animation = "lottieChangeBack 1s ease forwards";
-                }
-            }
+            this.firstLottieAni (total);
         } else if (type === 1) {
-            // 尾部lottie
-            if (total>=10) {
-                document.getElementsByClassName('mask-text')[0].style.animation = "textShowOut 0.5s ease forwards";
-            } else {
-                let dataDriveTitle = document.getElementsByClassName('mask-text')[0];
-                let opacity = window.getComputedStyle(dataDriveTitle,null).opacity;
-                if (opacity < 1){
-                    document.getElementsByClassName('mask-text')[0].style.animation = "textShowIn 0.5s ease forwards";
-                }
-            }
-            if (total>=120) {
-                document.getElementsByClassName('mask')[0].style.animation = "maskShowOut 1s ease forwards";
-                document.getElementsByClassName('section9')[0].style.animation = "blackToWhite 1s ease forwards";
-                document.getElementsByClassName('dataDriveGallery')[0].style.animation = "imgShowIn 1s ease forwards";
-            } else {
-                let mask = document.getElementsByClassName('mask')[0];
-                let opacity = window.getComputedStyle(mask,null).opacity;
-                if (opacity < 0.55) {
-                    document.getElementsByClassName('mask')[0].style.animation = "maskShowIn 1s ease forwards";
-                    document.getElementsByClassName('section9')[0].style.animation = "whiteToBlack 1s ease forwards";
-                    document.getElementsByClassName('dataDriveGallery')[0].style.animation = "imgShowOut 1s ease forwards";
-                }
-            }
-            if (total>=183) {
-                document.getElementsByClassName('dataDrive')[0].style.animation = "imgDown 1s ease forwards";
-                document.getElementsByClassName('dataDriveTitle')[0].style.animation = "textShowIn 1s ease forwards";
-                document.getElementsByClassName('dataDriveContent')[0].style.animation = "textShowIn 1s ease forwards";
-                setTimeout(()=>{
-                    document.getElementsByClassName('lottie-footer')[0].style.display = 'none';
-                    document.getElementsByClassName('section9-rotation')[0].style.display = 'inherit';
-                    this.container();
-                },500);
-            } else {
-                let dataDriveTitle = document.getElementsByClassName('dataDriveTitle')[0];
-                let opacity = window.getComputedStyle(dataDriveTitle,null).opacity;
-                if (opacity > 0) {
-                    document.getElementsByClassName('dataDrive')[0].style.animation = "imgUp 1s ease forwards";
-                    document.getElementsByClassName('dataDriveTitle')[0].style.animation = "textShowOut 1s ease forwards";
-                    document.getElementsByClassName('dataDriveContent')[0].style.animation = "textShowOut 1s ease forwards";
-                }
-            }
+            this.lastLotttieAni(total);
         }
 
+    }
+
+    // 尾部样式随lottie进度变化
+    lastLotttieAni(total) {
+        if (total >= 10) {
+            document.getElementsByClassName('mask-text')[0].style.animation = "textShowOut 0.5s ease forwards";
+        } else {
+            let dataDriveTitle = document.getElementsByClassName('mask-text')[0];
+            let opacity = window.getComputedStyle(dataDriveTitle, null).opacity;
+            if (opacity < 1) {
+                document.getElementsByClassName('mask-text')[0].style.animation = "textShowIn 0.5s ease forwards";
+            }
+        }
+        if (total >= 120) {
+            document.getElementsByClassName('mask')[0].style.animation = "maskShowOut 1s ease forwards";
+            document.getElementsByClassName('section9')[0].style.animation = "blackToWhite 1s ease forwards";
+            document.getElementsByClassName('dataDriveGallery')[0].style.animation = "imgShowIn 1s ease forwards";
+        } else {
+            let mask = document.getElementsByClassName('mask')[0];
+            let opacity = window.getComputedStyle(mask, null).opacity;
+            if (opacity < 0.55) {
+                document.getElementsByClassName('mask')[0].style.animation = "maskShowIn 1s ease forwards";
+                document.getElementsByClassName('section9')[0].style.animation = "whiteToBlack 1s ease forwards";
+                document.getElementsByClassName('dataDriveGallery')[0].style.animation = "imgShowOut 1s ease forwards";
+            }
+        }
+        if (total >= 183) {
+            document.getElementsByClassName('dataDrive')[0].style.animation = "imgDown 1s ease forwards";
+            document.getElementsByClassName('dataDriveTitle')[0].style.animation = "textShowIn 1s ease forwards";
+            document.getElementsByClassName('dataDriveContent')[0].style.animation = "textShowIn 1s ease forwards";
+            setTimeout(() => {
+                document.getElementsByClassName('lottie-footer')[0].style.display = 'none';
+                document.getElementsByClassName('whriteDiv')[0].style.display = 'none';
+                document.getElementsByClassName('section9-rotation')[0].style.display = 'inherit';
+                if(width >= 1440) {
+                    document.querySelector('.home_page').scrollTop = document.querySelector('.section9-rotation').offsetTop;
+                }
+                this.container();
+            }, 500);
+        } else {
+            let dataDriveTitle = document.getElementsByClassName('dataDriveTitle')[0];
+            let opacity = window.getComputedStyle(dataDriveTitle, null).opacity;
+            if (opacity > 0) {
+                document.getElementsByClassName('dataDrive')[0].style.animation = "imgUp 1s ease forwards";
+                document.getElementsByClassName('dataDriveTitle')[0].style.animation = "textShowOut 1s ease forwards";
+                document.getElementsByClassName('dataDriveContent')[0].style.animation = "textShowOut 1s ease forwards";
+            }
+        }
+    }
+
+// 头部样式随着lottie进度变化
+    firstLottieAni(total) {
+        if (total >= 144) {
+            document.getElementsByClassName('lottieImg')[0].style.display = "none";
+            document.getElementsByClassName('section')[0].style.animation = "lottieChange 1s ease forwards";
+        } else {
+            let section = document.getElementsByClassName('section')[0];
+            let backgroundColor = window.getComputedStyle(section, null).backgroundColor;
+            if (backgroundColor === 'rgb(250, 250, 250)') {
+                document.getElementsByClassName('lottieImg')[0].style.display = "inherit";
+                document.getElementsByClassName('section')[0].style.animation = "lottieChangeBack 1s ease forwards";
+            }
+        }
     }
 
     /**

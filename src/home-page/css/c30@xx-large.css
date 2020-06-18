@@ -289,7 +289,9 @@
 .lottie-footer{
     width: 100%;
     height: 1080px;
-    position: relative;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 60px;
 }
 .section9{
     width: 100%;

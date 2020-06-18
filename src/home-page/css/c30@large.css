@@ -292,7 +292,12 @@
 .lottie-footer{
     width: 100%;
     height: 874px;
-    position: relative;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 60px;
+}
+.whriteDiv{
+    display: none;
 }
 .section9{
     width: 100%;
