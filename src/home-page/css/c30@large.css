@@ -135,20 +135,21 @@
 }
 .section7 .gallery{
     height: 577px;
-    width: 100%;
-    background-image: url("../img/home/equipment.png");
+    width: 1024px;
+    background-image: url("../img/home/equipment1024.png");
     background-size: 100% 100%;
     background-repeat:no-repeat;
-    margin-top: 24px;
+    margin: 24px auto 0 auto;
 }
 
 .cooperation-section{
-    width: 100%;
+    width: 1024px;
     height: 273px;
     position: relative;
     background-image: url("../img/home/cooperation1024.png");
     background-size: 100% 100%;
     background-repeat:no-repeat;
+    margin: 0 auto;
 }
 .cooperationContent{
     position: absolute;
