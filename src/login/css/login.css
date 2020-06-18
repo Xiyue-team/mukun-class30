@@ -113,13 +113,15 @@ input,span,div{
 }
 
 .form .code_input{
-	background: #F9F9F9;
+	background: #ffffff;
 	border: none;
 	padding-left: 1%;
 	width: 200px;
 	height: 40px;
 	font-size: 0.938em;
 	box-shadow: inset 0 -1px 0 0 #EBEBEB;
+	outline-offset: unset !important;
+	outline: none !important;
 }
 
 .form .get-code{
