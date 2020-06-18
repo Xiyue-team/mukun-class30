@@ -131,9 +131,9 @@
 }
 .section7 .gallery{
     width: 1380px;
-    height: 764px;
+    height: 894px;
     background-image: url("../img/home/equipment.png");
-    background-size: 100% 100%;
+    background-size: 1380px 894px;
     background-repeat:no-repeat;
     margin: 23px auto 0 auto;
 }

@@ -134,10 +134,10 @@
     margin-top: 15px;
 }
 .section7 .gallery{
-    height: 577px;
+    height: 596px;
     width: 1024px;
     background-image: url("../img/home/equipment1024.png");
-    background-size: 100% 100%;
+    background-size: 1024px 596px;
     background-repeat:no-repeat;
     margin: 24px auto 0 auto;
 }
