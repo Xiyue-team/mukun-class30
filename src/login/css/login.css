@@ -155,15 +155,28 @@ input,span,div{
 	bottom: 129px;
 }
 .form .link{
-	width: 80%;
+	width: 90%;
 	margin: 4% 0 4% 0;
 	text-align: center;
 }
+.form .link img {
+display: block;
+width: 18px;
+height: 18px;
+float: left;
+}
+#selected {
+display: none;
+}
 .form .link span{
 	display: block;
-	font-size: 0.813em;
+	font-size: 0.913em;
 	color: #B8B8B8;
 	cursor: pointer;
+	height: 18px;
+	float: left;
+	margin-left: 0.813em;
+	line-height: 18px;
 }
 .form .link span:hover{
 	color: #38DB96;

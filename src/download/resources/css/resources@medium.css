@@ -1,0 +1,122 @@
+.section1{
+    width: 100%;
+    height: 60px;
+}
+.section2{
+    height: 650px;
+    background-color: #000000;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    overflow: hidden;
+}
+.section2 img{
+    width: 100%;
+    height: 100%;
+    content: url("../img/background@900@2x.png");
+}
+.section3{
+    position: relative;
+    padding-top: 650px;
+    width: 100%;
+    z-index: 11;
+}
+.more-resources{
+    width: 100%;
+    background-color: #ffffff;
+}
+.more-title{
+    width: 100%;
+    height: 220px;
+    line-height: 220px;
+    font-size: 36px;
+    color: #004254;
+    text-align: center;
+}
+.more-detail{
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 86px;
+}
+.detail{
+    width: 1000px;
+    background: #F1F9F6;
+    border: 1pt solid #F1F9F6;
+    padding-bottom: 68px;
+}
+.detail:hover{
+    border: 1pt solid #38DB96;
+}
+.detail:nth-of-type(2){
+    margin: 0 18px;
+}
+.detail-img{
+    width: 288px;
+    height: 253px;
+    margin-top: 73px;
+}
+.detail-img img{
+    width: 100%;
+    height: 100%;
+}
+.detail:nth-of-type(1) .detail-img img{
+    content: url("../img/huohuaschool@2x.png");
+}
+.detail:nth-of-type(2) .detail-img img{
+    content: url("../img/17zuoye@2x.png");
+}
+.detail:nth-of-type(3) .detail-img img{
+    content: url("../img/zhijiaoyun@2x.png");
+}
+.detail-title{
+    margin-top: 73px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 22px;
+    color: #004254;
+}
+.detail-content{
+    margin-top: 13px;
+    height: 16px;
+    line-height: 16px;
+    font-size: 11px;
+    color: #8A8A8A;
+}
+.detail-button{
+    margin-top: 34px;
+    width: 133px;
+    height: 45px;
+    position: relative;
+}
+.button-shadow{
+    position: absolute;
+    top: 9px;
+    width: 133px;
+    height: 32px;
+    opacity: 0.38;
+    background: #38DB96;
+    border-radius: 19px;
+    filter: blur(8px);
+}
+.button-border{
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    width: 133px;
+    height: 32px;
+    background: #38DB96;
+    border-radius: 19px;
+}
+.button-content{
+    width: 65px;
+    height: 32px;
+    justify-content: space-between;
+}
+.button-text{
+    font-size: 11px;
+    color: #FFFFFF;
+}
+.enter{
+    width: 5px;
+    height: 9px;
+}

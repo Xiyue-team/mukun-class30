@@ -1,0 +1,427 @@
+.pujiaoyun{
+    display: inherit;
+}
+.zhijiaoyun{
+    display: none;
+}
+.section1{
+    width: 100%;
+    height: 60px;
+}
+.section2{
+    width: 100%;
+    height: 501px;
+    background-image: url("../img/backImg1024@2x.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.img-title{
+    position: absolute;
+    width: 389px;
+    height: 173px;
+    top: 164px;
+    left: 100.5px;
+}
+.title1{
+    height: 45px;
+    font-size: 32px;
+    color: #ffffff;
+}
+.title2{
+    margin-top: 22.5px;
+    height: 33px;
+    font-size: 24px;
+    color: #ffffff;
+}
+.title3{
+    margin-top: 22.5px;
+    width: 389px;
+    height: 50px;
+    font-size: 14px;
+    color: #ffffff;
+}
+.version{
+    position: absolute;
+    top: 429px;
+    left: 50%;
+    margin-left: -350px;
+    width: 700px;
+    height: 143px;
+    background-color: #ffffff;
+    border-radius: 11px;
+    z-index: 11;
+}
+.version-buttons{
+    width: 490px;
+    height: 50px;
+}
+.version-button{
+    cursor: pointer;
+    width: 186px;
+    height: 50px;
+    background: #ffffff;
+    border: 1px solid #38DB96;
+    border-radius: 25px;
+    font-size: 24px;
+    color: #004254;
+    line-height: 46px;
+}
+.version-button:nth-of-type(1){
+    background: #38DB96;
+    color: #ffffff;
+}
+.button-split{
+    width: 117px;
+}
+.section3{
+    margin-top: 3px;
+    width: 676px;
+    height: 94px;
+    background: #ECF7F2;
+    border-radius: 11px;
+    filter: blur(8px);
+}
+
+/*普教云*/
+.section4{
+    flex-direction:column;
+    width: 589px;
+    height: 881px;
+    padding-top: 71px;
+}
+.section4 .img-panel1{
+    width: 589px;
+    height: 342px;
+}
+.section4 .img-panel1 img{
+    content: url('../img/pujiaoyun/daping@2x.png');
+    width: 589px;
+    height: 342px;
+}
+.section4-split{
+    height: 70px;
+}
+.text-panel1{
+    margin: 0 auto;
+    width: 564px;
+    height: 398px;
+}
+.title{
+    margin: 0 auto;
+    height: 45px;
+    font-size: 32px;
+    color: #004254;
+}
+.underline{
+    margin: 11px auto 0 auto;
+    width: 50px;
+    height: 5px;
+    background: #38DB96;
+    border-radius: 2.5px;
+}
+.subTitle{
+    margin: 40px auto 0 auto;
+    height: 33px;
+    font-size: 24px;
+    color: #5E5E5E;
+}
+.subContent{
+    margin-top: 10px;
+    width: 564px;
+    height: 75px;
+    font-size: 14px;
+    color: #858585;
+    text-align: center;
+    line-height: 25px;
+}
+.download-button{
+    margin: 40px auto 0 auto;
+    width: 160px;
+    height: 60px;
+    position: relative;
+}
+.button-shadow{
+    position: absolute;
+    top: 12.5px;
+    width: 160px;
+    height: 45px;
+    opacity: 0.38;
+    background: #38DB96;
+    border-radius: 27.5px;
+    filter: blur(8px);
+}
+.button-content{
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    width: 160px;
+    height: 45px;
+    background: #38DB96;
+    border-radius: 27.5px;
+}
+.microsoft{
+    width: 20px;
+    height: 20px;
+    margin-left: 37px;
+}
+.phone{
+    width: 20px;
+    height: 20px;
+    margin-left: 37px;
+    margin-bottom: 3px;
+}
+.button-text{
+    margin-left: 10px;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+.section5-back{
+    width: 100%;
+    height: 919px;
+    background: #F1F9F6;
+}
+.section5{
+    flex-direction:column;
+    width: 550px;
+    padding-top: 87.5px;
+}
+.section5 .img-panel2{
+    margin: 0 auto;
+    width: 485.6px;
+    height: 334.4px;
+}
+.section5 .img-panel2 img{
+    content: url('../img/pujiaoyun/jiaoshiPC@2x.png');
+    width: 485.6px;
+    height: 334.4px;
+}
+.section5-split{
+    height: 71.1px;
+}
+.text-panel2{
+    width: 550px;
+}
+.section5 .title{
+    width: 158px;
+}
+.section5 .subContent{
+    width: 550px;
+    height: 100px;
+}
+.section6{
+    flex-direction:column;
+    width: 511px;
+    height: 1066px;
+    padding-top: 86.5px;
+}
+.img-panel3{
+    width: 511px;
+    height: 332px;
+}
+.img-panel3 img{
+    content: url('../img/pujiaoyun/zhushou1024@2x.png');
+    width: 511px;
+    height: 332px;
+}
+.section6-split{
+    height: 70px;
+}
+.section6 .title{
+    width: 254px;
+}
+.section6 .subContent{
+    margin-left: auto;
+    margin-right: auto;
+    width: 410px;
+    height: 75px;
+}
+.download-imgs{
+    flex-direction:column;
+    margin-top: 40px;
+    width: 100%;
+}
+.download-qrcode{
+    width: 158px;
+    height: 158px;
+    margin: 0 auto;
+}
+.section6 .download-qrcode img{
+    content: url('../img/pujiaoyun/zhushouQR@2x.png');
+    width: 158px;
+    height: 158px;
+}
+.section7 .download-qrcode img{
+    content: url('../img/pujiaoyun/xuexiQR@2x.png');
+    width: 158px;
+    height: 158px;
+}
+.download-buttons{
+    flex-direction:row;
+    margin-top: 21px;
+    width: 341px;
+    height: 60px;
+}
+.ios-download{
+    width: 160px;
+    height: 60px;
+    position: relative;
+}
+.android-download{
+    margin-left: 21px;
+    width: 160px;
+    height: 60px;
+    position: relative;
+}
+.section7-back{
+    width: 100%;
+    height: 1066px;
+    background: #F1F9F6;
+}
+.section7{
+    flex-direction:column;
+    width: 511px;
+    padding-top: 111.5px;
+}
+.img-panel4{
+    width: 511px;
+    height: 332px;
+}
+.img-panel4 img{
+    content: url('../img/pujiaoyun/xuexi1024@2x.png');
+    width: 511px;
+    height: 332px;
+}
+.section7-split{
+    height: 70px;
+}
+.section7 .title{
+    width: 190px;
+}
+.section7 .subContent{
+    margin-left: auto;
+    margin-right: auto;
+    width: 410px;
+    height: 50px;
+}
+
+
+/*职教云*/
+.section8{
+    flex-direction:column;
+    width: 590px;
+    height: 856px;
+    padding-top: 71.5px;
+}
+.img-panel5{
+    width: 590px;
+    height: 347px;
+}
+.img-panel5 img{
+    content: url('../img/zhijiaoyun/ketang@2x.png');
+    width: 590px;
+    height: 347px;
+}
+.section8-split{
+    height: 65px;
+}
+.section8 .title{
+    width: 158px;
+}
+.section8 .subContent{
+    margin-left: auto;
+    margin-right: auto;
+    width: 550px;
+    height: 50px;
+}
+.section9-back{
+    width: 100%;
+    height: 880px;
+    background: #F1F9F6;
+}
+.section9{
+    flex-direction:column;
+    width: 550px;
+    padding-top: 87.5px;
+}
+.img-panel6{
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    height: 302px;
+}
+.img-panel6 img{
+    content: url('../img/zhijiaoyun/jiaoshi1024@2x.png');
+    width: 500px;
+    height: 302px;
+}
+.section9-split{
+    height: 64.5px;
+}
+.section9 .title{
+    width: 158px;
+}
+.section9 .subContent{
+    width: 550px;
+    height: 100px;
+}
+.section10{
+    flex-direction:column;
+    width: 520px;
+    height: 853.5px;
+    padding-top: 87px;
+}
+.img-panel7{
+    margin-left: auto;
+    margin-right: auto;
+    width: 486px;
+    height: 304px;
+}
+.img-panel7 img{
+    content: url('../img/zhijiaoyun/xuesheng1024@2x.png');
+    width: 486px;
+    height: 304px;
+}
+.section10-split{
+    height: 64px;
+}
+.text-panel7{
+    margin-left: auto;
+    margin-right: auto;
+    width: 520px;
+}
+.section10 .title{
+    width: 158px;
+}
+.section10 .subContent{
+    margin-left: auto;
+    margin-right: auto;
+    width: 410px;
+    height: 75px;
+}
+.section10 .download-buttons{
+    flex-direction:row;
+    margin-top: 40px;
+    margin-left: 0;
+    width: 520px;
+    height: 60px;
+}
+.section10 .windows-download{
+    width: 160px;
+    height: 60px;
+    position: relative;
+}
+.section10 .ios-download{
+    margin-left: 20px;
+    margin-top: 0;
+    width: 160px;
+    height: 60px;
+    position: relative;
+}
+.section10 .android-download{
+    margin-left: 20px;
+    margin-top: 0;
+    width: 160px;
+    height: 60px;
+    position: relative;
+}
