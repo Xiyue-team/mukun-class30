@@ -81,6 +81,9 @@
     height: 94px;
     background: #ECF7F2;
     border-radius: 11px;
+    -webkit-filter: blur(8px);
+    -moz-filter: blur(8px);
+    -ms-filter: blur(8px);
     filter: blur(8px);
 }
 
@@ -94,11 +97,9 @@
 .section4 .img-panel1{
     width: 736px;
     height: 427px;
-}
-.section4 .img-panel1 img{
-    content: url('../img/pujiaoyun/daping@2x.png');
-    width: 736px;
-    height: 427px;
+    background-image: url('../img/pujiaoyun/daping@2x.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 .section4-split{
     width: 150px;
@@ -148,6 +149,9 @@
     opacity: 0.38;
     background: #38DB96;
     border-radius: 27.5px;
+    -webkit-filter: blur(8px);
+    -moz-filter: blur(8px);
+    -ms-filter: blur(8px);
     filter: blur(8px);
 }
 .button-content{
@@ -189,11 +193,9 @@
 .section5 .img-panel2{
     width: 607px;
     height: 418px;
-}
-.section5 .img-panel2 img{
-    content: url('../img/pujiaoyun/jiaoshiPC@2x.png');
-    width: 607px;
-    height: 418px;
+    background-image: url('../img/pujiaoyun/jiaoshiPC@2x.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 .section5-split{
     width: 333px;
@@ -214,11 +216,9 @@
 .img-panel3{
     width: 638px;
     height: 415px;
-}
-.img-panel3 img{
-    content: url('../img/pujiaoyun/zhushou1380@2x.png');
-    width: 638px;
-    height: 415px;
+    background-image: url('../img/pujiaoyun/zhushou1380@2x.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 .section6-split{
     width: 169px;
@@ -236,19 +236,19 @@
     height: 158px;
     width: 100%;
 }
-.download-qrcode{
+.download-qrcode {
     width: 158px;
     height: 158px;
 }
-.section6 .download-qrcode img{
-    content: url('../img/pujiaoyun/zhushouQR@2x.png');
-    width: 158px;
-    height: 158px;
+.section6 .download-qrcode{
+    background-image: url('../img/pujiaoyun/zhushouQR@2x.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
-.section7 .download-qrcode img{
-    content: url('../img/pujiaoyun/xuexiQR@2x.png');
-    width: 158px;
-    height: 158px;
+.section7 .download-qrcode{
+    background-image: url('../img/pujiaoyun/xuexiQR@2x.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 .download-buttons{
     flex-direction:column;
@@ -281,11 +281,9 @@
 .img-panel4{
     width: 638px;
     height: 415px;
-}
-.img-panel4 img{
-    content: url('../img/pujiaoyun/xuexi1380@2x.png');
-    width: 638px;
-    height: 415px;
+    background-image: url('../img/pujiaoyun/xuexi1380@2x.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 .section7-split{
     width: 319px;
@@ -309,11 +307,9 @@
 .img-panel5{
     width: 736px;
     height: 433px;
-}
-.img-panel5 img{
-    content: url('../img/zhijiaoyun/ketang@2x.png');
-    width: 736px;
-    height: 433px;
+    background-image: url('../img/zhijiaoyun/ketang@2x.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 .section8-split{
     width: 151px;
@@ -338,11 +334,9 @@
 .img-panel6{
     width: 719px;
     height: 433px;
-}
-.img-panel6 img{
-    content: url('../img/zhijiaoyun/jiaoshi1380@2x.png');
-    width: 719px;
-    height: 433px;
+    background-image: url('../img/zhijiaoyun/jiaoshi1380@2x.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 .section9-split{
     width: 219px;
@@ -363,11 +357,9 @@
 .img-panel7{
     width: 665px;
     height: 415px;
-}
-.img-panel7 img{
-    content: url('../img/zhijiaoyun/xuesheng1380@2x.png');
-    width: 665px;
-    height: 415px;
+    background-image: url('../img/zhijiaoyun/xuesheng1380@2x.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 .section10-split{
     width: 121px;

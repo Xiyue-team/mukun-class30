@@ -185,32 +185,35 @@
     display: none !important;
 }
 .section8 .gallery .img-back{
-    position: relative;
     width: 320px;
     height: 195px;
     border-radius: 5px;
     margin-bottom: 30px;
-    background-color: #000000;
 }
-.section8 .gallery .img-back img{
-    position: absolute;
-    left: 0;
-    top: 0;
+.section8 .gallery .img-back:nth-of-type(1){
+    background-image: url('../img/home/bei-sm.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
-.section8 .gallery .img-back:nth-of-type(1) img{
-    content: url('../img/home/bei-sm.png');
+.section8 .gallery .img-back:nth-of-type(2){
+    background-image: url('../img/home/jiang-sm.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
-.section8 .gallery .img-back:nth-of-type(2) img{
-    content: url('../img/home/jiang-sm.png');
+.section8 .gallery .img-back:nth-of-type(3){
+    background-image: url('../img/home/pi-sm.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
-.section8 .gallery .img-back:nth-of-type(3) img{
-    content: url('../img/home/pi-sm.png');
+.section8 .gallery .img-back:nth-of-type(4){
+    background-image: url('../img/home/fu-sm.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
-.section8 .gallery .img-back:nth-of-type(4) img{
-    content: url('../img/home/fu-sm.png');
-}
-.section8 .gallery .img-back:nth-of-type(5) img{
-    content: url('../img/home/kao-sm.png');
+.section8 .gallery .img-back:nth-of-type(5){
+    background-image: url('../img/home/kao-sm.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 .lottie-footer{
     width: 100%;
@@ -270,14 +273,14 @@
     opacity: 0;
     margin: 20px 0;
 }
-.section9 img{
+.section9 .dataDriveGallery{
+    margin: 40px auto 0 auto;
+    opacity: 0;
     width: 250px;
     height: 150px;
-    content: url('../img/home/dataDrive-sm-2@2x.png');
-}
-.section9 .dataDriveGallery{
-    margin-top:40px;
-    opacity: 0;
+    background-image: url('../img/home/dataDrive-sm-2@2x.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 .section9 .content {
     width: 315px;
@@ -312,6 +315,36 @@
 .section9-rotation .swiper-slide{
     width: 250px;
     height: 150px;
+}
+.section9-rotation .swiper-slide:nth-of-type(1){
+    background-image: url("../img/home/dataDrive-2@2x.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.section9-rotation .swiper-slide:nth-of-type(2){
+    background-image: url("../img/home/dataDriveRotation-1@2x.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.section9-rotation .swiper-slide:nth-of-type(3){
+    background-image: url("../img/home/dataDriveRotation-2@2x.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.section9-rotation .swiper-slide:nth-of-type(4){
+    background-image: url("../img/home/dataDriveRotation-3@2x.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.section9-rotation .swiper-slide:nth-of-type(5){
+    background-image: url("../img/home/dataDriveRotation-4@2x.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.section9-rotation .swiper-slide:nth-of-type(6){
+    background-image: url("../img/home/dataDriveRotation-5@2x.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 .section9-rotation .swiper-container{
     width: 250px;

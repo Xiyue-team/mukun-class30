@@ -168,7 +168,7 @@
     line-height: 26px;
     color: #6B6B6B;
 }
-.section8 .img-back img{
+.section8 .img-back{
     width: 140px;
     height: 325px;
     opacity: 0.65;
@@ -200,6 +200,7 @@
 }
 .section8 .img-open:nth-of-type(3){
     position: relative;
+    background-size: 100% 100%;
 }
 .section8 .img-mask{
     position: absolute;
@@ -247,47 +248,38 @@
     padding-top: 225px;
     color: #FFFFFF;
 }
-@keyframes turnToBig0{
-    0%{background-color: #ffffff;background-image: url('../img/home/bei-open-md.png');background-size: 100% 100%;}
-    100%{width:700px;background-color: #ffffff;background-image: url('../img/home/bei-open-md.png');background-size: 100% 100%;}
-}
-@keyframes turnToBig1{
-    0%{background-color: #ffffff;background-image: url('../img/home/jiang-open-md.png');background-size: 100% 100%;}
-    100%{width:700px;background-color: #ffffff;background-image: url('../img/home/jiang-open-md.png');background-size: 100% 100%;}
-}
-@keyframes turnToBig2{
-    0%{background-color: #ffffff;background-image: url('../img/home/pi-open-md.png');background-size: 100% 100%;}
-    100%{width:700px;background-color: #ffffff;background-image: url('../img/home/pi-open-md.png');background-size: 100% 100%;}
-}
-@keyframes turnToBig3{
-    0%{background-color: #ffffff;background-image: url('../img/home/fu-open-md.png');background-size: 100% 100%;}
-    100%{width:700px;background-color: #ffffff;background-image: url('../img/home/fu-open-md.png');background-size: 100% 100%;}
-}
-@keyframes turnToBig4{
-    0%{background-color: #ffffff;background-image: url('../img/home/kao-open-md.png');background-size: 100% 100%;}
-    100%{width:700px;background-color: #ffffff;background-image: url('../img/home/kao-open-md.png');background-size: 100% 100%;}
+@keyframes turnToBig{
+    0%{}
+    100%{width:700px;}
 }
 @keyframes turnToSmall{
     0%{}
     100%{width:0;}
 }
-.section8 .gallery .img-back .text-mobile{
-    display: none;
-}
-.section8 .gallery .img-back:nth-of-type(1) img{
+.section8 .gallery .img-back:nth-of-type(1){
     content: url('../img/home/bei-md.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
-.section8 .gallery .img-back:nth-of-type(2) img{
+.section8 .gallery .img-back:nth-of-type(2){
     content: url('../img/home/jiang-md.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
-.section8 .gallery .img-back:nth-of-type(3) img{
+.section8 .gallery .img-back:nth-of-type(3){
     content: url('../img/home/pi-md.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
-.section8 .gallery .img-back:nth-of-type(4) img{
+.section8 .gallery .img-back:nth-of-type(4){
     content: url('../img/home/fu-md.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
-.section8 .gallery .img-back:nth-of-type(5) img{
+.section8 .gallery .img-back:nth-of-type(5){
     content: url('../img/home/kao-md.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 .lottie-footer{
     width: 100%;
@@ -347,14 +339,15 @@
     opacity: 0;
     margin: 20px 0;
 }
-.section9 img{
+
+.section9 .dataDriveGallery{
+    margin: 60px auto 0 auto;
+    opacity: 0;
     width: 610px;
     height: 345px;
-    content: url('../img/home/dataDrive-md-2@2x.png');
-}
-.section9 .dataDriveGallery{
-    margin-top:60px;
-    opacity: 0;
+    background-image: url('../img/home/dataDrive-md-2@2x.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .section9-rotation{
@@ -382,6 +375,36 @@
 .section9-rotation .swiper-slide{
     width: 610px;
     height: 345px;
+}
+.section9-rotation .swiper-slide:nth-of-type(1){
+    background-image: url("../img/home/dataDrive-2@2x.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.section9-rotation .swiper-slide:nth-of-type(2){
+    background-image: url("../img/home/dataDriveRotation-1@2x.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.section9-rotation .swiper-slide:nth-of-type(3){
+    background-image: url("../img/home/dataDriveRotation-2@2x.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.section9-rotation .swiper-slide:nth-of-type(4){
+    background-image: url("../img/home/dataDriveRotation-3@2x.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.section9-rotation .swiper-slide:nth-of-type(5){
+    background-image: url("../img/home/dataDriveRotation-4@2x.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.section9-rotation .swiper-slide:nth-of-type(6){
+    background-image: url("../img/home/dataDriveRotation-5@2x.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 .section9-rotation .swiper-container{
     width: 610px;

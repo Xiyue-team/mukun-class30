@@ -29,8 +29,6 @@
     <script src="../assets/js/lottie.js" type="text/javascript"></script>
     <script src="../assets/js/jquery-3.5.1.js" type="text/javascript"></script>
     <script src="../assets/js/bootstrap.min.js"></script>
-
-    <script src="js/home.js" type="text/javascript"></script>
 </head>
 <body>
 <div class="home_page bg-white">
@@ -157,31 +155,33 @@
         </section>
         <!--数据驱动lottie-->
         <div class="lottie-footer">
-            <section class="section9">
-                <div class="mask">
-                </div>
-                <div class="mask-text">
-                    <div class="subTitle text-center title ">数据驱动</div>
-                    <div class="subcontent text-center content">
-                        全过程、动态、连续、全面数据无感知采集
+            <div style="position: relative">
+                <section class="section9">
+                    <div class="mask">
                     </div>
-                    <div class="subcontent text-center content">
-                        <div class="content2">
-                            数据自动汇聚与分类展现，技术关联性分析、因果分析实现精准教学与科学治理
+                    <div class="mask-text">
+                        <div class="subTitle text-center title ">数据驱动</div>
+                        <div class="subcontent text-center content">
+                            全过程、动态、连续、全面数据无感知采集
+                        </div>
+                        <div class="subcontent text-center content">
+                            <div class="content2">
+                                数据自动汇聚与分类展现，技术关联性分析、因果分析实现精准教学与科学治理
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="dataDrive">
-                    <div class="dataDriveTitle text-center" >数据驱动</div>
-                    <div class="dataDriveContent text-center">
-                        <div class="content">
-                            全过程、动态、连续、全面数据无感知采集<br>数据自动汇聚与分类展现，技术关联性分析、因果分析实现精准教学与科学治理
+                    <div class="dataDrive">
+                        <div class="dataDriveTitle text-center" >数据驱动</div>
+                        <div class="dataDriveContent text-center">
+                            <div class="content">
+                                全过程、动态、连续、全面数据无感知采集<br>数据自动汇聚与分类展现，技术关联性分析、因果分析实现精准教学与科学治理
+                            </div>
                         </div>
+                        <div class="text-center dataDriveGallery"></div>
                     </div>
-                    <div class="text-center dataDriveGallery"><img class="mx-auto"></div>
+                </section>
+                <div id="dataDrive" style="position: absolute; left: 0; top: 0; width: 100%; height: 100%;">
                 </div>
-            </section>
-            <div id="dataDrive" style="position: absolute; left: 0; top: 0; width: 100%; height: 100%;">
             </div>
         </div>
 
@@ -198,12 +198,12 @@
                 </div>
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="img/home/dataDrive-2@2x.png"></div>
-                        <div class="swiper-slide"><img src="img/home/dataDriveRotation-1@2x.png"></div>
-                        <div class="swiper-slide"><img src="img/home/dataDriveRotation-2@2x.png"></div>
-                        <div class="swiper-slide"><img src="img/home/dataDriveRotation-3@2x.png"></div>
-                        <div class="swiper-slide"><img src="img/home/dataDriveRotation-4@2x.png"></div>
-                        <div class="swiper-slide"><img src="img/home/dataDriveRotation-5@2x.png"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
@@ -214,11 +214,25 @@
     <div id="footer_container"></div>
 </div>
 
+<script type="text/javascript" src="js/home_ie.js"></script>
 <script type="text/javascript" src="../header/js/header.js"></script>
 <script type="text/javascript" src="../footer/js/footer.js"></script>
 <script src="../assets/js/swiper.min.js"></script>
 <script type="text/javascript">
-    new HomePage().init();
+    // let scriptNode = document.createElement("script");
+    // scriptNode.setAttribute("type", "text/javascript");
+    // let explorer = navigator.userAgent;
+    // //ie11或者以下版本
+    // if ((explorer.indexOf("compatible") > -1 && explorer.indexOf("MSIE") > -1) || (explorer.indexOf('Trident') > -1 && explorer.indexOf("rv:11.0") > -1)) {
+    //     scriptNode.setAttribute("src", "js/home_ie.js");
+    //     document.head.appendChild(scriptNode);
+    // } else {
+    //     scriptNode.setAttribute("src", "js/home.js");
+    //     document.head.appendChild(scriptNode);
+    //     setTimeout(()=>{
+    //         new HomePage().init();
+    //     },200)
+    // }
     $("#header_container").load('../header/header.html');
     $("#footer_container").load('../footer/footer.html');
 </script>

@@ -5,7 +5,6 @@ let delta = 8; //鼠标每次滚动时动画运行的帧数
 let swiper;
 class HomePage {
     init() {
-        new Footer().init();
         this.initView();
         this.initEvent();
     }
@@ -218,7 +217,7 @@ class HomePage {
         }
     }
 
-// 头部样式随着lottie进度变化
+    // 头部样式随着lottie进度变化
     firstLottieAni(total) {
         if (total >= 144) {
             document.getElementsByClassName('lottieImg')[0].style.display = "none";
@@ -353,4 +352,3 @@ function hideHome(type) {
         document.getElementsByClassName('section')[0].style.backgroundColor = "#ffffff";
     }
 }
-

@@ -54,6 +54,8 @@
     width: 700px;
     height: 397px;
     margin-top: 30px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 .cards{
     width: 693px;
@@ -66,6 +68,8 @@
     height: 81px;
     margin-left: 2px;
     border: none;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 .card:nth-of-type(1){
     margin-left: 0;
@@ -78,23 +82,23 @@
 .section2 .subTitle{
     margin-top: 40px;
 }
-.section2 .big-img img{
-    content: url("../img/img1380/daping@2x.png");
+.section2 .big-img{
+    background-image: url("../img/img1380/daping@2x.png");
 }
 .section2 .card:nth-of-type(1){
-    content: url("../img/img1380/daping-tag1@2x.png");
+    background-image: url("../img/img1380/daping-tag1@2x.png");
 }
 .section2 .card:nth-of-type(2){
-    content: url("../img/img1380/daping-tag2@2x.png");
+    background-image: url("../img/img1380/daping-tag2@2x.png");
 }
 .section2 .card:nth-of-type(3){
-    content: url("../img/img1380/daping-tag3@2x.png");
+    background-image: url("../img/img1380/daping-tag3@2x.png");
 }
 .section2 .card:nth-of-type(4){
-    content: url("../img/img1380/daping-tag4@2x.png");
+    background-image: url("../img/img1380/daping-tag4@2x.png");
 }
 .section2 .card:nth-of-type(5){
-    content: url("../img/img1380/daping-tag5@2x.png");
+    background-image: url("../img/img1380/daping-tag5@2x.png");
 }
 
 /*C30教师PC*/
@@ -109,23 +113,23 @@
 .section3 .subTitle{
     margin-top: 80px;
 }
-.section3 .big-img img{
-    content: url("../img/img1380/jiaoshiPC@2x.png");
+.section3 .big-img{
+    background-image: url("../img/img1380/jiaoshiPC@2x.png");
 }
 .section3 .card:nth-of-type(1){
-    content: url("../img/img1380/jiaoshiPC-tag1@2x.png");
+    background-image: url("../img/img1380/jiaoshiPC-tag1@2x.png");
 }
 .section3 .card:nth-of-type(2){
-    content: url("../img/img1380/jiaoshiPC-tag2@2x.png");
+    background-image: url("../img/img1380/jiaoshiPC-tag2@2x.png");
 }
 .section3 .card:nth-of-type(3){
-    content: url("../img/img1380/jiaoshiPC-tag3@2x.png");
+    background-image: url("../img/img1380/jiaoshiPC-tag3@2x.png");
 }
 .section3 .card:nth-of-type(4){
-    content: url("../img/img1380/jiaoshiPC-tag4@2x.png");
+    background-image: url("../img/img1380/jiaoshiPC-tag4@2x.png");
 }
 .section3 .card:nth-of-type(5){
-    content: url("../img/img1380/jiaoshiPC-tag5@2x.png");
+    background-image: url("../img/img1380/jiaoshiPC-tag5@2x.png");
 }
 
 /*C30学生端*/
@@ -136,23 +140,23 @@
 .section4 .subTitle{
     margin-top: 80px;
 }
-.section4 .big-img img{
-    content: url("../img/img1380/xueshengPC@2x.png");
+.section4 .big-img{
+    background-image: url("../img/img1380/xueshengPC@2x.png");
 }
 .section4 .card:nth-of-type(1){
-    content: url("../img/img1380/xueshengPC-tag1@2x.png");
+    background-image: url("../img/img1380/xueshengPC-tag1@2x.png");
 }
 .section4 .card:nth-of-type(2){
-    content: url("../img/img1380/xueshengPC-tag2@2x.png");
+    background-image: url("../img/img1380/xueshengPC-tag2@2x.png");
 }
 .section4 .card:nth-of-type(3){
-    content: url("../img/img1380/xueshengPC-tag3@2x.png");
+    background-image: url("../img/img1380/xueshengPC-tag3@2x.png");
 }
 .section4 .card:nth-of-type(4){
-    content: url("../img/img1380/xueshengPC-tag4@2x.png");
+    background-image: url("../img/img1380/xueshengPC-tag4@2x.png");
 }
 .section4 .card:nth-of-type(5){
-    content: url("../img/img1380/xueshengPC-tag5@2x.png");
+    background-image: url("../img/img1380/xueshengPC-tag5@2x.png");
 }
 
 /*小卡片公用样式*/
@@ -176,10 +180,8 @@
     width: 50px;
     height: 50px;
     margin-top: 30px;
-}
-.app-img img{
-    width: 100%;
-    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 .app-title{
     font-size: 15px;
@@ -209,20 +211,22 @@
 .section5 .subTitle{
     margin-top: 80px;
 }
-.section5 .app-card:nth-of-type(1) .app-img img{
-    content: url("../img/img1380/app-jiazhang@2x.png");
+.section5 .app-card:nth-of-type(1) .app-img{
+    background-image: url("../img/img1380/app-jiazhang@2x.png");
 }
-.section5 .app-card:nth-of-type(2) .app-img img{
-    content: url("../img/img1380/app-zhushou@2x.png");
+.section5 .app-card:nth-of-type(2) .app-img{
+    background-image: url("../img/img1380/app-zhushou@2x.png");
 }
-.section5 .app-card:nth-of-type(3) .app-img img{
-    content: url("../img/img1380/app-xuexi@2x.png");
+.section5 .app-card:nth-of-type(3) .app-img{
+    background-image: url("../img/img1380/app-xuexi@2x.png");
 }
 
 
 .left-img{
     width: 600px;
     height: 467px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 .left-img img{
     width: 100%;
@@ -245,23 +249,23 @@
     margin: 40px auto 0 auto;
     flex-direction: column-reverse;
 }
-.section6 .left-img img{
-    content: url("../img/img1380/shisheng@2x.png");
+.section6 .left-img{
+    background-image: url("../img/img1380/shisheng@2x.png");
 }
 .section6 .card:nth-of-type(1){
-    content: url("../img/img1380/shisheng-tag1@2x.png");
+    background-image: url("../img/img1380/shisheng-tag1@2x.png");
 }
 .section6 .card:nth-of-type(2){
-    content: url("../img/img1380/shisheng-tag2@2x.png");
+    background-image: url("../img/img1380/shisheng-tag2@2x.png");
 }
 .section6 .card:nth-of-type(3){
-    content: url("../img/img1380/shisheng-tag3@2x.png");
+    background-image: url("../img/img1380/shisheng-tag3@2x.png");
 }
 .section6 .card:nth-of-type(4){
-    content: url("../img/img1380/shisheng-tag4@2x.png");
+    background-image: url("../img/img1380/shisheng-tag4@2x.png");
 }
 .section6 .card:nth-of-type(5){
-    content: url("../img/img1380/shisheng-tag5@2x.png");
+    background-image: url("../img/img1380/shisheng-tag5@2x.png");
 }
 
 /*教务管理*/
@@ -277,23 +281,23 @@
     margin: 80px auto 0 auto;
     flex-direction: column-reverse;
 }
-.section7 .left-img img{
-    content: url("../img/img1380/jiaowu@2x.png");
+.section7 .left-img{
+    background-image: url("../img/img1380/jiaowu@2x.png");
 }
 .section7 .card:nth-of-type(1){
-    content: url("../img/img1380/jiaowu-tag1@2x.png");
+    background-image: url("../img/img1380/jiaowu-tag1@2x.png");
 }
 .section7 .card:nth-of-type(2){
-    content: url("../img/img1380/jiaowu-tag2@2x.png");
+    background-image: url("../img/img1380/jiaowu-tag2@2x.png");
 }
 .section7 .card:nth-of-type(3){
-    content: url("../img/img1380/jiaowu-tag3@2x.png");
+    background-image: url("../img/img1380/jiaowu-tag3@2x.png");
 }
 .section7 .card:nth-of-type(4){
-    content: url("../img/img1380/jiaowu-tag4@2x.png");
+    background-image: url("../img/img1380/jiaowu-tag4@2x.png");
 }
 .section7 .card:nth-of-type(5){
-    content: url("../img/img1380/jiaowu-tag5@2x.png");
+    background-image: url("../img/img1380/jiaowu-tag5@2x.png");
 }
 
 /*一体化平台*/
@@ -305,8 +309,8 @@
     margin: 80px auto 0 auto;
     flex-direction: column-reverse;
 }
-.section8 .left-img img{
-    content: url("../img/img1380/pingtai@2x.png");
+.section8 .left-img{
+    background-image: url("../img/img1380/pingtai@2x.png");
 }
 .section8 .cards{
     width: 415px;
@@ -314,13 +318,13 @@
     margin-top: 20px;
 }
 .section8 .card:nth-of-type(1){
-    content: url("../img/img1380/pingtai-tag1@2x.png");
+    background-image: url("../img/img1380/pingtai-tag1@2x.png");
 }
 .section8 .card:nth-of-type(2){
-    content: url("../img/img1380/pingtai-tag2@2x.png");
+    background-image: url("../img/img1380/pingtai-tag2@2x.png");
 }
 .section8 .card:nth-of-type(3){
-    content: url("../img/img1380/pingtai-tag3@2x.png");
+    background-image: url("../img/img1380/pingtai-tag3@2x.png");
 }
 
 /*更多应用*/
