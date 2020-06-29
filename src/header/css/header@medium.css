@@ -14,17 +14,17 @@
     width: 700px;
 }
 .section-pc .img-panel{
-    width: 55px;
+    width: 132px;
     height: 60px;
     align-items: center;
     cursor: pointer;
 }
 .section-pc .img-panel img{
-    width: 55px;
-    height: 40px;
+    width: 132px;
+    height: 32px;
 }
 .section-pc .section-split{
-    width: 80px;
+    width: 52px;
 }
 .section-pc .nav{
     width: 430px;
@@ -32,10 +32,13 @@
 .section-pc .nav-content{
     width: 30px;
     height: 60px;
-    margin-right: 70px;
+    margin-right: 60px;
     font-size: 15px;
     line-height: 60px;
     opacity: 0.4;
+}
+.section-pc .loginDiv {
+	margin: 0 0 0 8px;
 }
 .section-pc .nav-content:hover{
     opacity: 1;
@@ -44,11 +47,11 @@
     margin-right: 0;
 }
 .section-pc .section-split2{
-    width: 99px;
+    width: 40px;
 }
 .section-pc .img-panel2{
     cursor: pointer;
-    width: 36px;
+    width: 70px;
     height: 60px;
     align-items: center;
 }

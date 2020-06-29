@@ -19,17 +19,16 @@
     height: 60px;
 }
 .section-mobile .img-panel1{
-    width: 46px;
+    width: 108px;
     height: 60px;
     align-items: center;
-    margin-left: 20px;
 }
 .section-mobile .img-panel1 img{
-    width: 46px;
-    height: 35px;
+    width: 108px;
+    height: 27px;
 }
 .section-mobile .img-split{
-    width: 218px;
+    width: 194px;
 }
 .section-mobile .img-panel2{
     width: 18px;

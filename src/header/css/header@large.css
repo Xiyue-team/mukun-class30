@@ -14,17 +14,17 @@
     width: 1024px;
 }
 .section-pc .img-panel{
-    width: 55px;
+    width: 132px;
     height: 60px;
     align-items: center;
     cursor: pointer;
 }
 .section-pc .img-panel img{
-    width: 55px;
-    height: 40px;
+    width: 132px;
+    height: 32px;
 }
 .section-pc .section-split{
-    width: 150px;
+    width: 135px;
 }
 .section-pc .nav{
     width: 430px;
@@ -37,6 +37,9 @@
     line-height: 60px;
     opacity: 0.4;
 }
+.section-pc .loginDiv {
+margin: 0 0 0 8px;
+}
 .section-pc .nav-content:hover{
     opacity: 1;
 }
@@ -44,11 +47,11 @@
     margin-right: 0;
 }
 .section-pc .section-split2{
-    width: 353px;
+    width: 273px;
 }
 .section-pc .img-panel2{
     cursor: pointer;
-    width: 36px;
+    width: 80px;
     height: 60px;
     align-items: center;
 }
