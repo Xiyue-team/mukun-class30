@@ -1,6 +1,6 @@
 let animationHeader;
 let animationFooter;
-let width = document.body.clientWidth;
+// let width = document.body.clientWidth;
 let delta = 8; //鼠标每次滚动时动画运行的帧数
 let swiper;
 

@@ -214,25 +214,11 @@
     <div id="footer_container"></div>
 </div>
 
-<script type="text/javascript" src="js/home_ie.js"></script>
 <script type="text/javascript" src="../header/js/header.js"></script>
 <script type="text/javascript" src="../footer/js/footer.js"></script>
+<script type="text/javascript" src="js/home_ie.js"></script>
 <script src="../assets/js/swiper.min.js"></script>
 <script type="text/javascript">
-    // let scriptNode = document.createElement("script");
-    // scriptNode.setAttribute("type", "text/javascript");
-    // let explorer = navigator.userAgent;
-    // //ie11或者以下版本
-    // if ((explorer.indexOf("compatible") > -1 && explorer.indexOf("MSIE") > -1) || (explorer.indexOf('Trident') > -1 && explorer.indexOf("rv:11.0") > -1)) {
-    //     scriptNode.setAttribute("src", "js/home_ie.js");
-    //     document.head.appendChild(scriptNode);
-    // } else {
-    //     scriptNode.setAttribute("src", "js/home.js");
-    //     document.head.appendChild(scriptNode);
-    //     setTimeout(()=>{
-    //         new HomePage().init();
-    //     },200)
-    // }
     $("#header_container").load('../header/header.html');
     $("#footer_container").load('../footer/footer.html');
 </script>
