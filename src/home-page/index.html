@@ -219,7 +219,10 @@
 <script type="text/javascript" src="js/home_ie.js"></script>
 <script src="../assets/js/swiper.min.js"></script>
 <script type="text/javascript">
-    $("#header_container").load('../header/header.html');
+    $("#header_container").load('../header/header.html', function() {
+        let navContent = document.getElementsByClassName('nav-content');
+        navContent[0].style.opacity = '1';
+    });
     $("#footer_container").load('../footer/footer.html');
 </script>
 </body>

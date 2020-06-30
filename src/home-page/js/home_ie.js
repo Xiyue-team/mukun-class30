@@ -7,11 +7,6 @@ let swiper;
 initLottie();
 initImg();
 
-setTimeout(function(){
-    let navContent = document.getElementsByClassName('nav-content');
-    navContent[0].style.opacity = '1';
-},1000)
-
 const element = document.querySelector('.home_page');
 let heightToTop = getScrollTop(); //滚动条距顶端的距离
 let total = 0;  // 鼠标滚轮和动画帧数绑定的数据

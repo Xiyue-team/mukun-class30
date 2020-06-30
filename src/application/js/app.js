@@ -5,11 +5,6 @@ function initEvent() {
     let swiper;
     container();
 
-    setTimeout(function(){
-        let navContent = document.getElementsByClassName('nav-content');
-        navContent[2].style.opacity = '1';
-    },1000)
-
     // 窗口resize事件
     window.onresize = function(){
         let width = document.body.clientWidth;

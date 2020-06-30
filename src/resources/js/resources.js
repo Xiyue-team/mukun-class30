@@ -2,10 +2,6 @@ initEvent();
 
 /*初始化事件*/
 function initEvent() {
-    setTimeout(function(){
-        let navContent = document.getElementsByClassName('nav-content');
-        navContent[1].style.opacity = '1';
-    },1000)
 
     imgWidth();
     zoomImg();

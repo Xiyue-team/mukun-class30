@@ -1,10 +1,6 @@
 initEvent();
 /*初始化事件*/
 function initEvent() {
-    setTimeout(function(){
-        let navContent = document.getElementsByClassName('nav-content');
-        navContent[3].style.opacity = '1';
-    },1000)
 
     let versionButtons = document.getElementsByClassName('version-button');
     let pujiaoyun = document.getElementsByClassName('pujiaoyun')[0];
