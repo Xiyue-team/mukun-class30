@@ -1,0 +1,391 @@
+.section {
+    height: 768px;
+    position: relative;
+}
+.lottieImg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url('../../img/home_page/home/mainBack2.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.section1{
+    width: 100%;
+    height: 60px;
+}
+.cloudTitle{
+    font-size: 27px;
+    color: #20204D;
+    line-height: 27px;
+}
+.cloudContent{
+    font-size: 20px;
+    color: #6B6B6B;
+    line-height: 28px;
+    margin-top: 20px;
+}
+.cloudContent span{ margin-left: 36px;  }
+.cloudContent span:nth-of-type(1){
+    margin-left: 0;
+}
+
+.section3{
+    width: 320px;
+    height: 240px;
+    padding-top: 40px;
+}
+.subTitle {
+    color: #333333;
+    font-size: 24px;
+    line-height: 24px;
+}
+.subTitle2{
+    color: #333333;
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 16px;
+}
+.subcontent {
+    font-size: 16px;
+    line-height: 26px;
+    color: #6B6B6B;
+}
+.subcontent2 {
+    font-size: 14px;
+    line-height: 26px;
+    color: #6B6B6B;
+}
+.img-panel1 video{
+    width: 320px;
+    height: 247px;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px 0 rgba(0,0,0,0.05);
+}
+.text-panel1{
+    width:320px;
+    height: 266px;
+}
+.img-panel2 video{
+    width: 320px;
+    height: 218px;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px 0 rgba(0,0,0,0.05);
+}
+.text-panel2{
+    width:320px;
+    height: 240px;
+}
+
+.img-panel3 video{
+    width: 320px;
+    height: 218px;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px 0 rgba(0,0,0,0.05);
+}
+.text-panel3{
+    width:320px;
+    height: 292px;
+}
+
+.section4 {
+    flex-direction:column;
+    width: 320px;
+    height: 663px;
+    padding-top: 80px;
+}
+.section4-split{
+    height: 30px;
+}
+.section5-bg {
+}
+.section5 {
+    flex-direction:column;
+    width: 320px;
+    height: 531px;
+    padding-top: 60px;
+}
+.section5-split{
+    height: 30px;
+}
+.section6 {
+    flex-direction:column;
+    width: 320px;
+    height: 556px;
+    padding-top: 60px;
+}
+.section6-split{
+    height: 30px;
+}
+.section7{
+    width: 100%;
+    height: 323px;
+}
+.section7 .subTitle{
+    padding-top: 40px;
+}
+.section7 .subcontent{
+    margin-top: 16px;
+}
+.section7 .gallery{
+    height: 193px;
+    width: 320px;
+    background-image: url("../../img/home_page/home/equipment320.png");
+    background-size: 320px 193px;
+    background-repeat:no-repeat;
+    margin: 24px auto 0 auto;
+}
+.cooperation-section{
+    width: 320px;
+    height: 334px;
+    position: relative;
+    background-image: url("../../img/home_page/home/cooperation320.png");
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+    margin: 0 auto;
+}
+.cooperationContent{
+    position: absolute;
+    font-size: 14px;
+    color: #6B6B6B;
+    text-align: center;
+    line-height: 22px;
+    left: 50%;
+    margin-left: -160px;
+    width: 320px;
+    height: 88px;
+    top: 30px;
+}
+
+.section8{
+    width: 100%;
+    height: 1287px;
+    padding-top: 40px;
+}
+.section8 .subcontent{
+    font-size: 16px;
+    line-height: 26px;
+    color: #6B6B6B;
+}
+.section8 .title{
+    width:285px;
+    margin: 0 auto;
+}
+.section8 .gallery{
+    flex-direction:column;
+    width:320px;
+    margin-top: 60px;
+}
+.section8 .gallery-cover{
+    display: none;
+}
+.borderAndText{
+    display: none !important;
+}
+.section8 .gallery .img-back{
+    width: 320px;
+    height: 195px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+.section8 .gallery .img-back:nth-of-type(1){
+    background-image: url('../../img/home_page/home/bei-sm.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.section8 .gallery .img-back:nth-of-type(2){
+    background-image: url('../../img/home_page/home/jiang-sm.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.section8 .gallery .img-back:nth-of-type(3){
+    background-image: url('../../img/home_page/home/pi-sm.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.section8 .gallery .img-back:nth-of-type(4){
+    background-image: url('../../img/home_page/home/fu-sm.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.section8 .gallery .img-back:nth-of-type(5){
+    background-image: url('../../img/home_page/home/kao-sm.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.lottie-footer{
+    width: 100%;
+    height: 736px;
+    position: relative;
+}
+.whriteDiv{
+    display: none;
+}
+.section9{
+    width: 100%;
+    height: 736px;
+    position:relative;
+    background-color: #000000;
+}
+.section9 .mask{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.55;
+    background-image: url("../../img/home_page/home/dataDrive-sm@2x.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.section9 .mask-text{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.section9 .mask-text .title {
+    color:#FFFFFF;
+    padding-top: 308px;
+    margin-bottom: 18px;
+}
+.section9 .mask-text .content {
+    color:#FFFFFF;
+}
+.section9 .mask-text .content2 {
+    width: 306px;
+    margin: 0 auto;
+}
+.section9 .dataDrive{
+    position: relative;
+    padding-top: 115px;
+}
+.section9 .dataDriveTitle {
+    color: #333333;
+    font-size: 24px;
+    line-height: 24px;
+    opacity: 0;
+}
+.section9 .dataDriveContent {
+    font-size: 16px;
+    line-height: 26px;
+    color: #6B6B6B;
+    padding-top: 20px;
+    opacity: 0;
+    margin: 20px 0;
+}
+.section9 .dataDriveGallery{
+    margin: 40px auto 0 auto;
+    opacity: 0;
+    width: 250px;
+    height: 150px;
+    background-image: url('../../img/home_page/home/dataDrive-sm-2@2x.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.section9 .content {
+    width: 315px;
+    margin: 0 auto;
+}
+.section9 .content2 {
+    width: 305px;
+    margin: 0 auto;
+}
+.section9-rotation{
+    width: 100%;
+    height: 736px;
+    position:relative;
+    display: none;
+}
+.section9-rotation .dataDrive{
+    position: relative;
+    padding-top: 115px;
+}
+.section9-rotation .dataDriveTitle {
+    color: #333333;
+    font-size: 24px;
+    line-height: 24px;
+}
+.section9-rotation .dataDriveContent {
+    font-size: 16px;
+    line-height: 26px;
+    color: #6B6B6B;
+    padding-top: 20px;
+    margin: 20px 0;
+}
+.section9-rotation .swiper-slide{
+    width: 250px;
+    height: 150px;
+}
+.section9-rotation .swiper-slide:nth-of-type(1){
+    background-image: url("../../img/home_page/home/dataDrive-2@2x.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.section9-rotation .swiper-slide:nth-of-type(2){
+    background-image: url("../../img/home_page/home/dataDriveRotation-1@2x.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.section9-rotation .swiper-slide:nth-of-type(3){
+    background-image: url("../../img/home_page/home/dataDriveRotation-2@2x.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.section9-rotation .swiper-slide:nth-of-type(4){
+    background-image: url("../../img/home_page/home/dataDriveRotation-3@2x.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.section9-rotation .swiper-slide:nth-of-type(5){
+    background-image: url("../../img/home_page/home/dataDriveRotation-4@2x.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.section9-rotation .swiper-slide:nth-of-type(6){
+    background-image: url("../../img/home_page/home/dataDriveRotation-5@2x.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.section9-rotation .swiper-container{
+    width: 250px;
+    height: 202px;
+    margin-top: 40px;
+}
+.section9-rotation .content2{
+    width: 306px;
+    margin: 0 auto;
+}
+@keyframes maskShowOut{
+    0%{background-color: #000000;}
+    50%{background-color: #000000;}
+    75%{background-color: #ffffff;}
+    100%{background-color: #ffffff;}
+}
+@keyframes imgShowOut{
+    0%{opacity: 0.55;}
+    50%{opacity: 0.55;}
+    75%{opacity: 0;}
+    100%{opacity: 0;}
+}
+@keyframes imgShowIn{
+    0%{opacity: 0;}
+    50%{opacity: 0;}
+    75%{opacity: 1;}
+    100%{opacity: 1;}
+}
+@keyframes textShowIn{
+    0%{opacity: 0;}
+    80%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes textShowOut{
+    0%{opacity: 1;}
+    10%{opacity: 0;}
+    100%{opacity: 0;}
+}
+@keyframes blackToWhite{
+    0%{background-color: #000000;}
+    75%{background-color: #000000;}
+    85%{background-color: #fafafa;}
+    100%{background-color: #fafafa;}
+}
